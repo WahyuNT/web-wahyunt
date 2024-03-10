@@ -40,6 +40,33 @@ export default function Home() {
 
               <div className="card card-glass w-100">
                 <div className="card-body">
+                  <div className="d-flex justify-content-start">
+                    <div className="col-4">
+                      <div className="card h-100">
+                        <div className="card-body">
+
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-8 d-flex justify-content-start">
+                      <div className="col-4 d-flex align-items-start">
+                        <div className="div">
+                          <div className="card ">
+                            <div className="card-body asprect-ratio-1-1">
+                              <img src="https://i.pinimg.com/564x/08/77/d3/0877d31bb72f2e9f0dd7e2ce75b6eb3b.jpg" className="asprect-ratio-1-1" alt="" />
+                            </div>
+                          </div>
+                          <div className="card asprect-ratio-1-1">
+                            <div className="card-body">
+
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
                   <h5 className="text-primary"><b>About Me</b></h5>
                   <p className="text-muted">Hello, I'm Wahyu Nusantara. I'm a fresh graduate from AMIKOM University Yogyakarta. With a background
                     in UI/UX design, 3D Modeling, Game development, and Web development, I have a great interest in the
@@ -66,9 +93,7 @@ export default function Home() {
                   </div>
                   <h5 className="text-primary mt-3"><b>Tech Skill</b></h5>
                   <div className="d-flex justify-content-start flex-wrap">
-                    <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" className="avatar pull-up" aria-label="Darcey Nooner" data-bs-original-title="Darcey Nooner">
-                      <img className="rounded-circle" src="" alt="Avatar"/>
-                    </li>
+
                     <div className="avatar avatar-skill me-2 mb-2 pull-up" data-popup="tooltip-custom" data-bs-placement="top" aria-label="Blender" data-bs-original-title="Blender">
                       <img src="/img/icon/blender.png" className="rounded" alt="" />
                     </div>

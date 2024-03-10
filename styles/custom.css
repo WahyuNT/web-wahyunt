@@ -38,3 +38,10 @@ body{
     aspect-ratio: 1/1;
     object-fit: cover;
 }
+.asprect-ratio-1-1{
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+.object-cover{
+    object-fit: cover;
+}
