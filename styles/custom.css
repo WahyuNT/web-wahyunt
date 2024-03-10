@@ -1,0 +1,19 @@
+
+body{
+    background: black !important;
+}
+.card-glass{
+    background-color: #1e1e1f ;
+    border: 1px solid #383838;
+    border-radius: 20px;
+    box-shadow: -4px 8px 24px rgba(0, 0, 0, 0.25);
+    padding: rem(30px);
+    position: relative;
+}
+.avatar-profile{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
