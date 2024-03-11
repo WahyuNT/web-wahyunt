@@ -76,7 +76,7 @@ export default function Home() {
                 </div>
                 <div className="d-flex justify-content-center">
 
-                  <hr className="mt-0 text-white text-center" style={{ width: 230 }} />
+                 
                 </div>
                 <div className="d-flex justify-content-center flex-wrap gap-2">
                   <div className="card-sosmed-mini d-flex justify-content-center align-items-center p-1">
@@ -116,7 +116,7 @@ export default function Home() {
                   <div className="card-body " style={{ maxHeight: "100%" }}>
                     <div className="d-flex justify-content-between align-items-center mb-2">
 
-                      <h5 className="text-white text-center mb-0"><b>My Project</b></h5>
+                      <h5 className="text-white text-center mb-0"><b>Overview</b></h5>
                       <button className="btn text-primary rounded-pill">See More...</button>
                     </div>
                     <div className="d-flex gap-2 mb-3">
@@ -164,9 +164,9 @@ export default function Home() {
                     <h5 className="text-white mt-2"><b>About Me</b></h5>
                     <p className="text-muted">Hello, I'm Wahyu Nusantara. I'm a fresh graduate from AMIKOM University Yogyakarta. With a background
                       in UI/UX design, 3D Modeling, Game development, and Web development, I have a great interest in the
-                      world of programming. My expertise spans various languages and frameworks, including C#, JavaScript,
+                      world of programming. My expertise spans various span and frameworks, including C#, JavaScript,
                       PHP, Laravel, React.js, and Express.js. Additionally, I am proficient in managing data structure. </p>
-                    <h5 className="text-white mt-3"><b>Hard Skill</b></h5>
+                    <h5 className="text-white mt-3"><b>Hard Skill</b> <small style={{ fontSize: '9px' }} className="text-muted">(Click the icon to see the project)</small></h5> 
                     <div className="d-flex justify-content-start flex-wrap ">
                       <div className="avatar avatar-skill me-2 mb-2 pull-up" data-popup="tooltip-custom" data-bs-placement="top" aria-label="Blender" data-bs-original-title="Blender">
                         <img src="/img/icon/blender.png" className="rounded" alt="" />
