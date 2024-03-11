@@ -16,13 +16,13 @@ export default function Home() {
           <div className="d-flex justify-content-center gap-3">
             <div className="col-3  ">
               <div className="card card-bg w-100 p-3">
-                <div className=" d-flex justify-content-center align-items-center">
+                <div className=" d-flex justify-content-center align-items-center mt-4">
                   <img src="https://avatars.githubusercontent.com/u/83133470?v=4" className="avatar-profile" alt="icon" />
                 </div>
                 <h5 className="text-white text-center mt-3 ">Wahyu NT</h5>
                 <div className="d-flex justify-content-center">
 
-                  <hr className="mt-3 text-white text-center" style={{ width: 230 }} />
+                  <hr className="mt-0 text-white text-center" style={{ width: 230 }} />
                 </div>
                 <div className="d-flex px-3 justify-content-center align-items-start flex-column">
                   <div className="card w-100 bg-transparent mb-3">
@@ -74,8 +74,33 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
+                <div className="d-flex justify-content-center">
+
+                  <hr className="mt-0 text-white text-center" style={{ width: 230 }} />
+                </div>
+                <div className="d-flex justify-content-center flex-wrap gap-2">
+                  <div className="card-sosmed-mini d-flex justify-content-center align-items-center p-1">
+                    <i className="fa-brands fa-instagram fa-sm text-white "></i>
+                  </div>
+                  <div className="card-sosmed-mini d-flex justify-content-center align-items-center p-1">
+                    <i className="fa-brands fa-facebook fa-sm text-white "></i>
+                  </div>
+                  <div className="card-sosmed-mini d-flex justify-content-center align-items-center p-1">
+                    <i className="fa-brands fa-dribbble fa-sm text-white "></i>
+                  </div>
+                  <div className="card-sosmed-mini d-flex justify-content-center align-items-center p-1">
+                    <i className="fa-brands fa-youtube fa-sm text-white "></i>
+                  </div>
+                  <div className="card-sosmed-mini d-flex justify-content-center align-items-center p-1">
+                    <i className="fa-brands fa-discord fa-sm text-white "></i>
+                  </div>
+                  <div className="card-sosmed-mini d-flex justify-content-center align-items-center p-1">
+                    <i className="fa-brands fa-steam fa-sm text-white "></i>
+                  </div>
+                </div>
 
               </div>
+
               <a href="" className="text-decoration-none">
                 <div className="card card-bg mt-3">
                   <div className="card-body align-items-center d-flex justify-content-center">
