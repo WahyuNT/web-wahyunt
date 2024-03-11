@@ -140,3 +140,19 @@ body{
 	border-radius: 10px;
 	box-shadow: 0px 5px 20px rgba(0,0,0,0.25);
 }
+.card-sosmed{
+	/* padding: 40px; */
+	border: 1px solid rgba(255,255,255,.15);
+	border-radius: 10px;
+    aspect-ratio: 1/1;
+	box-shadow: 0px 5px 20px rgba(0,0,0,0.25);
+}
+.banner-image {
+    border-radius: 10px;
+    width: 130px; /* sesuaikan dengan ukuran yang Anda inginkan */
+    height: 130px; /* sesuaikan dengan ukuran yang Anda inginkan */
+    object-fit: cover;
+}
+.overflow-hide::-webkit-scrollbar {
+    display: none;
+}
