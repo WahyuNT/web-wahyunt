@@ -1,4 +1,4 @@
-import "../styles/core.css";
+// import "../styles/core.css";
 import "../styles/custom.css";
 // import "../styles/globals.css";
 
