@@ -5,8 +5,7 @@ import "../styles/custom.css";
 
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import ReactDOM from 'react-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
