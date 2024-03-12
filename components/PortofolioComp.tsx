@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function PortofolioComp() {
     return (
-        <div><div className="card-body " style={{ maxHeight: "100%" }}>
+        <div><div className="card-body  px-1" style={{ maxHeight: "100%" }}>
 
             <div className="d-flex">
 
@@ -12,18 +12,18 @@ export default function PortofolioComp() {
             <div className="d-flex  flex-wrap">
 
 
-                <div className="col-4 px-1">
+                <div className="col-4 mb-2 px-2">
                     <div className=" bg-transparent card card-glass card-porto p-3">
                         <div className="card bg-transparent  card-banner flex-column">
                             <div className="card bg-transparent">
-
+                                
                                 <img src="https://i.pinimg.com/564x/d7/fb/95/d7fb95f5d8ebd333665e4b9d33c2ce2b.jpg" className="cover-image " alt="" />
-                                <div className="overlay-software position-absolute  start-50 translate-middle-x">
+                                {/* <div className="overlay-project position-absolute   ">
 
-                                    <div className="d-flex justify-content-center">
+                                    <div className="d-flex  ">
 
                                         <div className="card rounded-pill bg-dark   ">
-                                            <div className="d-flex gap-1 px-1">
+                                            <div className="d-flex align-items-center flex-column gap-1 py-1 ">
 
                                                 <button className='btn btn-icon text-white'>
                                                     <i className="fa-brands fa-github "></i>
@@ -37,14 +37,37 @@ export default function PortofolioComp() {
 
                                         </div>
                                     </div>
+                                </div> */}
+                                <div className="overlay-software position-absolute  start-50 translate-middle-x">
+
+                                    <div className="d-flex justify-content-center">
+
+                                        <div className="card rounded-pill bg-dark   ">
+                                            <div className="card-body p-1">
+
+                                                <div className="d-flex gap-1 px-1">
+
+                                                    <button className='btn btn-icon text-white'>
+                                                        <i className="fa-brands fa-github "></i>
+
+                                                    </button>
+                                                    <button className='btn btn-icon text-white'>
+                                                        <i className="fa-brands fa-github "></i>
+
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div className="d-flex justify-content-between align-items-center mt-2">
 
                                 <small className='text-white fw-bold '>Judul Karya</small>
-                                <button className='btn btn-info align-end btn-xs btn-primary rounded-pill '>
+                                {/* <button className='btn btn-info align-end btn-xs btn-primary rounded-pill '>
                                     Visit
-                                </button>
+                                </button> */}
                             </div>
                             <div className="card w-100 bg-transparent ">
                                 <div className="d-flex justify-content-start align-items-center mt-2">
@@ -60,7 +83,7 @@ export default function PortofolioComp() {
                             </div>
                         </div>
                         <hr className='text-muted border-1 my-2' />
-                        <div className="d-flex justify-content-start flex-wrap mb-2 gap-1">
+                        <div className="d-flex justify-content-start flex-wrap mb-1 gap-1">
 
                             <button className='btn btn-xs btn-tag  text-muted'>
                                 <small>
@@ -83,7 +106,8 @@ export default function PortofolioComp() {
                                 </small>
                             </button>
                         </div>
-                        {/* <div className="d-flex justify-content-between gap-2">
+                        <hr className='text-muted border-1 my-2' />
+                        <div className="d-flex justify-content-between gap-2">
 
                             <button className='btn btn-border rounded-pill text-white w-100 '>
                                 <i className="fa-brands fa-github me-2"></i>
@@ -93,7 +117,7 @@ export default function PortofolioComp() {
                                 <i className="fa-brands fa-figma me-2"></i>
                                 Figma
                             </button>
-                        </div> */}
+                        </div>
 
                     </div>
                 </div>

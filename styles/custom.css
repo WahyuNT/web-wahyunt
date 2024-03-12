@@ -173,9 +173,10 @@ height:  28px;
     object-fit: cover;
 }
 .cover-image {
-    border-radius: 20px;
+    border-radius: 18px;
     width: auto;
-   aspect-ratio: 1/1;
+	height: 170px;
+   aspect-ratio: 16/9;
     object-fit: cover;
 }
 .card-porto{
@@ -186,7 +187,12 @@ height:  28px;
 }
 .overlay-software {
     padding: 20px; 
-	top: 75%;
+	top: 68%;
+}
+.overlay-project {
+    padding: 10px; 
+	top: 0%;
+	right: 0%;
 }
 .road-map {
 	box-sizing: border-box;

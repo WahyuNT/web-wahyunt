@@ -21,10 +21,10 @@ export default function Resume() {
             <div className="section-primary">
                 <div className="container px-5 pt-5 ">
                     <div className="d-flex justify-content-center gap-3">
-                        <div className="col-3  ">
+                        <div className="col  ">
                             <Profile />
                         </div>
-                        <div className="col-8 ">
+                        <div className="col-9 ">
                             <div className="card p-2 card-bg w-100" style={{ height: "89vh" }}>
                                 <div className="overflow-auto overflow-hide">
                                     <PortofolioComp />
