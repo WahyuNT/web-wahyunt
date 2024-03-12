@@ -1,5 +1,6 @@
 :root{
     --bs-primary: #4631e7 !important;
+    --bs-border: rgba(255,255,255,.15) !important;
 }
 
 body{
@@ -7,14 +8,7 @@ body{
     /* background-image: url('/img/BG.png'); */
     background-size: cover;
 }
-/* .card-glass{
-    background-color: #1e1e1f ;
-    border: 1px solid #383838;
-    border-radius: 20px;
-    box-shadow: -4px 8px 24px rgba(0, 0, 0, 0.25);
-    padding: rem(30px);
-    position: relative;
-} */
+
 .card-bg{
     border-radius: 15px;
     /* border: 1px solid var(--Neutral-02-Black-Neutral-03, #222426); */
@@ -27,9 +21,7 @@ body{
     z-index: 9;
     
 }
-.card-glass{
-    
-}
+
 
 .avatar-profile{
     width: 150px;
@@ -134,22 +126,41 @@ body{
     background-color: rgba(38, 37, 77,0.7);
     margin-bottom: 25px;
 }
-.card-doing{
+.card-glass{
 	/* padding: 40px; */
-	border: 1px solid rgba(255,255,255,.15);
+	border: 1px solid var(--bs-border);
+	border-radius: 10px;
+	box-shadow: 0px 5px 20px rgba(0,0,0,0.25);
+}
+.btn-tag{
+	/* padding: 40px; */
+	border: 1px solid var(--bs-border);
+	border-radius: 7px !important;
+	box-shadow: 0px 5px 20px rgba(0,0,0,0.25);
+	padding: 5px ;
+}
+.btn-border{
+	/* padding: 40px; */
+	border: 1px solid var(--bs-border);
+
+
+}
+.card-border{
+	/* padding: 40px; */
+	border: 1px solid var(--bs-border);
 	border-radius: 10px;
 	box-shadow: 0px 5px 20px rgba(0,0,0,0.25);
 }
 .card-sosmed{
 	/* padding: 40px; */
-	border: 1px solid rgba(255,255,255,.15);
+	border: 1px solid var(--bs-border);
 	border-radius: 10px;
     aspect-ratio: 1/1;
 	box-shadow: 0px 5px 20px rgba(0,0,0,0.25);
 }
 .card-sosmed-mini{
 	/* padding: 40px; */
-	border: 1px solid rgba(255,255,255,.15);
+	border: 1px solid var(--bs-border);
 	border-radius: 9px;
 width: 28px;
 height:  28px;
@@ -161,8 +172,21 @@ height:  28px;
     height: 130px; /* sesuaikan dengan ukuran yang Anda inginkan */
     object-fit: cover;
 }
+.cover-image {
+    border-radius: 20px;
+    width: auto;
+   aspect-ratio: 1/1;
+    object-fit: cover;
+}
+.card-porto{
+	border-radius: 20px;
+}
 .overflow-hide::-webkit-scrollbar {
     display: none;
+}
+.overlay-software {
+    padding: 20px; 
+	top: 75%;
 }
 .road-map {
 	box-sizing: border-box;
@@ -537,3 +561,12 @@ height:  28px;
     	}
     }
 }
+
+
+
+.btn-group-xs > .btn, .btn-xs {
+	padding: .25rem .4rem;
+	font-size: .875rem;
+	line-height: .5;
+	border-radius: .2rem;
+  }

@@ -13,14 +13,14 @@ export default function ResumeComp() {
                 <h5 className='text-white'>Education</h5>
                 <div className="col-5 ">
 
-                    <div className="card-doing"><div className="meta">
+                    <div className="card-glass"><div className="meta">
                         <div className="p-3">
                             <div className="d-flex ">
                                 <div className="col-2 d-flex justify-content-center">
                                     <Image className='me-2' src="logo-amikom.svg" width={30} height={30} alt="" />
                                 </div>
                                 <div className="col d-flex align-items-start flex-column">
-                                    <div className="card text-white bg-transparent border-1 card-doing px-2 py-1 mb-1 " style={{ borderRadius: "7px" }}>
+                                    <div className="card text-white bg-transparent border-1 card-glass px-2 py-1 mb-1 " style={{ borderRadius: "7px" }}>
                                         <small style={{ fontSize: "11px" }}>
                                             2020 - 2023
                                         </small>
