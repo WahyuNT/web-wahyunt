@@ -16,7 +16,7 @@ export default function PortofolioComp() {
                     <div className=" bg-transparent card card-glass card-porto p-3">
                         <div className="card bg-transparent  card-banner flex-column">
                             <div className="card bg-transparent">
-                                
+
                                 <img src="https://i.pinimg.com/564x/d7/fb/95/d7fb95f5d8ebd333665e4b9d33c2ce2b.jpg" className="cover-image " alt="" />
                                 {/* <div className="overlay-project position-absolute   ">
 
@@ -107,16 +107,25 @@ export default function PortofolioComp() {
                             </button>
                         </div>
                         <hr className='text-muted border-1 my-2' />
-                        <div className="d-flex justify-content-between gap-2">
+                        <div className="d-flex justify-content-between gap-2 mt-1">
+                            <div className="col d-flex gap-2 ">
 
-                            <button className='btn btn-border rounded-pill text-white w-100 '>
-                                <i className="fa-brands fa-github me-2"></i>
-                                GitHub
-                            </button>
-                            <button className='btn btn-border rounded-pill text-white w-100 '>
-                                <i className="fa-brands fa-figma me-2"></i>
-                                Figma
-                            </button>
+                                <button className='btn btn-border btn-icon rounded-pill text-white w-50'>
+                                    <i className="fa-brands fa-github "></i>
+
+                                </button>
+                                <button className='btn btn-border btn-icon rounded-pill text-white w-50'>
+                                    <i className="fa-brands fa-figma "></i>
+
+                                </button>
+                            </div>
+                            <div className="col ps-2">
+
+                                <button className='btn btn-border rounded-pill text-white w-100 '>
+                                    Details
+
+                                </button>
+                            </div>
                         </div>
 
                     </div>
