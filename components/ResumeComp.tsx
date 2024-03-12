@@ -22,7 +22,7 @@ export default function ResumeComp() {
                                 <div className="col d-flex align-items-start flex-column">
                                     <div className="card text-white bg-transparent border-1 card-doing px-2 py-1 mb-1 " style={{ borderRadius: "7px" }}>
                                         <small style={{ fontSize: "11px" }}>
-                                            2020 -2023
+                                            2020 - 2023
                                         </small>
                                     </div>
                                     <h6 className="text-white mb-0">AMIKOM University Yogyakarta</h6>
@@ -30,7 +30,7 @@ export default function ResumeComp() {
                                     <small className='text-muted'>GPA : 3.99/4.00 </small>
                                     <div className="d-flex justify-content-start flex-wrap">
 
-                                        <small className='text-muted'>Award :</small>
+                                        <small className='text-muted mt-1'>Achievement :</small>
                                         <div className="d-flex justify-content-center flex-wrap gap-2">
                                             <div className="card-sosmed-mini d-flex justify-content-center align-items-center p-1">
                                                 <i className="fa-brands fa-instagram fa-sm text-white "></i>
@@ -66,59 +66,14 @@ export default function ResumeComp() {
 
                         <div className="road-map text-white">
                             <div className="road-map-wrapper">
-                                <div className="timeline-row">
-                                    <div className="timeline-items">
-                                        <div className="item">
-                                            <div className="timeline-item ">
-                                                <div className="timeline-date " data-animation="{&quot;animation&quot;:&quot;&quot;,&quot;duration&quot;:&quot;&quot;,&quot;delay&quot;:&quot;&quot;}">
-                                                    <span className="date">Jan 2021</span>
-                                                </div>
-                                                <div className="timeline-info animated ova-move-up" data-animation="{&quot;animation&quot;:&quot;ova-move-up&quot;,&quot;duration&quot;:&quot;&quot;,&quot;delay&quot;:100}">
-                                                    <h3 className="timeline-title">Concept</h3>
-                                                    <ul className="timeline-content">
-                                                        <li>Concept Generation</li>
-                                                        <li>Team Assemble</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="item">
-                                            <div className="timeline-item ">
-                                                <div className="timeline-date " data-animation="{&quot;animation&quot;:&quot;&quot;,&quot;duration&quot;:&quot;&quot;,&quot;delay&quot;:&quot;&quot;}">
-                                                    <span className="date">Mar 2021</span>
-                                                </div>
-                                                <div className="timeline-info animated ova-move-up" data-animation="{&quot;animation&quot;:&quot;ova-move-up&quot;,&quot;duration&quot;:&quot;&quot;,&quot;delay&quot;:200}">
-                                                    <h3 className="timeline-title">Research</h3>
-                                                    <ul className="timeline-content">
-                                                        <li>Concept Generation</li>
-                                                        <li>Team Assemble</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="item">
-                                            <div className="timeline-item ">
-                                                <div className="timeline-date " data-animation="{&quot;animation&quot;:&quot;&quot;,&quot;duration&quot;:&quot;slow&quot;,&quot;delay&quot;:&quot;&quot;}">
-                                                    <span className="date">May 2021</span>
-                                                </div>
-                                                <div className="timeline-info animated ova-move-up" data-animation="{&quot;animation&quot;:&quot;ova-move-up&quot;,&quot;duration&quot;:&quot;&quot;,&quot;delay&quot;:300}">
-                                                    <h3 className="timeline-title">Pre-Sale</h3>
-                                                    <ul className="timeline-content">
-                                                        <li>Concept Generation</li>
-                                                        <li>Team Assemble</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+
 
                                 <div className="timeline-row">
                                     <div className="timeline-items">
                                         <div className="item">
                                             <div className="timeline-item timeline-not-done">
                                                 <div className="timeline-date " data-animation="{&quot;animation&quot;:&quot;&quot;,&quot;duration&quot;:&quot;slow&quot;,&quot;delay&quot;:&quot;&quot;}">
-                                                    <span className="date">Jul 2021</span>
+                                                    <span className="date">-</span>
                                                 </div>
                                                 <div className="timeline-info animated ova-move-up" data-animation="{&quot;animation&quot;:&quot;ova-move-up&quot;,&quot;duration&quot;:&quot;&quot;,&quot;delay&quot;:100}">
                                                     <h3 className="timeline-title">App beta test</h3>
@@ -130,12 +85,12 @@ export default function ResumeComp() {
                                             </div>
                                         </div>
                                         <div className="item">
-                                            <div className="timeline-item ">
+                                            <div className="timeline-item timeline-not-done">
                                                 <div className="timeline-date " data-animation="{&quot;animation&quot;:&quot;&quot;,&quot;duration&quot;:&quot;slow&quot;,&quot;delay&quot;:&quot;&quot;}">
-                                                    <span className="date">Sep 2021</span>
+                                                    <span className="date">- </span>
                                                 </div>
-                                                <div className="timeline-info animated ova-move-up" data-animation="{&quot;animation&quot;:&quot;ova-move-up&quot;,&quot;duration&quot;:&quot;&quot;,&quot;delay&quot;:200}">
-                                                    <h3 className="timeline-title">Token sale</h3>
+                                                <div className="timeline-info animated ova-move-up" data-animation="{&quot;animation&quot;:&quot;ova-move-up&quot;,&quot;duration&quot;:&quot;&quot;,&quot;delay&quot;:100}">
+                                                    <h3 className="timeline-title">App beta test</h3>
                                                     <ul className="timeline-content">
                                                         <li>Concept Generation</li>
                                                         <li>Team Assemble</li>
@@ -143,6 +98,7 @@ export default function ResumeComp() {
                                                 </div>
                                             </div>
                                         </div>
+
                                     </div>
                                 </div>
 
@@ -162,20 +118,7 @@ export default function ResumeComp() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="item">
-                                            <div className="timeline-item timeline-not-done">
-                                                <div className="timeline-date " data-animation="{&quot;animation&quot;:&quot;&quot;,&quot;duration&quot;:&quot;slow&quot;,&quot;delay&quot;:&quot;&quot;}">
-                                                    <span className="date">Jan 2022</span>
-                                                </div>
-                                                <div className="timeline-info ova-invisible" data-animation="{&quot;animation&quot;:&quot;ova-move-up&quot;,&quot;duration&quot;:&quot;&quot;,&quot;delay&quot;:200}">
-                                                    <h3 className="timeline-title">Benefits</h3>
-                                                    <ul className="timeline-content">
-                                                        <li>Concept Generation</li>
-                                                        <li>Team Assemble</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
+
                                         <div className="item">
                                             <div className="timeline-item timeline-not-done">
                                                 <div className="timeline-date " data-animation="{&quot;animation&quot;:&quot;&quot;,&quot;duration&quot;:&quot;slow&quot;,&quot;delay&quot;:&quot;&quot;}">
