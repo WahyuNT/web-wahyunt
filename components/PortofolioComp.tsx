@@ -17,27 +17,26 @@ export default function PortofolioComp() {
                         <div className="card bg-transparent  card-banner flex-column">
                             <div className="card bg-transparent">
 
-                                <img src="https://i.pinimg.com/564x/d7/fb/95/d7fb95f5d8ebd333665e4b9d33c2ce2b.jpg" className="cover-image " alt="" />
-                                {/* <div className="overlay-project position-absolute   ">
+                                <img src="https://i.pinimg.com/564x/d7/fb/95/d7fb95f5d8ebd333665e4b9d33c2ce2b.jpg" className="cover-image img-porto" alt="" />
 
-                                    <div className="d-flex  ">
+                                <div className="overlay-visit   position-absolute  start-50  translate-middle-x">
+                                    <a href="https://fontawesome.com/icons/arrow-up-right-from-square?f=classic&s=solid" target='_blank' className='text-decoration-none text-white btn-visit'>
+                                        <div className="d-flex justify-content-center ">
 
-                                        <div className="card rounded-pill bg-dark   ">
-                                            <div className="d-flex align-items-center flex-column gap-1 py-1 ">
+                                            <div className="card rounded-pill bg-dark   px-3 py-1">
+                                                <div className="d-flex align-items-center ">
 
-                                                <button className='btn btn-icon text-white'>
-                                                    <i className="fa-brands fa-github "></i>
+                                                    <i className="fa-solid fa-arrow-up-right-from-square me-1 fa-xs"></i>
+                                                    <small>
 
-                                                </button>
-                                                <button className='btn btn-icon text-white'>
-                                                    <i className="fa-brands fa-github "></i>
+                                                        Visit Site
+                                                    </small>
+                                                </div>
 
-                                                </button>
                                             </div>
-
                                         </div>
-                                    </div>
-                                </div> */}
+                                    </a>
+                                </div>
                                 <div className="overlay-software position-absolute  start-50 translate-middle-x">
 
                                     <div className="d-flex justify-content-center">
@@ -52,7 +51,7 @@ export default function PortofolioComp() {
 
                                                     </button>
                                                     <button className='btn btn-icon text-white'>
-                                                        <i className="fa-brands fa-github "></i>
+                                                        <i className="fa-brands fa-figma "></i>
 
                                                     </button>
                                                 </div>
@@ -71,8 +70,10 @@ export default function PortofolioComp() {
                             </div>
                             <div className="card w-100 bg-transparent ">
                                 <div className="d-flex justify-content-start align-items-center mt-2">
-                                    <div className="col-2 card-sosmed d-flex align-items-center justify-content-center me-2">
-
+                                    <div className="col-2   d-flex align-items-center justify-content-center me-2">
+                                        <div className="card bg-transparent ">
+                                            <img src="https://ih1.redbubble.net/image.4529980642.7761/st,small,507x507-pad,600x600,f8f8f8.jpg" className="cover-ava " alt="" />
+                                        </div>
                                     </div>
                                     <div className=" d-flex align-items-start flex-column ">
                                         <small className="text-white ">Boim Amikom  </small>

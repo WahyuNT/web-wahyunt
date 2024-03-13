@@ -179,6 +179,16 @@ height:  28px;
    aspect-ratio: 16/9;
     object-fit: cover;
 }
+.cover-ava {
+    width: auto;
+   aspect-ratio: 1/1;
+    object-fit: cover;
+	border-radius: 8px;
+}
+.aspect-ratio-1-1{
+	aspect-ratio: 1/1;
+
+}
 .card-porto{
 	border-radius: 20px;
 }
@@ -186,14 +196,32 @@ height:  28px;
     display: none;
 }
 .overlay-software {
-    padding: 20px; 
-	top: 68%;
+   
+	top: 75%;
 }
-.overlay-project {
-    padding: 10px; 
-	top: 0%;
-	right: 0%;
+.overlay-visit {
+
+	top: 43%;
+	color: white;
 }
+.btn-visit {
+    display: none;
+	transform: scale(1);
+	transition: transform 0.3s ease;
+}
+.btn-visit:hover {
+	transform: scale(1.2);
+	transition: transform 0.3s ease;
+    display: block;
+}
+
+.img-porto:hover + .overlay-visit .btn-visit {
+	display: block;
+
+
+}
+
+
 .road-map {
 	box-sizing: border-box;
     width: 100%;
