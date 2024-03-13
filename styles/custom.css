@@ -172,6 +172,14 @@ height:  28px;
     height: 130px; /* sesuaikan dengan ukuran yang Anda inginkan */
     object-fit: cover;
 }
+.cover-blog {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: auto;
+	/* height: 170px; */
+   aspect-ratio: 1/1;
+    object-fit: cover;
+}
 .cover-image {
     border-radius: 18px;
     width: auto;
