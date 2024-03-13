@@ -181,7 +181,7 @@ height:  28px;
     object-fit: cover;
 }
 .cover-image {
-    border-radius: 18px;
+    border-radius: 15px;
     width: auto;
 	height: 170px;
    aspect-ratio: 16/9;

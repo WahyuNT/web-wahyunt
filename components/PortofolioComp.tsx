@@ -13,7 +13,9 @@ export default function PortofolioComp() {
 
 
                 <div className="col-4 mb-2 px-2">
-                    <div className=" bg-transparent card card-glass card-porto p-3">
+                    <div className=" bg-transparent card card-glass card-porto ">
+                        <div className="div px-3 pt-3">
+
                         <div className="card bg-transparent  card-banner flex-column">
                             <div className="card bg-transparent">
 
@@ -61,12 +63,15 @@ export default function PortofolioComp() {
                                     </div>
                                 </div>
                             </div>
+
+
+                        </div>
+                        </div>
+                        <div className="div px-3 pb-3">
                             <div className="d-flex justify-content-between align-items-center mt-2">
 
                                 <small className='text-white fw-bold '>Judul Karya</small>
-                                {/* <button className='btn btn-info align-end btn-xs btn-primary rounded-pill '>
-                                    Visit
-                                </button> */}
+
                             </div>
                             <div className="card w-100 bg-transparent ">
                                 <div className="d-flex justify-content-start align-items-center mt-2">
@@ -82,52 +87,53 @@ export default function PortofolioComp() {
 
                                 </div>
                             </div>
-                        </div>
-                        <hr className='text-muted border-1 my-2' />
-                        <div className="d-flex justify-content-start flex-wrap mb-1 gap-1">
+                            <hr className='text-muted border-1 my-2' />
+                            <div className="d-flex justify-content-start flex-wrap mb-1 gap-1">
 
-                            <button className='btn btn-xs btn-tag  text-muted'>
-                                <small>
-                                    Full Stack
-                                </small>
-                            </button>
-                            <button className='btn btn-xs btn-tag  text-muted'>
-                                <small>
-                                    Laravel
-                                </small>
-                            </button>
-                            <button className='btn btn-xs btn-tag  text-muted'>
-                                <small>
-                                    Unreal Engine
-                                </small>
-                            </button>
-                            <button className='btn btn-xs btn-tag  text-muted'>
-                                <small>
-                                    HTML
-                                </small>
-                            </button>
-                        </div>
-                        <hr className='text-muted border-1 my-2' />
-                        <div className="d-flex justify-content-between gap-2 mt-1">
-                            <div className="col d-flex gap-2 ">
-
-                                <button className='btn btn-border btn-icon rounded-pill text-white w-50'>
-                                    <i className="fa-brands fa-github "></i>
-
+                                <button className='btn btn-xs btn-tag  text-muted'>
+                                    <small>
+                                        Full Stack
+                                    </small>
                                 </button>
-                                <button className='btn btn-border btn-icon rounded-pill text-white w-50'>
-                                    <i className="fa-brands fa-figma "></i>
-
+                                <button className='btn btn-xs btn-tag  text-muted'>
+                                    <small>
+                                        Laravel
+                                    </small>
+                                </button>
+                                <button className='btn btn-xs btn-tag  text-muted'>
+                                    <small>
+                                        Unreal Engine
+                                    </small>
+                                </button>
+                                <button className='btn btn-xs btn-tag  text-muted'>
+                                    <small>
+                                        HTML
+                                    </small>
                                 </button>
                             </div>
-                            <div className="col ps-2">
+                            <hr className='text-muted border-1 my-2' />
+                            <div className="d-flex justify-content-between gap-2 mt-1">
+                                <div className="col d-flex gap-2 ">
 
-                                <button className='btn btn-border rounded-pill text-white w-100 '>
-                                    Details
+                                    <button className='btn btn-border btn-icon rounded-pill text-white w-50'>
+                                        <i className="fa-brands fa-github "></i>
 
-                                </button>
+                                    </button>
+                                    <button className='btn btn-border btn-icon rounded-pill text-white w-50'>
+                                        <i className="fa-brands fa-figma "></i>
+
+                                    </button>
+                                </div>
+                                <div className="col ps-2">
+
+                                    <button className='btn btn-border rounded-pill text-white w-100 '>
+                                        Details
+
+                                    </button>
+                                </div>
                             </div>
                         </div>
+
 
                     </div>
                 </div>
