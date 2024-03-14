@@ -25,7 +25,7 @@ export default function AwardComp() {
                             <div className="px-3 text-center">
                                 <br />
                                 <p className='text-white  fw-bold mt-2 mb-0'>Get Winner in Boim Amikom</p>
-                                <p className='text-muted mb-1 mt-1' style={{ fontSize: "13px" }}>
+                                <p className='text-second mb-1 mt-1' style={{ fontSize: "13px" }}>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
                                 </p>
 

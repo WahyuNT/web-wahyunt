@@ -26,11 +26,11 @@ export default function ResumeComp() {
                                         </small>
                                     </div>
                                     <h6 className="text-white mb-0">AMIKOM University Yogyakarta</h6>
-                                    <small className='text-muted'>Computer Science</small>
-                                    <small className='text-muted'>GPA : 3.99/4.00 </small>
+                                    <small className='text-second'>Computer Science</small>
+                                    <small className='text-second'>GPA : 3.99/4.00 </small>
                                     <div className="d-flex justify-content-start flex-wrap">
 
-                                        <small className='text-muted mt-1'>Achievement :</small>
+                                        <small className='text-second mt-1'>Achievement :</small>
                                         <div className="d-flex justify-content-center flex-wrap gap-2">
                                             <div className="card-sosmed-mini d-flex justify-content-center align-items-center p-1">
                                                 <i className="fa-brands fa-instagram fa-sm text-white "></i>

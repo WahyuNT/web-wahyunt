@@ -22,13 +22,13 @@ export default function BlogComp() {
                             <div className="px-3">
 
                                 <small className='mt-2'>
-                                    <small className='text-muted mt-2'>4 August 2023</small>
+                                    <small className='text-second mt-2'>4 August 2023</small>
                                 </small>
                                 <p className='text-white fw-bold mt-0 mb-0'>Get Winner in Boim Amikom 2023</p>
-                                <p className='text-muted mb-1 mt-1' style={{ fontSize: "13px" }}>
+                                <p className='text-second mb-1 mt-1' style={{ fontSize: "13px" }}>
 
 
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus 
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
 
                                 </p>
 

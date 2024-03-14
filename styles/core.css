@@ -7403,7 +7403,7 @@ a.bg-lightest:hover, a.bg-lightest:focus {
     background-color: rgba(67, 89, 113, .05) !important
 }
 
-.text-muted[href]:hover, .text-muted[href]:focus {
+.text-second[href]:hover, .text-second[href]:focus {
     color: #8e9baa !important
 }
 
@@ -14146,7 +14146,7 @@ html:not([dir=rtl]) .toast.bs-toast .toast-header .btn-close {
     word-break: break-word !important
 }
 
-.text-primary {
+.text-utama {
     --bs-text-opacity: 1;
     color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important
 }
@@ -14206,7 +14206,7 @@ html:not([dir=rtl]) .toast.bs-toast .toast-header .btn-close {
     color: #697a8d !important
 }
 
-.text-muted {
+.text-second {
     --bs-text-opacity: 1;
     color: #a1acb8 !important
 }

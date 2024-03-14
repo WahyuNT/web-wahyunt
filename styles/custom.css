@@ -1,5 +1,5 @@
 :root{
-    --bs-primary: #4631e7 !important;
+    --bs-primary: #19d95c !important;
     --bs-border: rgba(255,255,255,.15) !important;
 }
 
@@ -21,15 +21,29 @@ body{
     z-index: 9;
     
 }
+.text-utama{
+	color: var(--bs-primary) !important;
+}
+.color-utama{
+	background-color: var(--bs-primary) !important;
+}
+.text-second{
+	color: #8a8f93!important
 
-
+}
+.text-gradiasi {
+    background: linear-gradient(90deg, #19d95c 0%, #ffffff 100%);
+    -webkit-background-clip: text; /* Untuk browser Webkit seperti Chrome dan Safari */
+    background-clip: text;
+    color: transparent;
+}
 .avatar-profile{
     width: 150px;
     height: 150px;
     object-fit: cover;
     border-radius: 15% !important;
 }
-.text-primary{
+.text-utama{
     color: var(--bs-primary);
 }
 .avatar-skill{
@@ -282,8 +296,8 @@ height:  28px;
     		&:nth-of-type(odd) {
     			&:before {
     				position: absolute;
-				    top: 68px;
-				    left: 13%;
+				    top: 70px;
+				    left: 10%;
 				    width: 75%;
 				    height: 0;
 				    content: "";
@@ -292,7 +306,7 @@ height:  28px;
 
     			&:after {
 				    position: absolute;
-				    top: 68px;
+				    top: 70px;
 				    right: -50px;
 				    width: 20%;
 				    height: calc(100% + 97px);
@@ -317,7 +331,7 @@ height:  28px;
     		&:nth-of-type(even) {
     			&:before {
     				position: absolute;
-				    top: 68px;
+				    top: 70px;
 				    left: 13%;
     				width: 73%;
 				    height: 0;
@@ -327,7 +341,7 @@ height:  28px;
 
     			&:after {
 				    position: absolute;
-				    top: 68px;
+				    top: 70px;
 				    left: 0;
 				    width: 13%;
 				    height: calc(100% + 97px);
@@ -382,9 +396,9 @@ height:  28px;
 			    					}
 			    					&:after {
 			    						content: "";
-							    		width: 27px;
-							    		height: 27px;
-										border: 1px solid rgba(111, 111, 147, 0.5);
+							    		width: 20px;
+							    		height: 20px;
+										/* border: 1px solid rgba(111, 111, 147, 0.5); */
 										box-sizing: border-box;
 										border-radius: 50%;
 									    bottom: -53px;
@@ -405,7 +419,7 @@ height:  28px;
 								text-align: center;
 								position: relative;
 								border-bottom: 2px solid var(--primary);
-								&:before {
+								/* &:before {
 									position: absolute;
 									z-index: 1;
 								    content: "";
@@ -417,13 +431,14 @@ height:  28px;
 									border-radius: 50%;
 									margin-left: -20.5px;
 
-								}
+								} */
 
 								&:after {
 									position: absolute;
 									z-index: 1;
 								    content: "\f00c";
 								    color: #fff;
+									background-color: white;
 								    font-family: "Font Awesome 5 Free";
 								    font-weight: 900;
 								    left: 50%;

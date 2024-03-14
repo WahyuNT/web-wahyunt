@@ -19,7 +19,7 @@ export default function Profile() {
                         </div>
                         <div className=" d-flex align-items-start flex-column">
 
-                            <small className=" text-muted mb-0">Email</small>
+                            <small className=" text-second mb-0">Email</small>
                             <small className="text-white ">wahyuntx28@gmail.com  </small>
                         </div>
                     </div>
@@ -31,7 +31,7 @@ export default function Profile() {
                         </div>
                         <div className=" d-flex align-items-start flex-column">
 
-                            <small className=" text-muted mb-0">Website</small>
+                            <small className=" text-second mb-0">Website</small>
                             <small className="text-white ">wahyunt.me  </small>
                         </div>
                     </div>
@@ -43,7 +43,7 @@ export default function Profile() {
                         </div>
                         <div className=" d-flex align-items-start flex-column">
 
-                            <small className=" text-muted mb-0">Github</small>
+                            <small className=" text-second mb-0">Github</small>
                             <small className="text-white ">Wahyu NT  </small>
                         </div>
                     </div>
@@ -55,7 +55,7 @@ export default function Profile() {
                         </div>
                         <div className=" d-flex align-items-start flex-column">
 
-                            <small className=" text-muted mb-0">LinkedIn</small>
+                            <small className=" text-second mb-0">LinkedIn</small>
                             <small className="text-white ">Wahyu Nusantara  </small>
                         </div>
                     </div>

@@ -24,7 +24,7 @@ export default function CertificateComp() {
                                 <div className="d-flex align-items-center">
 
                                     <div className="col">
-                                        <p className='text-muted mb-1 mt-1' style={{ fontSize: "13px" }}>
+                                        <p className='text-second mb-1 mt-1' style={{ fontSize: "13px" }}>
                                             <i className="fa-solid fa-building me-1"></i>Microsoft <br />
                                             <i className="fa-solid fa-calendar-days me-1"></i>Aug 2023 - Aug 2025 <br />
                                             <i className="fa-solid fa-hashtag me-1"></i>123456789
@@ -32,7 +32,7 @@ export default function CertificateComp() {
                                     </div>
                                     <div className="div">
                                         <button className='btn btn-icon border btn-border p-2'>
-                                        <i className="fa-solid fa-arrow-right-from-bracket text-white"></i>
+                                            <i className="fa-solid fa-arrow-right-from-bracket text-white"></i>
                                         </button>
                                     </div>
                                 </div>
