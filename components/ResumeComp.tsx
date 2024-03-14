@@ -9,7 +9,7 @@ export default function ResumeComp() {
                 <div className="d-flex">
 
                 </div>
-                <h4 className="text-white mt-2 text-center"><b>Resume</b></h4>
+                <h4 className="text-utama mt-2 text-center "><b>Resume</b></h4>
                 <h5 className='text-white'>Education</h5>
                 <div className="col-5 ">
 

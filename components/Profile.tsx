@@ -15,11 +15,14 @@ export default function Profile() {
                 <div className="card w-100 bg-transparent mb-3">
                     <div className="d-flex justify-content-start">
                         <div className="col-2 card-sosmed d-flex align-items-center justify-content-center me-2">
-                            <i className="fa-solid fa-envelope  text-white"></i>
+                            <i className="fa-solid fa-envelope  "></i>
                         </div>
                         <div className=" d-flex align-items-start flex-column">
 
-                            <small className=" text-second mb-0">Email</small>
+                            <small>
+
+                                <small className=" text-second mb-0">Email</small>
+                            </small>
                             <small className="text-white ">wahyuntx28@gmail.com  </small>
                         </div>
                     </div>
@@ -27,11 +30,14 @@ export default function Profile() {
                 <div className="card w-100 bg-transparent mb-3">
                     <div className="d-flex justify-content-start">
                         <div className="col-2 card-sosmed d-flex align-items-center justify-content-center me-2">
-                            <i className="fa-solid fa-globe  text-white"></i>
+                            <i className="fa-solid fa-globe  "></i>
                         </div>
                         <div className=" d-flex align-items-start flex-column">
 
-                            <small className=" text-second mb-0">Website</small>
+                            <small>
+
+                                <small className=" text-second mb-0">Website</small>
+                            </small>
                             <small className="text-white ">wahyunt.me  </small>
                         </div>
                     </div>
@@ -39,11 +45,13 @@ export default function Profile() {
                 <div className="card w-100 bg-transparent mb-3">
                     <div className="d-flex justify-content-start">
                         <div className="col-2 card-sosmed d-flex align-items-center justify-content-center me-2">
-                            <i className="fa-brands fa-github text-white"></i>
+                            <i className="fa-brands fa-github "></i>
                         </div>
                         <div className=" d-flex align-items-start flex-column">
+                            <small>
 
-                            <small className=" text-second mb-0">Github</small>
+                                <small className=" text-second mb-0">Github</small>
+                            </small>
                             <small className="text-white ">Wahyu NT  </small>
                         </div>
                     </div>
@@ -51,11 +59,13 @@ export default function Profile() {
                 <div className="card w-100 bg-transparent mb-3 ">
                     <div className="d-flex justify-content-start">
                         <div className="col-2 card-sosmed d-flex align-items-center justify-content-center me-2">
-                            <i className="fa-brands fa-linkedin-in text-white"></i>
+                            <i className="fa-brands fa-linkedin-in "></i>
                         </div>
                         <div className=" d-flex align-items-start flex-column">
+                            <small>
 
-                            <small className=" text-second mb-0">LinkedIn</small>
+                                <small className=" text-second mb-0">LinkedIn</small>
+                            </small>
                             <small className="text-white ">Wahyu Nusantara  </small>
                         </div>
                     </div>
@@ -67,32 +77,32 @@ export default function Profile() {
             </div>
             <div className="d-flex justify-content-center flex-wrap gap-2">
                 <div className="card-sosmed-mini d-flex justify-content-center align-items-center p-1">
-                    <i className="fa-brands fa-instagram fa-sm text-white "></i>
+                    <i className="fa-brands fa-instagram fa-sm  "></i>
                 </div>
                 <div className="card-sosmed-mini d-flex justify-content-center align-items-center p-1">
-                    <i className="fa-brands fa-facebook fa-sm text-white "></i>
+                    <i className="fa-brands fa-facebook fa-sm  "></i>
                 </div>
                 <div className="card-sosmed-mini d-flex justify-content-center align-items-center p-1">
-                    <i className="fa-brands fa-dribbble fa-sm text-white "></i>
+                    <i className="fa-brands fa-dribbble fa-sm  "></i>
                 </div>
                 <div className="card-sosmed-mini d-flex justify-content-center align-items-center p-1">
-                    <i className="fa-brands fa-youtube fa-sm text-white "></i>
+                    <i className="fa-brands fa-youtube fa-sm  "></i>
                 </div>
                 <div className="card-sosmed-mini d-flex justify-content-center align-items-center p-1">
-                    <i className="fa-brands fa-discord fa-sm text-white "></i>
+                    <i className="fa-brands fa-discord fa-sm  "></i>
                 </div>
                 <div className="card-sosmed-mini d-flex justify-content-center align-items-center p-1">
-                    <i className="fa-brands fa-steam fa-sm text-white "></i>
+                    <i className="fa-brands fa-steam fa-sm  "></i>
                 </div>
             </div>
 
         </div>
 
             <a href="" className="text-decoration-none">
-                <div className="card card-bg mt-3">
+                <div className="card card-bg mt-3 text-link text-white">
                     <div className="card-body align-items-center d-flex justify-content-center">
-                        <i className="fa-solid fa-download text-white me-2"></i>
-                        <p className="text-white m-0">Download CV</p>
+                        <i className="fa-solid fa-download  me-2"></i>
+                        <p className=" m-0">Download CV</p>
                     </div>
                 </div>
             </a></div>

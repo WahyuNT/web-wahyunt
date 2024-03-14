@@ -7,7 +7,7 @@ export default function AwardComp() {
             <div className="d-flex">
 
             </div>
-            <h4 className="text-white mt-2 text-center"><b>Award</b></h4>
+            <h4 className="text-utama mt-2 text-center"><b>Award</b></h4>
             <div className="d-flex  flex-wrap">
 
 
@@ -24,7 +24,7 @@ export default function AwardComp() {
                             </div>
                             <div className="px-3 text-center">
                                 <br />
-                                <p className='text-white  fw-bold mt-2 mb-0'>Get Winner in Boim Amikom</p>
+                                <p className='text-white  fw-bold mt-1 mb-0'>Get Winner in Boim Amikom</p>
                                 <p className='text-second mb-1 mt-1' style={{ fontSize: "13px" }}>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
                                 </p>

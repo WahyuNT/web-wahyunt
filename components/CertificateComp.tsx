@@ -7,7 +7,7 @@ export default function CertificateComp() {
             <div className="d-flex">
 
             </div>
-            <h4 className="text-white mt-2 text-center"><b>Certificate</b></h4>
+            <h4 className="text-utama mt-2 text-center"><b>Certificate</b></h4>
             <div className="d-flex  flex-wrap">
 
 
