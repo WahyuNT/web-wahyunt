@@ -59,8 +59,9 @@ body{
 .btn-icon {
     --bs-btn-active-border-color: transparent;
     padding: 0;
-    width: calc(2.309375rem + calc(var(--bs-border-width) * 2));
-    height: calc(2.309375rem + calc(var(--bs-border-width) * 2));
+    width: calc(2.309375rem + calc(var(--bs-border-width) * 2)) !important;
+    height: calc(2.309375rem + calc(var(--bs-border-width) * 2)) !important;
+	aspect-ratio: 1/1 !important;
     display: inline-flex;
     flex-shrink: 0;
     justify-content: center;

@@ -48,7 +48,7 @@ export default function Profile() {
                         </div>
                     </div>
                 </div>
-                <div className="card w-100 bg-transparent mb-3">
+                <div className="card w-100 bg-transparent mb-3 ">
                     <div className="d-flex justify-content-start">
                         <div className="col-2 card-sosmed d-flex align-items-center justify-content-center me-2">
                             <i className="fa-brands fa-linkedin-in text-white"></i>
