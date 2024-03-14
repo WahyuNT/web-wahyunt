@@ -20,7 +20,7 @@ export default function CertificateComp() {
 
                             </div>
                             <div className="px-3">
-                                <p className='text-white fw-bold mt-0 mb-0'>Get Winner in Boim Amikom 2023</p>
+                                <p className='text-white fw-bold mt-0 mb-0'>Get Winner in Boim </p>
                                 <div className="d-flex align-items-center">
 
                                     <div className="col">
@@ -31,8 +31,8 @@ export default function CertificateComp() {
                                         </p>
                                     </div>
                                     <div className="div">
-                                        <button className='btn btn-icon border btn-border p-2'>
-                                            <i className="fa-solid fa-arrow-right-from-bracket text-white"></i>
+                                        <button className='btn btn-icon btn-open-certificate  p-2'>
+                                            <i className="fa-solid fa-arrow-right-from-bracket  fa"></i>
                                         </button>
                                     </div>
                                 </div>

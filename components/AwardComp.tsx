@@ -30,13 +30,13 @@ export default function AwardComp() {
                                 </p>
 
                             </div>
-                            <div className="px-3 ">
+                            <div className="px-3  mt-1">
 
                                 <hr className=' mb-0  mt-1 border-2 color-border' />
                             </div>
-                            <a href="" className='text-decoration-none'>
-                                <div className="d-flex justify-content-between align-items-center mt-2 text-white px-3 pb-1">
-                                    <small className='text-white fw-bold '>Read More</small>
+                            <a href="" className='text-decoration-none text-link'>
+                                <div className="d-flex justify-content-between align-items-center mt-2  px-3 pb-1">
+                                    <small className=' fw-bold '>Read More</small>
                                     <i className="fa-solid fa-caret-right ms-1 fa-sm"></i>
                                 </div>
                             </a>

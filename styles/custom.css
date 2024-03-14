@@ -1,6 +1,7 @@
 :root{
     --bs-primary: #19d95c !important;
     --bs-border: rgba(255,255,255,.15) !important;
+	--bs-border-width: 1px;
 }
 
 body{
@@ -191,6 +192,7 @@ color: white !important;
 .card-sosmed-mini:hover{
 color: var(--bs-primary) !important;
 }
+
 .banner-image {
     border-radius: 10px;
     width: 130px; /* sesuaikan dengan ukuran yang Anda inginkan */
@@ -262,6 +264,24 @@ color: var(--bs-primary) !important;
    
 	top: 75%;
 }
+.border-transparent{
+	border-color: transparent !important;
+}
+.border-utama{
+	border-color: var(--bs-primary) !important;
+}
+
+.btn-open-certificate{
+	border: 1px solid var(--bs-border) !important;
+	color: white !important;
+	border-radius: 10px;
+}
+.btn-open-certificate:hover{
+	border-color: var(--bs-primary) !important;
+	background-color: var(--bs-primary) !important;
+	color: white !important;
+	border-radius: 10px;
+}
 .overlay-visit {
 
 	top: 43%;
@@ -284,6 +304,10 @@ color: var(--bs-primary) !important;
 
 }
 
+.text-link{
+	color: white !important;
+
+}
 .text-link:hover{
 	color: var(--bs-primary) !important;
 
@@ -316,7 +340,7 @@ color: var(--bs-primary) !important;
 				    width: 75%;
 				    height: 0;
 				    content: "";
-				    border-bottom: 2px dashed #414073;
+				    border-bottom: 2px dashed var(--bs-border);
     			}
 
     			&:after {
@@ -326,7 +350,7 @@ color: var(--bs-primary) !important;
 				    width: 20%;
 				    height: calc(100% + 97px);
 				    content: "";
-				    border: 2px dashed #414073;
+				    border: 2px dashed var(--bs-border);
 				    border-left: 0;
 				    border-radius: 20px;
 				    border-top-left-radius: 0;
@@ -351,7 +375,7 @@ color: var(--bs-primary) !important;
     				width: 73%;
 				    height: 0;
 				    content: "";
-				    border-bottom: 2px dashed #414073;
+				    border-bottom: 2px dashed var(--bs-border);
     			}
 
     			&:after {
@@ -361,7 +385,7 @@ color: var(--bs-primary) !important;
 				    width: 13%;
 				    height: calc(100% + 97px);
 				    content: "";
-				    border: 2px dashed #414073;
+				    border: 2px dashed var(--bs-border);
 				    border-right: 0;
 				    border-radius: 20px;
 				    border-top-right-radius: 0;
@@ -453,7 +477,7 @@ color: var(--bs-primary) !important;
 									z-index: 1;
 								    content: "\f00c";
 								    color: #fff;
-									background-color: white;
+									background-color: var(--bs-primary);
 								    font-family: "Font Awesome 5 Free";
 								    font-weight: 900;
 								    left: 50%;
@@ -578,7 +602,7 @@ color: var(--bs-primary) !important;
 							    left: 20px;
 							    height: 100%;
 							    content: "";
-							    border-left: 2px dashed #414073;
+							    border-left: 2px dashed var(--bs-border);
 			    			}
 
 				    		.timeline-date {
@@ -592,7 +616,7 @@ color: var(--bs-primary) !important;
 								    left: 20px;
 								    width: 260px;
 								    content: "";
-								    border-bottom: 2px dashed #414073;
+								    border-bottom: 2px dashed var(--bs-border);
 
 								    @media screen and (max-width: 375px) {
 				    					width: 225px;

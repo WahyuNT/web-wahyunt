@@ -14,7 +14,7 @@ export default function Profile() {
             <div className="d-flex px-3 justify-content-center align-items-start flex-column">
                 <div className="card w-100 bg-transparent mb-3">
                     <div className="d-flex justify-content-start">
-                        <div className="col-2 card-sosmed d-flex align-items-center justify-content-center me-2">
+                        <div className="col-2 btn-icon card-sosmed d-flex align-items-center justify-content-center me-2">
                             <i className="fa-solid fa-envelope  "></i>
                         </div>
                         <div className=" d-flex align-items-start flex-column">
@@ -29,7 +29,7 @@ export default function Profile() {
                 </div>
                 <div className="card w-100 bg-transparent mb-3">
                     <div className="d-flex justify-content-start">
-                        <div className="col-2 card-sosmed d-flex align-items-center justify-content-center me-2">
+                        <div className="col-2 card-sosmed btn-icon d-flex align-items-center justify-content-center me-2">
                             <i className="fa-solid fa-globe  "></i>
                         </div>
                         <div className=" d-flex align-items-start flex-column">
@@ -44,7 +44,7 @@ export default function Profile() {
                 </div>
                 <div className="card w-100 bg-transparent mb-3">
                     <div className="d-flex justify-content-start">
-                        <div className="col-2 card-sosmed d-flex align-items-center justify-content-center me-2">
+                        <div className="col-2 card-sosmed btn-icon d-flex align-items-center justify-content-center me-2">
                             <i className="fa-brands fa-github "></i>
                         </div>
                         <div className=" d-flex align-items-start flex-column">
@@ -58,7 +58,7 @@ export default function Profile() {
                 </div>
                 <div className="card w-100 bg-transparent mb-3 ">
                     <div className="d-flex justify-content-start">
-                        <div className="col-2 card-sosmed d-flex align-items-center justify-content-center me-2">
+                        <div className="col-2 card-sosmed btn-icon d-flex align-items-center justify-content-center me-2">
                             <i className="fa-brands fa-linkedin-in "></i>
                         </div>
                         <div className=" d-flex align-items-start flex-column">

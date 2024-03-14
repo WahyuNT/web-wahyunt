@@ -13,46 +13,76 @@ export default function Sidebar() {
 
     return (
         <div>
-            <div className="d-flex align-items-start justify-content-center flex-wrap">
-                <div className="col d-flex justify-content-center mb-1">
-                    <Link href="/">
-                        <button className='btn p-3 btn-icon'>
+            <div className="d-flex align-items-start justify-content-center flex-wrap gap-3">
+                <div className="col d-flex justify-content-center align-items-start mb-1">
+                    <Link href="/" className='text-decoration-none'>
+                        <button className='btn p-3 btn-icon d-flex flex-column'>
                             <i className="fa-solid fa-user text-white   text-utama"></i>
+                            <small>
+                                <small>
+                                    <small className='text-utama'>About</small>
+                                </small>
+                            </small>
                         </button>
                     </Link>
                 </div>
                 <div className="col d-flex justify-content-center mb-1">
-                    <Link href="/resume">
-                        <button className='btn p-3 btn-icon' >
+                    <Link href="/resume" className='text-decoration-none'>
+                        <button className='btn p-3 btn-icon d-flex flex-column' >
                             <i className="fa-solid fa-briefcase text-white ${isActive ? 'text-utama' : ''}"></i>
+                            <small>
+                                <small>
+                                    <small className='text-white'>Resume</small>
+                                </small>
+                            </small>
                         </button>
                     </Link>
                 </div>
                 <div className="col d-flex justify-content-center mb-1">
-                    <Link href="/portofolio">
-                        <button className='btn p-3 btn-icon' >
+                    <Link href="/resume" className='text-decoration-none'>
+                        <button className='btn p-3 btn-icon d-flex flex-column' >
                             <i className="fa-solid fa-images text-white ${isActive ? 'text-utama' : ''}"></i>
+                            <small>
+                                <small>
+                                    <small className='text-white'>Portofolio</small>
+                                </small>
+                            </small>
                         </button>
                     </Link>
                 </div>
                 <div className="col d-flex justify-content-center mb-1">
-                    <Link href="/blog">
-                        <button className='btn p-3 btn-icon' >
+                    <Link href="/resume" className='text-decoration-none'>
+                        <button className='btn p-3 btn-icon d-flex flex-column' >
                             <i className="fa-solid fa-newspaper text-white ${isActive ? 'text-utama' : ''}"></i>
+                            <small>
+                                <small>
+                                    <small className='text-white'>Blog</small>
+                                </small>
+                            </small>
                         </button>
                     </Link>
                 </div>
                 <div className="col d-flex justify-content-center mb-1">
-                    <Link href="/certificate">
-                        <button className='btn p-3 btn-icon' >
+                    <Link href="/resume" className='text-decoration-none'>
+                        <button className='btn p-3 btn-icon d-flex flex-column' >
                             <i className="fa-solid fa-file-invoice text-white ${isActive ? 'text-utama' : ''}"></i>
+                            <small>
+                                <small>
+                                    <small className='text-white'>Certificate</small>
+                                </small>
+                            </small>
                         </button>
                     </Link>
                 </div>
                 <div className="col d-flex justify-content-center mb-1">
-                    <Link href="/award">
-                        <button className='btn p-3 btn-icon' >
+                    <Link href="/resume" className='text-decoration-none'>
+                        <button className='btn p-3 btn-icon d-flex flex-column' >
                             <i className="fa-solid fa-award text-white ${isActive ? 'text-utama' : ''}"></i>
+                            <small>
+                                <small>
+                                    <small className='text-white'>Award</small>
+                                </small>
+                            </small>
                         </button>
                     </Link>
                 </div>

@@ -22,9 +22,10 @@ export default function BlogComp() {
                             <div className="px-3">
 
                                 <small className='mt-2'>
+                                    <i className="fa-solid fa-calendar-days text-second me-1 fa-sm"></i>
                                     <small className='text-second mt-2'>4 August 2023</small>
                                 </small>
-                                <p className='text-white fw-bold mt-0 mb-0'>Get Winner in Boim Amikom 2023</p>
+                                <p className='text-link fw-bold mt-0 mb-0'>Get Winner in Boim Amikom 2023</p>
                                 <p className='text-second mb-1 mt-1' style={{ fontSize: "13px" }}>
 
 
@@ -32,15 +33,19 @@ export default function BlogComp() {
 
                                 </p>
 
-                                <a href="" className='text-decoration-none'>
 
-                                    <small className='text-white fw-bold '>Read More<i className="fa-solid fa-caret-right ms-1 fa-sm"></i></small>
-                                </a>
 
                             </div>
-                            <div className="d-flex justify-content-start align-items-center mt-2">
+                            <div className="px-3  mt-1">
 
+                                <hr className=' mb-0  mt-1 border-2 color-border' />
                             </div>
+                            <a href="" className='text-decoration-none text-link'>
+                                <div className="d-flex justify-content-between align-items-center mt-2  px-3 pb-1">
+                                    <small className=' fw-bold '>Read More</small>
+                                    <i className="fa-solid fa-caret-right ms-1 fa-sm"></i>
+                                </div>
+                            </a>
 
 
                         </div>
