@@ -169,6 +169,11 @@ body{
 	padding-top: 7px  !important;
 	padding-bottom: 7px  !important;
 }
+.certificate-image{
+	object-fit: cover !important;
+	border-radius: 15px;
+}
+
 .btn-tag-detail{
 	/* padding: 40px; */
 	border: 1px solid var(--bs-border);

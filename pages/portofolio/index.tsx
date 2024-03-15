@@ -15,7 +15,7 @@ import PortofolioComp from "@/components/PortofolioComp";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Resume() {
+export default function Index() {
     return (
         <>
             <div className="section-primary">

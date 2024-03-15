@@ -5,7 +5,6 @@ import { width } from "@fortawesome/free-solid-svg-icons/fa0";
 import Profile from "@/components/Profile";
 import Sidebar from "@/components/Sidebar";
 import DetailPortofolio from "@/components/DetailPortofolio";
-import DetailCertificate from "@/components/DetailCertificate";
 
 
 // import styles from "@/styles/Home.module.css";
@@ -26,7 +25,7 @@ export default function Detail() {
                         <div className="col-9 ">
                             <div className="card p-2 card-bg w-100" style={{ height: "89vh" }}>
                                 <div className="overflow-auto overflow-hide">
-                                    <DetailCertificate />
+                                    <DetailPortofolio />
                                 </div>
                             </div>
                         </div>
