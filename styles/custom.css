@@ -173,6 +173,17 @@ body{
 	object-fit: cover !important;
 	border-radius: 15px;
 }
+.award-image{
+	object-fit: cover !important;
+	border-radius: 15px;
+	height: 425px !important;
+	width: auto;
+}
+.award-image-box{
+	object-fit: cover !important;
+	border-radius: 15px;
+	aspect-ratio: 1/1;
+}
 
 .btn-tag-detail{
 	/* padding: 40px; */

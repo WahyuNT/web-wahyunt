@@ -3,11 +3,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import { width } from "@fortawesome/free-solid-svg-icons/fa0";
 import Profile from "@/components/Profile";
-import Aboute from "@/components/AbouteComp";
 import Sidebar from "@/components/Sidebar";
-import ResumeComp from "@/components/ResumeComp";
-import PortofolioComp from "@/components/PortofolioComp";
-import BlogComp from "@/components/BlogComp";
 import AwardComp from "@/components/AwardComp";
 
 
@@ -17,7 +13,7 @@ import AwardComp from "@/components/AwardComp";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Award() {
+export default function Index() {
     return (
         <>
             <div className="section-primary">
