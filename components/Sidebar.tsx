@@ -39,7 +39,7 @@ export default function Sidebar() {
                     </Link>
                 </div>
                 <div className="col d-flex justify-content-center mb-1">
-                    <Link href="/resume" className='text-decoration-none'>
+                    <Link href="/portofolio" className='text-decoration-none'>
                         <button className='btn p-3 btn-icon d-flex flex-column' >
                             <i className="fa-solid fa-images text-white ${isActive ? 'text-utama' : ''}"></i>
                             <small>
@@ -51,7 +51,7 @@ export default function Sidebar() {
                     </Link>
                 </div>
                 <div className="col d-flex justify-content-center mb-1">
-                    <Link href="/resume" className='text-decoration-none'>
+                    <Link href="/blog" className='text-decoration-none'>
                         <button className='btn p-3 btn-icon d-flex flex-column' >
                             <i className="fa-solid fa-newspaper text-white ${isActive ? 'text-utama' : ''}"></i>
                             <small>
@@ -63,7 +63,7 @@ export default function Sidebar() {
                     </Link>
                 </div>
                 <div className="col d-flex justify-content-center mb-1">
-                    <Link href="/resume" className='text-decoration-none'>
+                    <Link href="/certificate" className='text-decoration-none'>
                         <button className='btn p-3 btn-icon d-flex flex-column' >
                             <i className="fa-solid fa-file-invoice text-white ${isActive ? 'text-utama' : ''}"></i>
                             <small>
@@ -75,7 +75,7 @@ export default function Sidebar() {
                     </Link>
                 </div>
                 <div className="col d-flex justify-content-center mb-1">
-                    <Link href="/resume" className='text-decoration-none'>
+                    <Link href="/award" className='text-decoration-none'>
                         <button className='btn p-3 btn-icon d-flex flex-column' >
                             <i className="fa-solid fa-award text-white ${isActive ? 'text-utama' : ''}"></i>
                             <small>

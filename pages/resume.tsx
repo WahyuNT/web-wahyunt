@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import { width } from "@fortawesome/free-solid-svg-icons/fa0";
 import Profile from "@/components/Profile";
-import Aboute from "@/components/Aboute";
+import Aboute from "@/components/AbouteComp";
 import Sidebar from "@/components/Sidebar";
 import ResumeComp from "@/components/ResumeComp";
 

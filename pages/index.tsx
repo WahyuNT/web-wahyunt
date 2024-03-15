@@ -3,8 +3,9 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import { width } from "@fortawesome/free-solid-svg-icons/fa0";
 import Profile from "@/components/Profile";
-import Aboute from "@/components/Aboute";
+import Aboute from "@/components/AbouteComp";
 import Sidebar from "@/components/Sidebar";
+import AbouteComp from "@/components/AbouteComp";
 // import styles from "@/styles/Home.module.css";
 
 
@@ -12,9 +13,9 @@ import Sidebar from "@/components/Sidebar";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  return (
-    <>
-    <div className="section-primary">
+    return (
+        <>
+            <div className="section-primary">
                 <div className="container px-5 pt-5 ">
                     <div className="d-flex justify-content-center gap-3">
                         <div className="col  ">
@@ -23,7 +24,7 @@ export default function Home() {
                         <div className="col-9 ">
                             <div className="card p-2 card-bg w-100" style={{ height: "89vh" }}>
                                 <div className="overflow-auto overflow-hide">
-                                    <Aboute />
+                                    <AbouteComp />
                                 </div>
                             </div>
                         </div>
@@ -38,6 +39,6 @@ export default function Home() {
 
 
 
-    </>
-  );
+        </>
+    );
 }

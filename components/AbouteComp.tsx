@@ -1,7 +1,7 @@
 import { width } from '@fortawesome/free-solid-svg-icons/fa0'
 import React from 'react'
 
-export default function Aboute() {
+export default function AbouteComp() {
     return (
         <div>
 

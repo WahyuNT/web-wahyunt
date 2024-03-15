@@ -2,6 +2,7 @@
     --bs-primary: #19d95c !important;
     --bs-border: rgba(255,255,255,.15) !important;
 	--bs-border-width: 1px;
+	--bs-second : #8a8f93 !important;
 }
 
 body{
@@ -52,6 +53,11 @@ body{
     height: 40px !important;
     aspect-ratio: 1/1;
     object-fit: cover;
+	filter: grayscale(100%);
+}
+.avatar-skill:hover{
+
+	filter: grayscale(0%);
 }
 .banner-small{
     aspect-ratio: 16/9;
@@ -312,7 +318,29 @@ color: var(--bs-primary) !important;
 	color: var(--bs-primary) !important;
 
 }
+.logo-amikom{
+	color: white !important;
+}
+.logo-amikom:hover{
+	filter: contrast(0.5);
+}
 
+.card-year-campus{
+color: var(--bs-primary) !important;
+border: 1px solid var(--bs-primary) !important;
+background-color: transparent !important;
+padding-left: 5px;
+padding-right: 5px;
+border-radius: 5px !important;
+}
+.card-year-volunteer{
+color: var(--bs-second) !important;
+border: 1px solid var(--bs-border) !important;
+background-color: transparent !important;
+padding-left: 5px;
+padding-right: 5px;
+border-radius: 5px !important;
+}
 .road-map {
 	box-sizing: border-box;
     width: 100%;
@@ -346,8 +374,8 @@ color: var(--bs-primary) !important;
     			&:after {
 				    position: absolute;
 				    top: 70px;
-				    right: -50px;
-				    width: 20%;
+				    right: -10px;
+				    width: 17%;
 				    height: calc(100% + 97px);
 				    content: "";
 				    border: 2px dashed var(--bs-border);
@@ -497,14 +525,16 @@ color: var(--bs-primary) !important;
 
 			    		.timeline-info {
 			    			text-align: center;
-			    			background-color: #201F3A;
-							border-radius: 20px;
+			    			background-color: transparent;
 							padding: 14px 17px 16px 17px;
 							display: inline-block;
+							border: 1px solid var(--bs-border);
+							border-radius: 10px;
+							box-shadow: 0px 5px 20px rgba(0,0,0,0.25);
 
 							.timeline-title {
 								font-weight: 600;
-								font-size: 18px;
+								font-size: 16px;
 								line-height: 27px;
 								color: #fff;
 								margin-top: 0;
