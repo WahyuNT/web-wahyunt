@@ -8,7 +8,7 @@ import Sidebar from "@/components/Sidebar";
 import ResumeComp from "@/components/ResumeComp";
 import PortofolioComp from "@/components/PortofolioComp";
 import BlogComp from "@/components/BlogComp";
-import CertificateComp from "@/components/CertificateComp";
+import DetailCertificate from "@/components/DetailCertificate";
 
 
 // import styles from "@/styles/Home.module.css";
@@ -17,7 +17,7 @@ import CertificateComp from "@/components/CertificateComp";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Certificate() {
+export default function Detail() {
     return (
         <>
             <div className="section-primary">
@@ -29,7 +29,7 @@ export default function Certificate() {
                         <div className="col-9 ">
                             <div className="card p-2 card-bg w-100" style={{ height: "89vh" }}>
                                 <div className="overflow-auto overflow-hide">
-                                    <CertificateComp />
+                                    <DetailCertificate />
                                 </div>
                             </div>
                         </div>

@@ -50,7 +50,7 @@ export default function Sidebar() {
                         </button>
                     </Link>
                 </div>
-                <div className="col d-flex justify-content-center mb-1">
+                {/* <div className="col d-flex justify-content-center mb-1">
                     <Link href="/blog" className='text-decoration-none'>
                         <button className='btn p-3 btn-icon d-flex flex-column' >
                             <i className="fa-solid fa-newspaper text-white ${isActive ? 'text-utama' : ''}"></i>
@@ -61,7 +61,7 @@ export default function Sidebar() {
                             </small>
                         </button>
                     </Link>
-                </div>
+                </div> */}
                 <div className="col d-flex justify-content-center mb-1">
                     <Link href="/certificate" className='text-decoration-none'>
                         <button className='btn p-3 btn-icon d-flex flex-column' >

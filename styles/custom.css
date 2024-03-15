@@ -154,12 +154,30 @@ body{
 	border-radius: 10px;
 	box-shadow: 0px 5px 20px rgba(0,0,0,0.25);
 }
+.border-glass{
+	/* padding: 40px; */
+	border: 1px solid var(--bs-border);
+	box-shadow: 0px 5px 20px rgba(0,0,0,0.25);
+}
 .btn-tag{
 	/* padding: 40px; */
 	border: 1px solid var(--bs-border);
 	border-radius: 7px !important;
-	box-shadow: 0px 5px 20px rgba(0,0,0,0.25);
-	padding: 5px ;
+	/* box-shadow: 0px 5px 20px rgba(0,0,0,0.25); */
+	padding-left: 6px !important;
+	padding-right: 6px !important;
+	padding-top: 7px  !important;
+	padding-bottom: 7px  !important;
+}
+.btn-tag-detail{
+	/* padding: 40px; */
+	border: 1px solid var(--bs-border);
+	border-radius: 7px !important;
+	/* box-shadow: 0px 5px 20px rgba(0,0,0,0.25); */
+	padding-top: 2px ;
+	padding-bottom: 2px ;
+	padding-left: 7px;
+	padding-right: 7px;
 }
 .btn-border{
 	/* padding: 40px; */
@@ -203,6 +221,13 @@ color: var(--bs-primary) !important;
     border-radius: 10px;
     width: 130px; /* sesuaikan dengan ukuran yang Anda inginkan */
     height: 130px; /* sesuaikan dengan ukuran yang Anda inginkan */
+    object-fit: cover;
+}
+.detail-porto-image {
+    border-radius: 10px !important;
+	height: 200px !important;
+	width: auto;
+aspect-ratio: 16/9;
     object-fit: cover;
 }
 .cover-blog {
