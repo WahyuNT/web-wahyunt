@@ -22,7 +22,7 @@ export default function ResumeComp() {
                             <div className="p-3">
                                 <div className="d-flex ">
                                     <div className="col-2 d-flex justify-content-center">
-                                    <img src="/img/experience/logo-amikom.png" style={{ width: "40px", height:"40px" }} alt="skill" className="rounded" ></img>
+                                        <img src="/img/experience/logo-amikom.png" style={{ width: "40px", height: "40px" }} alt="skill" className="rounded" ></img>
                                     </div>
                                     <div className="col d-flex align-items-start flex-column">
                                         <div className="card  card-year-campus mb-1 " style={{ borderRadius: "7px" }}>
@@ -46,7 +46,7 @@ export default function ResumeComp() {
                             <div className="p-3">
                                 <div className="d-flex ">
                                     <div className="col-2 d-flex justify-content-center">
-                                    <img src="/img/experience/tamsis.png" style={{ width: "40px", height:"40px" }} alt="skill" className="rounded" ></img>
+                                        <img src="/img/experience/tamsis.png" style={{ width: "40px", height: "40px" }} alt="skill" className="rounded" ></img>
                                     </div>
                                     <div className="col d-flex align-items-start flex-column">
                                         <div className="card  card-year-campus mb-1 " style={{ borderRadius: "7px" }}>
@@ -192,7 +192,7 @@ export default function ResumeComp() {
                             <div className="p-3">
                                 <div className="d-flex ">
                                     <div className="col-2 d-flex justify-content-center">
-                                        {/* <Image className='me-2 logo-amikom' src="logo-amikom.png" width={30} height={30} alt="" /> */}
+                                        <img src="/img/icon/boim2024.png" style={{ width: "40px", height: "40px" }} alt="skill" className="rounded" ></img>
                                     </div>
                                     <div className="col d-flex align-items-start flex-column">
 
@@ -224,7 +224,7 @@ export default function ResumeComp() {
                             <div className="p-3">
                                 <div className="d-flex ">
                                     <div className="col-2 d-flex justify-content-center">
-                                        <Image className='me-2 logo-amikom' src="/img/experience/logo-amikom.png" width={30} height={30} alt="" />
+                                        <img src="/img/icon/boim2023.png" style={{ width: "40px", height: "40px" }} alt="skill" className="rounded" ></img>
                                     </div>
                                     <div className="col d-flex align-items-start flex-column">
 
@@ -256,7 +256,7 @@ export default function ResumeComp() {
                             <div className="p-3">
                                 <div className="d-flex ">
                                     <div className="col-2 d-flex justify-content-center">
-                                        <Image className='me-2 logo-amikom' src="/img/experience/logo-amikom.png" width={30} height={30} alt="" />
+                                        <img src="/img/icon/expo2022.png" style={{ width: "40px", height: "40px" }} alt="skill" className="rounded" ></img>
                                     </div>
                                     <div className="col d-flex align-items-start flex-column">
 
@@ -288,7 +288,7 @@ export default function ResumeComp() {
                             <div className="p-3">
                                 <div className="d-flex ">
                                     <div className="col-2 d-flex justify-content-center">
-                                        <Image className='me-2 logo-amikom' src="logo-amikom.svg" width={30} height={30} alt="" />
+                                        <img src="/img/icon/pemilwa.png" style={{ width: "40px", height: "40px" }} alt="skill" className="rounded" ></img>
                                     </div>
                                     <div className="col d-flex align-items-start flex-column">
 
