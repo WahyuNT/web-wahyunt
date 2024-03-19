@@ -1,3 +1,4 @@
+import { width } from '@fortawesome/free-solid-svg-icons/fa0'
 import Image from 'next/image'
 import React from 'react'
 
@@ -86,8 +87,12 @@ export default function ResumeComp() {
                                                         </small>
                                                     </span>
                                                 </div>
-                                                <div className="timeline-info animated ova-move-up" data-animation="{&quot;animation&quot;:&quot;ova-move-up&quot;,&quot;duration&quot;:&quot;&quot;,&quot;delay&quot;:100}">
-                                                    <h3 className="timeline-title ">Forum Asisten</h3>
+                                                <div className="timeline-info animated ova-move-up" data-animation="{{&quot;animation&quot;:&quot;ova-move-up&quot;,&quot;duration&quot;:&quot;&quot;,&quot;delay&quot;:100}}">
+                                                    <div className="card bg-transparent mb-1">
+                                                        <img src="/img/experience/fa.png" style={{ width: "100px" }} alt="skill" className="rounded" ></img>
+                                                    </div>
+
+                                                    <h3 className="timeline-title text-utama">Forum Asisten</h3>
                                                     <ul className="timeline-content">
                                                         <li>Full Stack Web</li>
                                                     </ul>
@@ -104,7 +109,10 @@ export default function ResumeComp() {
                                                     </span>
                                                 </div>
                                                 <div className="timeline-info animated ova-move-up" data-animation="{&quot;animation&quot;:&quot;ova-move-up&quot;,&quot;duration&quot;:&quot;&quot;,&quot;delay&quot;:100}">
-                                                    <h3 className="timeline-title ">MSV Studio</h3>
+                                                    <div className="card bg-transparent mb-0">
+                                                        <img src="/img/experience/msv.png" style={{ width: "100px" }} alt="skill" className="rounded" ></img>
+                                                    </div>
+                                                    <h3 className="timeline-title text-utama">MSV Studio</h3>
                                                     <ul className="timeline-content">
                                                         <li>3D Modelling</li>
                                                         <li ><small>
@@ -130,8 +138,13 @@ export default function ResumeComp() {
                                                         </small>
                                                     </span>
                                                 </div>
-                                                <div className="timeline-info ova-invisible" data-animation="{&quot;animation&quot;:&quot;ova-move-up&quot;,&quot;duration&quot;:&quot;&quot;,&quot;delay&quot;:100}">
-                                                    <h3 className="timeline-title ">PT SIAP CETAK INSPIRATION</h3>
+                                                <div className="timeline-info  ova-invisible" data-animation="{&quot;animation&quot;:&quot;ova-move-up&quot;,&quot;duration&quot;:&quot;&quot;,&quot;delay&quot;:100}">
+                                                    <div className="d-flex justify-content-center">
+                                                        <div className="card bg-transparent mb-1">
+                                                            <img src="/img/experience/sci.png" style={{ width: "100px" }} alt="skill" className="rounded" ></img>
+                                                        </div>
+                                                    </div>
+                                                    <h3 className="timeline-title text-utama">PT SIAP CETAK INSPIRATION</h3>
                                                     <ul className="timeline-content">
                                                         <li>Graphic Design</li>
                                                     </ul>
@@ -147,7 +160,10 @@ export default function ResumeComp() {
                                                     </span>
                                                 </div>
                                                 <div className="timeline-info ova-invisible" data-animation="{&quot;animation&quot;:&quot;ova-move-up&quot;,&quot;duration&quot;:&quot;&quot;,&quot;delay&quot;:300}">
-                                                    <h3 className="timeline-title ">ADiTV Jogja</h3>
+                                                    <div className="card bg-transparent mb-1">
+                                                        <img src="/img/experience/aditv.png" style={{ width: "100px" }} alt="skill" className="rounded" ></img>
+                                                    </div>
+                                                    <h3 className="timeline-title text-utama">ADiTV Jogja</h3>
                                                     <ul className="timeline-content">
                                                         <li>News Producer</li>
                                                         <li ><small>
@@ -281,10 +297,10 @@ export default function ResumeComp() {
                                         <small className='mb-0 text-second'>
                                             <ul className='ps-4'>
                                                 <li>
-                                                Creating design for use on Instagram feed.
+                                                    Creating design for use on Instagram feed.
                                                 </li>
                                                 <li>
-                                                    Creating designs for banners, ID cards, and lanyards. 
+                                                    Creating designs for banners, ID cards, and lanyards.
                                                 </li>
                                             </ul>
                                         </small >
