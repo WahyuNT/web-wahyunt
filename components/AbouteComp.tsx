@@ -1,19 +1,36 @@
 import { width } from '@fortawesome/free-solid-svg-icons/fa0'
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
+import Image from 'next/image';
 
 
 export default function AbouteComp() {
     const [about, setAbout] = useState([]);
+    const [skill, setSkill] = useState([]);
+    const [doing, setDoing] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await axios.get('https://portodb.wahyunt.me/api/about');
-            setAbout(response.data.data);
+            try {
+                const responseAbout = await axios.get('https://portodb.wahyunt.me/api/about');
+                setAbout(responseAbout.data.data);
 
+                const responseSkill = await axios.get('https://portodb.wahyunt.me/api/skill');
+                setSkill(responseSkill.data.data);
+
+                const responseDoing = await axios.get('https://portodb.wahyunt.me/api/doing');
+                setDoing(responseDoing.data.data);
+
+
+
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
         };
+
         fetchData();
     }, []);
+
 
     return (
         <div>
@@ -38,49 +55,16 @@ export default function AbouteComp() {
                 </div>
 
                 <div className="d-flex justify-content-start flex-wrap ps-3">
-                    <div className="avatar avatar-skill me-2 mb-2 pull-up" data-popup="tooltip-custom" data-bs-placement="top" aria-label="Blender" data-bs-original-title="Blender">
-                        <img src="/img/icon/blender.png" className="rounded" alt="" />
-                    </div>
-                    <div className="avatar avatar-skill me-2 mb-2">
-                        <img src="/img/icon/express.png" className="rounded" alt="" />
-                    </div>
-                    <div className="avatar avatar-skill me-2 mb-2">
-                        <img src="/img/icon/figma.png" className="rounded" alt="" />
-                    </div>
-                    <div className="avatar avatar-skill me-2 mb-2">
-                        <img src="/img/icon/js.png" className="rounded" alt="" />
-                    </div>
-                    <div className="avatar avatar-skill me-2 mb-2">
-                        <img src="/img/icon/laravel.png" className="rounded" alt="" />
-                    </div>
-                    <div className="avatar avatar-skill me-2 mb-2">
-                        <img src="/img/icon/react.png" className="rounded" alt="" />
-                    </div>
-                    <div className="avatar avatar-skill me-2 mb-2">
-                        <img src="/img/icon/unity.png" className="rounded" alt="" />
-                    </div>
-                    <div className="avatar avatar-skill me-2 mb-2">
-                        <img src="/img/icon/vue.png" className="rounded" alt="" />
-                    </div>
-                    <div className="avatar avatar-skill me-2 mb-2">
-                        <img src="/img/icon/ue.png" className="rounded" alt="" />
-                    </div>
-                    <div className="avatar avatar-skill me-2 mb-2">
-                        <img src="/img/icon/corel.png" className="rounded" alt="" />
-                    </div>
-                    <div className="avatar avatar-skill me-2 mb-2">
-                        <img src="/img/icon/mongo.png" className="rounded" alt="" />
-                    </div>
-                    <div className="avatar avatar-skill me-2 mb-2">
-                        <img src="/img/icon/premiere.png" className="rounded" alt="" />
-                    </div>
-                    <div className="avatar avatar-skill me-2 mb-2">
-                        <img src="/img/icon/ae.png" className="rounded" alt="" />
-                    </div>
-                    <div className="avatar avatar-skill me-2 mb-2">
-                        <img src="/img/icon/ps.png" className="rounded" alt="" />
-                    </div>
+                    {skill.map((item: { icon: string }) => {
+                        return (
+                            <div className="avatar btn-icon avatar-skill me-2 mb-2">
+                                <Image src={item.icon} width={40} height={40} className="rounded"
+                                    alt="skill" />
 
+                            </div>
+
+                        )
+                    })}
 
                 </div>
                 <div className="d-flex justify-content-start mb-3 mt-3">
@@ -93,108 +77,27 @@ export default function AbouteComp() {
                 </div>
 
                 <div className="d-flex justify-content-start flex-wrap ps-3">
-                    <div className="col-4 pe-2 mb-2">
-                        <div className="card-glass"><div className="meta">
-                            <div className="p-3">
-                                <div className="d-flex ">
-                                    <div className="col-2 ">
-                                        <i className="fa-solid fa-globe fa-xl text-utama"></i>
-                                    </div>
-                                    <div className="col d-flex align-items-start flex-wrap">
+                    {doing.map((item: { title: string, icon: string, desc: string }) => {
+                        return (
+                            <div className="col-4 pe-2 mb-2">
+                                <div className="card-glass h-100"><div className="meta">
+                                    <div className="p-3">
+                                        <div className="d-flex ">
+                                            <div className="col-2 ">
+                                                <i className={`fa-xl ${item.icon} text-utama`}></i>
+                                            </div>
+                                            <div className="col d-flex align-items-start flex-wrap">
 
-                                        <h6 className="text-white fw-bold mb-0 ">Web Developer</h6>
-                                        <small className="text-second text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptates, facere  </small>
+                                                <h6 className="text-white fw-bold mb-0 ">{item.title}</h6>
+                                                <small className="text-second text-wrap">{item.desc}</small>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <div className="col-4 pe-2 mb-2">
-                        <div className="card-glass"><div className="meta">
-                            <div className="p-3">
-                                <div className="d-flex ">
-                                    <div className="col-2 ">
-                                        <i className="fa-solid fa-puzzle-piece fa-xl text-utama"></i>
-                                    </div>
-                                    <div className="col d-flex align-items-start flex-wrap">
-
-                                        <h6 className="text-white fw-bold mb-0">Game Developer</h6>
-                                        <small className="text-second text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptates, facere  </small>
-                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        </div>
-                    </div>
-                    <div className="col-4 pe-2 mb-2">
-                        <div className="card-glass"><div className="meta">
-                            <div className="p-3">
-                                <div className="d-flex ">
-                                    <div className="col-2 ">
-                                        <i className="fa-solid fa-pen-nib fa-xl text-utama"></i>
-                                    </div>
-                                    <div className="col d-flex align-items-start flex-wrap">
-
-                                        <h6 className="text-white fw-bold mb-0">UI/UX</h6>
-                                        <small className="text-second text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptates, facere  </small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <div className="col-4 pe-2 mb-2">
-                        <div className="card-glass"><div className="meta">
-                            <div className="p-3">
-                                <div className="d-flex ">
-                                    <div className="col-2 ">
-                                        <i className="fa-solid fa-palette fa-xl text-utama"></i>
-                                    </div>
-                                    <div className="col d-flex align-items-start flex-wrap">
-
-                                        <h6 className="text-white fw-bold mb-0">Graphic Design</h6>
-                                        <small className="text-second text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptates, facere  </small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <div className="col-4 pe-2 mb-2">
-                        <div className="card-glass"><div className="meta">
-                            <div className="p-3">
-                                <div className="d-flex ">
-                                    <div className="col-2 ">
-                                        <i className="fa-solid fa-cubes fa-xl text-utama"></i>
-                                    </div>
-                                    <div className="col d-flex align-items-start flex-wrap">
-
-                                        <h6 className="text-white fw-bold  mb-0">3D Modelling</h6>
-                                        <small className="text-second text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptates, facere  </small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <div className="col-4 pe-2 mb-2">
-                        <div className="card-glass"><div className="meta">
-                            <div className="p-3">
-                                <div className="d-flex ">
-                                    <div className="col-2 ">
-                                        <i className="fa-solid fa-film fa-xl text-utama"></i>
-                                    </div>
-                                    <div className="col d-flex align-items-start flex-wrap">
-
-                                        <h6 className="text-white fw-bold mb-0">Motion Graphic</h6>
-                                        <small className="text-second text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptates, facere  </small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
+                        )
+                    })}
 
                 </div>
 

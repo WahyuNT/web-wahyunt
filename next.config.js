@@ -1,5 +1,5 @@
 module.exports = {
     images: {
-        domains: ['https://portodb.wahyunt.me/api/about'],
+        domains: ['portodb.wahyunt.me'], // Tambahkan host gambar Anda di sini
     },
 }
