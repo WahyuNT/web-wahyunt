@@ -33,7 +33,7 @@ export default function CertificateComp() {
                 {certificate.map((item: { image: string,title: string,company: string,year: string,credential: string, }) => {
                     return (
                         <div className="col-4 mb-2 p-2">
-                            <div className=" bg-transparent card card-glass card-porto pb-2">
+                            <div className=" bg-transparent card h-100 card-glass card-porto pb-2">
                                 <div className="card bg-transparent  card-banner flex-column">
                                     <div className="card bg-transparent pt-3 px-3">
                                         <img src={item.image} className="cover-certificate mb-2" alt="" />
