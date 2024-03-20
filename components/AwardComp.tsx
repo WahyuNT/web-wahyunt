@@ -1,6 +1,25 @@
-import React from 'react'
+import axios from 'axios';
+import React, { useEffect, useState } from 'react'
 
 export default function AwardComp() {
+    const [award, setAward] = useState([]);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const responseCertificate = await axios.get('https://portodb.wahyunt.me/api/award');
+                setAward(responseCertificate.data.data);
+
+
+
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        };
+
+        fetchData();
+    }, []);
+
     return (
         <div><div className="card-body  px-1" style={{ maxHeight: "100%" }}>
 
@@ -9,43 +28,44 @@ export default function AwardComp() {
             </div>
             <h4 className="text-utama mt-2 text-center"><b>Award</b></h4>
             <div className="d-flex  flex-wrap">
+                {award.map((item: { title: string,cover: string, desc: string, icon_company: string, company: string, desc_company: string, date: string }) => {
+                    return (
+                        <div className="col-4 mb-2 p-2">
+                            <div className=" bg-transparent card card-glass card-porto pb-2">
+                                <div className="card bg-transparent  card-banner flex-column">
+                                    <div className="card bg-transparent">
+                                        <img src={item.cover} className="cover-award mb-2" alt="" />
+                                    </div>
+                                    <div className="d-flex justify-content-center ">
+                                        <div className="card bg-transparent ">
+                                            <img src={item.icon_company} className="cover-ava-award " alt="" />
+                                        </div>
+                                    </div>
+                                    <div className="px-3 text-center">
+                                        <br />
+                                        <p className='text-white  fw-bold mt-1 mb-0'>{item.title}</p>
+                                        <p className='text-second mb-1 mt-1' style={{ fontSize: "13px" }}>
+                                        {item.desc}
+                                        </p>
+
+                                    </div>
+                                    <div className="px-3  mt-1">
+
+                                        <hr className=' mb-0  mt-1 border-2 color-border' />
+                                    </div>
+                                    <a href="" className='text-decoration-none text-link'>
+                                        <div className="d-flex justify-content-between align-items-center mt-2  px-3 pb-1">
+                                            <small className=' fw-bold '>Read More</small>
+                                            <i className="fa-solid fa-caret-right ms-1 fa-sm"></i>
+                                        </div>
+                                    </a>
 
 
-                <div className="col-4 mb-2 p-2">
-                    <div className=" bg-transparent card card-glass card-porto pb-2">
-                        <div className="card bg-transparent  card-banner flex-column">
-                            <div className="card bg-transparent">
-                                <img src="https://i.pinimg.com/564x/d7/fb/95/d7fb95f5d8ebd333665e4b9d33c2ce2b.jpg" className="cover-award mb-2" alt="" />
-                            </div>
-                            <div className="d-flex justify-content-center ">
-                                <div className="card bg-transparent ">
-                                    <img src="https://ih1.redbubble.net/image.4529980642.7761/st,small,507x507-pad,600x600,f8f8f8.jpg" className="cover-ava-award " alt="" />
                                 </div>
                             </div>
-                            <div className="px-3 text-center">
-                                <br />
-                                <p className='text-white  fw-bold mt-1 mb-0'>Get Winner in Boim Amikom</p>
-                                <p className='text-second mb-1 mt-1' style={{ fontSize: "13px" }}>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-                                </p>
-
-                            </div>
-                            <div className="px-3  mt-1">
-
-                                <hr className=' mb-0  mt-1 border-2 color-border' />
-                            </div>
-                            <a href="" className='text-decoration-none text-link'>
-                                <div className="d-flex justify-content-between align-items-center mt-2  px-3 pb-1">
-                                    <small className=' fw-bold '>Read More</small>
-                                    <i className="fa-solid fa-caret-right ms-1 fa-sm"></i>
-                                </div>
-                            </a>
-
-
                         </div>
-                    </div>
-                </div>
-
+                    )
+                })}
             </div>
 
         </div></div>
