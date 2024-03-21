@@ -383,6 +383,22 @@ padding-left: 5px;
 padding-right: 5px;
 border-radius: 5px !important;
 }
+.btn-utama{
+	background-color: var(--bs-primary) !important;
+	border-color: var(--bs-primary) !important;
+	color: white !important;
+}
+.btn-outline-utama{
+	background-color: transparent !important;
+	border-color: var(--bs-border) !important;
+	color: white !important;
+}
+.btn-outline-utama:hover{
+	background-color: var(--bs-primary) !important;
+	border-color: var(--bs-border) !important;
+	color: white !important;
+}
+
 .road-map {
 	box-sizing: border-box;
     width: 100%;

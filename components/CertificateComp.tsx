@@ -10,9 +10,6 @@ export default function CertificateComp() {
             try {
                 const responseCertificate = await axios.get('https://portodb.wahyunt.me/api/certificate');
                 setCertificate(responseCertificate.data.data);
-
-
-
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
