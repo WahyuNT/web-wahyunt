@@ -31,7 +31,7 @@ export default function DetailCertificate() {
             <div className="card-body  px-1" style={{ maxHeight: "100%" }}>
 
                 <div className="d-flex align-items-center justify-content-start mb-3">
-                    <Link href="/portofolio">
+                    <Link href="/certificate">
                         <button className='btn card-sosmed btn-icon me-2 text-utama'>
                             <i className="fa-solid fa-chevron-left"></i>
                         </button>

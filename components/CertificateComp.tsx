@@ -55,7 +55,7 @@ export default function CertificateComp() {
                                                 </p>
                                             </div>
                                             <div className="div">
-                                                <Link href={`/certificate/${item.slug}/detail`}>
+                                                <Link href={`/certificate/detail/${item.slug}`}>
                                                     <button className='btn btn-icon btn-open-certificate  p-2'>
                                                         <i className="fa-solid  fa-arrow-right-from-bracket  fa"></i>
                                                     </button>
