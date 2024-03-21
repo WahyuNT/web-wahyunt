@@ -28,11 +28,11 @@ export default function AwardComp() {
             </div>
             <h4 className="text-utama mt-2 text-center"><b>Award</b></h4>
             <div className="d-flex  flex-wrap">
-                {award.map((item: { title: string,cover: string, desc: string, icon_company: string, company: string, desc_company: string, date: string }) => {
+                {award.map((item: { title: string, cover: string, desc: string, icon_company: string, company: string, desc_company: string, date: string }) => {
                     return (
                         <div className="col-4 mb-2 p-2">
-                            <div className=" bg-transparent card card-glass card-porto pb-2">
-                                <div className="card bg-transparent  card-banner flex-column">
+                            <div className=" bg-transparent card h-100 card-glass card-porto pb-2">
+                                <div className="card bg-transparent card-body p-0 card-banner flex-column">
                                     <div className="card bg-transparent">
                                         <img src={item.cover} className="cover-award mb-2" alt="" />
                                     </div>
@@ -41,15 +41,22 @@ export default function AwardComp() {
                                             <img src={item.icon_company} className="cover-ava-award " alt="" />
                                         </div>
                                     </div>
-                                    <div className="px-3 text-center">
-                                        <br />
-                                        <p className='text-white  fw-bold mt-1 mb-0'>{item.title}</p>
-                                        <p className='text-second mb-1 mt-1' style={{ fontSize: "13px" }}>
-                                        {item.desc}
-                                        </p>
+                                    <div className="div ">
 
+                                        <div className="px-3 text-center">
+                                            <br />
+                                            <p className='text-white text-utama fw-bold mt-1 mb-0'>{item.title}</p>
+                                            <p className='text-second mb-1 mt-1' style={{ fontSize: "13px" }}>
+                                                {item.desc}
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div className="px-3  mt-1">
+
+
+                                </div>
+                                <div className="card-footer p-0" >
+
+                                    <div className="px-3  ">
 
                                         <hr className=' mb-0  mt-1 border-2 color-border' />
                                     </div>
@@ -59,8 +66,6 @@ export default function AwardComp() {
                                             <i className="fa-solid fa-caret-right ms-1 fa-sm"></i>
                                         </div>
                                     </a>
-
-
                                 </div>
                             </div>
                         </div>

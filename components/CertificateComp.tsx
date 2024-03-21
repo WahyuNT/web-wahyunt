@@ -30,7 +30,7 @@ export default function CertificateComp() {
             <h4 className="text-utama mt-2 text-center"><b>Certificate</b></h4>
             <div className="d-flex  flex-wrap">
 
-                {certificate.map((item: { image: string,title: string,company: string,year: string,credential: string, }) => {
+                {certificate.map((item: { image: string, title: string, company: string, year: string, credential: string, }) => {
                     return (
                         <div className="col-4 mb-2 p-2">
                             <div className=" bg-transparent card h-100 card-glass card-porto pb-2">
@@ -39,19 +39,23 @@ export default function CertificateComp() {
                                         <img src={item.image} className="cover-certificate mb-2" alt="" />
                                     </div>
                                     <div className="px-3">
-                                        <p className='text-white fw-bold mt-0 mb-0'>{item.title} </p>
+                                        <p className='text-utama fw-bold mt-0 mb-0'>{item.title} </p>
                                         <div className="d-flex align-items-center">
 
                                             <div className="col">
                                                 <p className='text-second mb-1 mt-1' style={{ fontSize: "13px" }}>
                                                     <i className="fa-solid fa-building me-1"></i>{item.company} <br />
                                                     <i className="fa-solid fa-calendar-days me-1"></i>{item.year} <br />
-                                                    <i className="fa-solid fa-hashtag me-1"></i>{item.credential}
+                                                    {item.credential && (
+                                                        <React.Fragment>
+                                                            <i className="fa-solid fa-hashtag me-1"></i>{item.credential}
+                                                        </React.Fragment>
+                                                    )}
                                                 </p>
                                             </div>
                                             <div className="div">
                                                 <button className='btn btn-icon btn-open-certificate  p-2'>
-                                                    <i className="fa-solid fa-arrow-right-from-bracket  fa"></i>
+                                                    <i className="fa-solid  fa-arrow-right-from-bracket  fa"></i>
                                                 </button>
                                             </div>
                                         </div>
