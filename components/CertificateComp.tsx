@@ -1,4 +1,5 @@
 import axios from 'axios';
+import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
 
 export default function CertificateComp() {
@@ -30,7 +31,7 @@ export default function CertificateComp() {
             <h4 className="text-utama mt-2 text-center"><b>Certificate</b></h4>
             <div className="d-flex  flex-wrap">
 
-                {certificate.map((item: { image: string, title: string, company: string, year: string, credential: string, }) => {
+                {certificate.map((item: {slug:string, image: string, title: string, company: string, year: string, credential: string, }) => {
                     return (
                         <div className="col-4 mb-2 p-2">
                             <div className=" bg-transparent card h-100 card-glass card-porto pb-2">
@@ -54,9 +55,11 @@ export default function CertificateComp() {
                                                 </p>
                                             </div>
                                             <div className="div">
-                                                <button className='btn btn-icon btn-open-certificate  p-2'>
-                                                    <i className="fa-solid  fa-arrow-right-from-bracket  fa"></i>
-                                                </button>
+                                                <Link href={`/certificate/${item.slug}/detail`}>
+                                                    <button className='btn btn-icon btn-open-certificate  p-2'>
+                                                        <i className="fa-solid  fa-arrow-right-from-bracket  fa"></i>
+                                                    </button>
+                                                </Link>
                                             </div>
                                         </div>
 
@@ -66,7 +69,6 @@ export default function CertificateComp() {
                                 </div>
                             </div>
                         </div>
-
                     )
                 })}
             </div>

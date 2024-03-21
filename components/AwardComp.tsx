@@ -7,8 +7,8 @@ export default function AwardComp() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const responseCertificate = await axios.get('https://portodb.wahyunt.me/api/award');
-                setAward(responseCertificate.data.data);
+                const responseAward = await axios.get('https://portodb.wahyunt.me/api/award');
+                setAward(responseAward.data.data);
 
 
 
