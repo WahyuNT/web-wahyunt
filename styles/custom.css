@@ -176,8 +176,9 @@ body{
 .award-image{
 	object-fit: cover !important;
 	border-radius: 15px;
-	height: 425px !important;
-	width: auto;
+	height: 100% !important;
+
+
 }
 .award-image-box{
 	object-fit: cover !important;

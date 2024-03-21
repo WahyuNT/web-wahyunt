@@ -1,4 +1,5 @@
 import axios from 'axios';
+import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
 
 export default function AwardComp() {
@@ -28,7 +29,7 @@ export default function AwardComp() {
             </div>
             <h4 className="text-utama mt-2 text-center"><b>Award</b></h4>
             <div className="d-flex  flex-wrap">
-                {award.map((item: { title: string, cover: string, desc: string, icon_company: string, company: string, desc_company: string, date: string }) => {
+                {award.map((item: { title: string, cover: string, desc: string, icon_company: string, company: string, desc_company: string, date: string, slug: string }) => {
                     return (
                         <div className="col-4 mb-2 p-2">
                             <div className=" bg-transparent card h-100 card-glass card-porto pb-2">
@@ -60,12 +61,15 @@ export default function AwardComp() {
 
                                         <hr className=' mb-0  mt-1 border-2 color-border' />
                                     </div>
-                                    <a href="" className='text-decoration-none text-link'>
-                                        <div className="d-flex justify-content-between align-items-center mt-2  px-3 pb-1">
-                                            <small className=' fw-bold '>Read More</small>
-                                            <i className="fa-solid fa-caret-right ms-1 fa-sm"></i>
+                                    <Link href={`/award/detail/${item.slug}` }>
+
+                                        <div className='text-decoration-none text-link'>
+                                            <div className="d-flex justify-content-between align-items-center mt-2  px-3 pb-1 ">
+                                                <small className=' fw-bold '>Read More</small>
+                                                <i className="fa-solid fa-caret-right ms-1 fa-sm"></i>
+                                            </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
