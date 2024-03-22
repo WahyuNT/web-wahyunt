@@ -132,7 +132,7 @@ export default function PortofolioComp() {
                                     <div className="d-flex justify-content-between gap-2 mt-1">
                                         {item.figma || item.github && (
                                             <div className="col d-flex gap-2 ">
-                                                {item.figma && (
+                                                {item.github && (
                                                     <div className="col">
                                                         <button className='btn btn-outline-utama btn-border w-100 rounded-pill text-white w-50'>
                                                             <i className="fa-brands fa-github "></i>
