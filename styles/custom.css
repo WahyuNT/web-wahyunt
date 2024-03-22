@@ -285,6 +285,13 @@ color: var(--bs-primary) !important;
     object-fit: cover;
 	border-radius: 8px;
 }
+.cover-skill-mini {
+    width: 15px;
+    height:  15px;
+   aspect-ratio: 1/1;
+    object-fit: cover;
+	border-radius: 3px;
+}
 .cover-ava-award {
     aspect-ratio: 1/1;
     object-fit: cover;

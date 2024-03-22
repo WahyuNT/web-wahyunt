@@ -28,7 +28,7 @@ export default function PortofolioComp() {
             <h4 className="text-utama mt-2 text-center"><b>Portofolio</b></h4>
             <div className="d-flex  flex-wrap">
 
-                {portofolio.map((item: { _id: string, title: string, desc: string, purpose: string, icon_company: string, cover: string, company: string, desc_company: string, date: string, slug: string, link: string, figma: string, github: string, software: [] }) => {
+                {portofolio.map((item: { _id: string, title: string, desc: string, purpose: string, icon_company: string, cover: string, company: string, desc_company: string, date: string, slug: string, link: string, figma: string, github: string, software: string[], type: string[] }) => {
                     return (
                         <div className="col-4 mb-2 px-2">
                             <div className=" bg-transparent card card-glass card-porto ">
@@ -67,9 +67,10 @@ export default function PortofolioComp() {
                                                         <div className="card-body p-1">
 
                                                             <div className="d-flex gap-2 px-2 py-1">
-                                                                {/* <Image  src= width={15} height={15} className="rounded"
-                                                                    alt="skill" /> */}
-
+                                                                {item.software.map((softwareItem) => (
+                                                                    // <img src={softwareItem}  className="cover-skill-mini " alt="" />
+                                                                    <Image src={softwareItem} width={15} height={15} className="rounded" alt="skill" />
+                                                                ))}
 
                                                             </div>
                                                         </div>
@@ -107,29 +108,17 @@ export default function PortofolioComp() {
                                     </div>
                                     <hr className='text-second border-1 my-2' />
                                     <div className="d-flex justify-content-start flex-wrap mb-1 gap-1">
+                                        {item.type.map((typeItem) => (
 
-                                        <button className='btn btn-xs btn-tag  text-second'>
-                                            <small>
-                                                Full Stack
-                                            </small>
-                                        </button>
-                                        <button className='btn btn-xs btn-tag  text-second'>
-                                            <small>
-                                                Laravel
-                                            </small>
-                                        </button>
-                                        <button className='btn btn-xs btn-tag  text-second'>
-                                            <small>
-                                                Unreal Engine
-                                            </small>
-                                        </button>
-                                        <button className='btn btn-xs btn-tag  text-second'>
-                                            <small>
-                                                HTML
-                                            </small>
-                                        </button>
+                                            <button className='btn btn-xs btn-tag  text-second'>
+                                                <small>
+                                                    {typeItem}
+                                                </small>
+                                            </button>
+                                        ))}
+
                                     </div>
-                                    <hr className='text-second border-1 my-3' />
+                                    <hr className='text-second border-1 my-2' />
                                     <div className="d-flex justify-content-between gap-2 mt-1">
                                         {item.figma || item.github && (
                                             <div className="col d-flex gap-2 ">

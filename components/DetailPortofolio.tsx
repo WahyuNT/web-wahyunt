@@ -7,6 +7,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Console } from 'console';
+import Image from 'next/image';
 
 
 
@@ -24,7 +25,7 @@ export default function DetailPortofolio() {
 
     const router = useRouter();
     const { slug } = router.query;
-    const [portofolio, setPortofolio] = useState({ _id: "", icon_company: '', cover: '', title: '', desc: '', desc_company: '', company: '', purpose: '', date: '', slug: '', link: '', github: '', figma: '' });
+    const [portofolio, setPortofolio] = useState({ _id: "", icon_company: '', cover: '', title: '', desc: '', desc_company: '', company: '', purpose: '', date: '', slug: '', link: '', github: '', figma: '', type: [], software: [] });
     const [image, setImage] = useState([]);
 
 
@@ -70,21 +71,34 @@ export default function DetailPortofolio() {
                 </div>
 
                 <div className=" slider-container px-4">
-                    <Slider {...settings}>
-                        {image.map((img: { image_name: string, }) => {
-                            return (
-                                <div className="px-1">
-
-                                    <div className=" bg-transparent card-glass p-2">
-                                        <div className="card bg-transparent  p-1">
-                                            <img src={img.image_name} className="detail-porto-image " alt="" />
-                                        </div>
+                    {image && image.length > 0 && (
+                        <Slider {...settings}>
+                            {image.map((img: { image_name: string; video_link?: string }) => {
+                                return (
+                                    <div key={img.image_name}>
+                                        {img.video_link ? (
+                                            <div className="px-1">
+                                                <div className="bg-transparent card-glass p-2">
+                                                    <div className="card bg-transparent p-1">
+                                                        <iframe title="video" width="auto" height="218px" src={img.video_link}></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        ) : (
+                                            <div className="px-1">
+                                                <div className="bg-transparent card-glass p-2">
+                                                    <div className="card bg-transparent p-1">
+                                                        <img src={img.image_name} className="detail-porto-image" alt="" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        )}
                                     </div>
-                                </div>
-                            )
-                        })}
+                                );
+                            })}
+                        </Slider>
+                    )}
 
-                    </Slider>
                 </div>
                 {/* <div className=" bg-transparent card-glass p-2">
                         <div className="card bg-transparent  p-1">
@@ -148,7 +162,7 @@ export default function DetailPortofolio() {
                                         <small>
                                             <small className=" text-second mb-0">Site</small>
                                         </small>
-                                        <small className="text-white ">{portofolio.link}</small>
+                                        <small className="text-white ">Click to open</small>
                                     </div>
                                 </div>
                             </div>
@@ -207,7 +221,7 @@ export default function DetailPortofolio() {
 
                 </div>
 
-                <small className='text-second'>Team Partners :</small><br />
+                {/* <small className='text-second'>Team Partners :</small><br />
                 <div className="d-flex justify-content-start flex-wrap mt-1 mb-2">
                     <div className="avatar  me-2 mb-2 pull-up" data-popup="tooltip-custom" data-bs-placement="top" aria-label="Blender" data-bs-original-title="Blender">
                         <img src="/img/icon/blender.png" className="rounded-circle" alt="" />
@@ -219,33 +233,31 @@ export default function DetailPortofolio() {
                         <img src="/img/icon/blender.png" className="rounded-circle" alt="" />
                     </div>
 
-                </div>
-                <small className='text-second'>Software :</small><br />
+                </div> */}
+                <small className='text-second'>Tools :</small><br />
                 <div className="d-flex justify-content-start flex-wrap mt-1 mb-2">
-                    <div className="avatar avatar-skill me-2 mb-2 pull-up" data-popup="tooltip-custom" data-bs-placement="top" aria-label="Blender" data-bs-original-title="Blender">
-                        <img src="/img/icon/blender.png" className="rounded" alt="" />
-                    </div>
-                    <div className="avatar avatar-skill me-2 mb-2">
-                        <img src="/img/icon/express.png" className="rounded" alt="" />
-                    </div>
-                    <div className="avatar avatar-skill me-2 mb-2">
-                        <img src="/img/icon/figma.png" className="rounded" alt="" />
-                    </div>
-                    <div className="avatar avatar-skill me-2 mb-2">
-                        <img src="/img/icon/js.png" className="rounded" alt="" />
-                    </div>
-                    <div className="avatar avatar-skill me-2 mb-2">
-                        <img src="/img/icon/laravel.png" className="rounded" alt="" />
-                    </div>
+                    {portofolio.software.map((software) => (
+
+
+                        <div className="avatar avatar-skill me-2 mb-2 pull-up" data-popup="tooltip-custom" data-bs-placement="top" aria-label="Blender" data-bs-original-title="Blender">
+                            {/* <img src={software} className="rounded" alt="" /> */}
+                            <Image src={software} width={300} height={300} className="rounded" alt="skill" />
+                        </div>
+                    ))}
+
                 </div>
 
                 <small className='text-second '>Category :</small>
                 <div className="d-flex flex-wrap mt-1">
-                    <button className='btn btn-sm btn-tag-detail  text-second'>
-                        <small>
-                            Full Stack
-                        </small>
-                    </button>
+                    {portofolio.type.map((typeItem) => (
+
+
+                        <button className='btn btn-sm btn-tag-detail me-2 text-second'>
+                            <small>
+                                {typeItem}
+                            </small>
+                        </button>
+                    ))}
                 </div>
             </div>
         </div >
