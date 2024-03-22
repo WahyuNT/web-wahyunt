@@ -15,9 +15,9 @@ export default function DetailPortofolio() {
     var settings = {
         dots: false,
         infinite: false,
-        speed: 100,
+        speed: 300,
         slidesToShow: 2,
-        slidesToScroll: 4,
+        slidesToScroll: 2,
         initialSlide: 0,
 
     };

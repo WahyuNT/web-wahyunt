@@ -242,9 +242,9 @@ color: var(--bs-primary) !important;
 }
 .detail-porto-image {
     border-radius: 10px !important;
-	height: 200px !important;
-	width: auto;
-aspect-ratio: 16/9;
+	height: auto !important;
+	/* width: auto; */
+/* aspect-ratio: 16/9; */
     object-fit: cover;
 }
 .cover-blog {
