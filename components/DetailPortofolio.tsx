@@ -6,6 +6,7 @@ import React, { useEffect, useState } from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Console } from 'console';
 
 
 
@@ -14,7 +15,7 @@ export default function DetailPortofolio() {
     var settings = {
         dots: false,
         infinite: false,
-        speed: 500,
+        speed: 100,
         slidesToShow: 2,
         slidesToScroll: 4,
         initialSlide: 0,
@@ -23,7 +24,9 @@ export default function DetailPortofolio() {
 
     const router = useRouter();
     const { slug } = router.query;
-    const [portofolio, setPortofolio] = useState({ icon_company: '', cover: '', title: '', desc: '', desc_company: '', company: '', purpose: '', date: '', slug: '', link: '', github: '', figma: '' }); // Ganti array dengan objek tunggal
+    const [portofolio, setPortofolio] = useState({ _id: "", icon_company: '', cover: '', title: '', desc: '', desc_company: '', company: '', purpose: '', date: '', slug: '', link: '', github: '', figma: '' });
+    const [image, setImage] = useState([]);
+
 
     useEffect(() => {
         const fetchData = async () => {
@@ -31,13 +34,16 @@ export default function DetailPortofolio() {
                 if (slug) { // Pastikan slug tidak undefined
                     const responsePortofolio = await axios.get(`https://portodb.wahyunt.me/api/portofolio/detail/${slug}`);
                     setPortofolio(responsePortofolio.data.data);
-                    console.log(responsePortofolio.data.data);
+                    const id = responsePortofolio.data.data._id; // Mengambil _id dari responsePortofolio.data.data
+                    if (id) {
+                        const responseImage = await axios.get(`https://portodb.wahyunt.me/api/portofolio/image/list/${id}`);
+                        setImage(responseImage.data.data);
+                    }
                 }
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
         };
-
         fetchData();
     }, [slug]);
     return (
@@ -65,46 +71,18 @@ export default function DetailPortofolio() {
 
                 <div className=" slider-container px-4">
                     <Slider {...settings}>
-                        <div className="px-1">
+                        {image.map((img: { image_name: string, }) => {
+                            return (
+                                <div className="px-1">
 
-                            <div className=" bg-transparent card-glass p-2">
-                                <div className="card bg-transparent  p-1">
-                                    <img src="https://i.pinimg.com/564x/f2/c5/ed/f2c5ed701123f181f478f7d4e7f9c9d2.jpg" className="detail-porto-image " alt="" />
+                                    <div className=" bg-transparent card-glass p-2">
+                                        <div className="card bg-transparent  p-1">
+                                            <img src={img.image_name} className="detail-porto-image " alt="" />
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div className="px-1">
-
-                            <div className=" bg-transparent card-glass p-2">
-                                <div className="card bg-transparent  p-1">
-                                    <img src="https://i.pinimg.com/564x/f2/c5/ed/f2c5ed701123f181f478f7d4e7f9c9d2.jpg" className="detail-porto-image " alt="" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="px-1">
-
-                            <div className=" bg-transparent card-glass p-2">
-                                <div className="card bg-transparent  p-1">
-                                    <img src="https://i.pinimg.com/564x/f2/c5/ed/f2c5ed701123f181f478f7d4e7f9c9d2.jpg" className="detail-porto-image " alt="" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="px-1">
-
-                            <div className=" bg-transparent card-glass p-2">
-                                <div className="card bg-transparent  p-1">
-                                    <img src="https://i.pinimg.com/564x/f2/c5/ed/f2c5ed701123f181f478f7d4e7f9c9d2.jpg" className="detail-porto-image " alt="" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="px-1">
-
-                            <div className=" bg-transparent card-glass p-2">
-                                <div className="card bg-transparent  p-1">
-                                    <img src="https://i.pinimg.com/564x/f2/c5/ed/f2c5ed701123f181f478f7d4e7f9c9d2.jpg" className="detail-porto-image " alt="" />
-                                </div>
-                            </div>
-                        </div>
+                            )
+                        })}
 
                     </Slider>
                 </div>
