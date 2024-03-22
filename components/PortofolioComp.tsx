@@ -1,5 +1,6 @@
 import axios from 'axios';
 import Image from 'next/image'
+import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
 
 export default function PortofolioComp() {
@@ -68,7 +69,7 @@ export default function PortofolioComp() {
                                                             <div className="d-flex gap-2 px-2 py-1">
                                                                 {/* <Image  src= width={15} height={15} className="rounded"
                                                                     alt="skill" /> */}
-                                                       
+
 
                                                             </div>
                                                         </div>
@@ -151,11 +152,13 @@ export default function PortofolioComp() {
                                             </div>
                                         )}
                                         <div className="col ">
+                                            <Link href={`/portofolio/detail/${item.slug}`}>
 
-                                            <button className='btn btn-outline-utama btn-border rounded-pill text-white w-100 '>
-                                                Details
+                                                <button className='btn btn-outline-utama btn-border rounded-pill text-white w-100 '>
+                                                    Details
 
-                                            </button>
+                                                </button>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -170,3 +173,6 @@ export default function PortofolioComp() {
         </div></div >
     )
 }
+
+
+
