@@ -16,27 +16,38 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Index() {
     return (
         <>
-            <div className="section-primary">
-                <div className="container px-5 pt-5 ">
-                    <div className="d-flex justify-content-center gap-3">
-                        <div className="col  ">
+            <div className="section-primary ">
+                <div className="container   px-lg-1 pt-lg-5 pt-3 ">
+                    <div className="d-flex  gap-3  flex-wrap flex-lg-nowrap ">
+                        <div className="col ">
                             <Profile />
                         </div>
-                        <div className="col-9 ">
-                            <div className="card p-2 card-bg w-100" style={{ height: "89vh" }}>
-                                <div className="overflow-auto overflow-hide">
+                        <div className="col-lg-9 col-12 col-sm-12 ">
+                            <div className="card p-2 card-bg w-100 " style={{ height: "89vh" }}>
+                                <div className="overflow-auto overflow-hide bottom-space">
                                     <AwardComp />
                                 </div>
                             </div>
                         </div>
-                        <div className="col">
+                        <div className="col  mobile">
+                            <div className=" d-flex justify-content-center">
+
+                                <div className="card card-overlay-bg bar p-3  ">
+                                    <Sidebar />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col desktop ">
                             <div className="card card-bg  p-3">
                                 <Sidebar />
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div >
+
 
 
         </>

@@ -28,9 +28,6 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-
-
-
                         <div className="col  mobile">
                             <div className=" d-flex justify-content-center">
 
@@ -45,16 +42,10 @@ export default function Home() {
                                 <Sidebar />
                             </div>
                         </div>
-
-
-
                     </div>
 
                 </div>
             </div >
-
-
-
         </>
     );
 }
