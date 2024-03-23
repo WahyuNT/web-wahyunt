@@ -61,11 +61,11 @@ export default function AwardComp() {
 
                                         <hr className=' mb-0  mt-1 border-2 color-border' />
                                     </div>
-                                    <Link href={`/award/detail/${item.slug}` }>
+                                    <Link href={`/award/detail/${item.slug}` } className='text-decoration-none'>
 
-                                        <div className='text-decoration-none text-link'>
+                                        <div className=' text-link'>
                                             <div className="d-flex justify-content-between align-items-center mt-2  px-3 pb-1 ">
-                                                <small className=' fw-bold '>Read More</small>
+                                                <small className=' fw-bold  '>Read More</small>
                                                 <i className="fa-solid fa-caret-right ms-1 fa-sm"></i>
                                             </div>
                                         </div>
