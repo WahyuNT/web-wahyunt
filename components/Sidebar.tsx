@@ -12,8 +12,8 @@ export default function Sidebar() {
     }, []);
 
     return (
-        <div>
-            <div className="d-flex align-items-start justify-content-center flex-wrap gap-3">
+        <div >
+            <div className="d-flex align-items-start justify-content-center flex-wrap gap-3 ">
                 <div className="col d-flex justify-content-center align-items-start mb-1">
                     <Link href="/" className='text-decoration-none'>
                         <button className='btn p-3 btn-icon d-flex flex-column'>

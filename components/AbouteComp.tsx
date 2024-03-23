@@ -79,7 +79,7 @@ export default function AbouteComp() {
                 <div className="d-flex justify-content-start flex-wrap ps-3">
                     {doing.map((item: { title: string, icon: string, desc: string }) => {
                         return (
-                            <div className="col-4 pe-2 mb-2">
+                            <div className="col-lg-4 col-sm-6 col-12 pe-2 mb-2">
                                 <div className="card-glass h-100"><div className="meta">
                                     <div className="p-3">
                                         <div className="d-flex ">
