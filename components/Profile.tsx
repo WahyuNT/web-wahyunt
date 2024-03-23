@@ -106,14 +106,16 @@ export default function Profile() {
 
                     </div>
 
-                    <a href="" className="text-decoration-none">
-                        <div className="card card-bg mt-3 text-link text-white">
+                    <a href="" className="text-decoration-none w-100">
+                        <div className="card card-bg mt-3 text-link text-white w-100">
                             <div className="card-body align-items-center d-flex justify-content-center">
-                                <i className="fa-solid fa-download  me-2"></i>
+                                <i className="fa-solid fa-file-arrow-down  me-2"></i>
                                 <p className=" m-0">Download CV</p>
                             </div>
                         </div>
-                    </a></div>
+                    </a>
+
+                </div>
             </div>
             <div className="mobile mb-0">
 
@@ -160,8 +162,8 @@ export default function Profile() {
                     </div>
                     <div className="desktop">
 
-                        <a href="" className="text-decoration-none">
-                            <div className="card card-bg mt-3 text-link text-white">
+                        <a href="" className="text-decoration-none w-100">
+                            <div className="card card-bg mt-3 text-link text-white ">
                                 <div className="card-body align-items-center d-flex justify-content-center">
                                     <i className="fa-solid fa-download  me-2"></i>
                                     <p className=" m-0">Download CV</p>
