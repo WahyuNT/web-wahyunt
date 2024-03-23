@@ -30,7 +30,7 @@ export default function DetailCertificate() {
         <div className='p-2'>
             <div className="card-body  px-1" style={{ maxHeight: "100%" }}>
 
-                <div className="d-flex align-items-center justify-content-start mb-3">
+                <div className="d-flex align-items-center justify-content-start mb-lg-3">
                     <Link href="/certificate">
                         <button className='btn card-sosmed btn-icon me-2 text-utama'>
                             <i className="fa-solid fa-chevron-left"></i>
@@ -48,13 +48,13 @@ export default function DetailCertificate() {
 
                 </div>
             </div>
-            <div className="d-flex">
-                <div className="col pe-3">
+            <div className="d-flex  flex-wrap-reverse flex-lg-wrap   ">
+                <div className="col-lg col-12 col-sm-12  pe-lg-3">
                     <div className="card  bg-transparent ">
                         <img src={certificate.image} className='w-100 certificate-image' alt="" />
                     </div>
                 </div>
-                <div className="col-3">
+                <div className="col-lg-3 col-12 col-sm-12 mb-3">
                     <div className="card card-glass bg-transparent" style={{ borderRadius: "15px" }}>
                         <div className="card-body pb-0 text-second">
                             <small className='text-white text-utama fw-bold'>Detail :</small>

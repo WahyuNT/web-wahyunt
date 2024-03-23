@@ -33,8 +33,8 @@ export default function PortofolioComp() {
 
             </div>
             <h4 className="text-utama mt-2 text-center"><b>Portofolio</b></h4>
-            <small className='text-second  mb-1 ms-2'>valueFilter :</small>
-            <div className="d-flex flex-wrap ms-2">
+            <small className='text-second  mb-2 ms-2'>Filter :</small>
+            <div className="d-flex flex-wrap mt-1 ms-2">
                 <button
                     className={`btn btn-xs  text-second me-2 mb-2 ${valueFilter === '' ? 'btn-tag-active' : 'btn-tag'}`}
                     onClick={() => handleFilterChange('')}
@@ -131,7 +131,7 @@ export default function PortofolioComp() {
 
                 {portofolio.map((item: { _id: string, title: string, desc: string, purpose: string, icon_company: string, cover: string, company: string, desc_company: string, date: string, slug: string, link: string, figma: string, github: string, software: string[], type: string[] }) => {
                     return (
-                        <div className="col-4 mb-2 px-2">
+                        <div className="col-lg-4 col-12 mb-3 px-2">
                             <div className=" bg-transparent card card-glass card-porto ">
                                 <div className="div px-3 pt-3">
 

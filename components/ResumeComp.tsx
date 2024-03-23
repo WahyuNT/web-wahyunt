@@ -15,9 +15,9 @@ export default function ResumeComp() {
                     <div className="card me-2 color-utama" style={{ width: '5px', height: 'auto' }}></div>
                     <h4 className="text-white mt-2 text-white"><b><span className='text-utama'>Edu</span>cation</b></h4>
                 </div>
-                <div className="d-flex justify-content-start gap-3 ms-3">
+                <div className="d-flex flex-wrap justify-content-start gap-3 ms-3">
 
-                    <div className="col-5 ">
+                    <div className="col-lg-5 col-12 ">
                         <div className="card-glass"><div className="meta">
                             <div className="p-3">
                                 <div className="d-flex ">
@@ -41,7 +41,7 @@ export default function ResumeComp() {
                         </div>
                         </div>
                     </div>
-                    <div className="col-5 ">
+                    <div className="col-lg-5 col-12 ">
                         <div className="card-glass h-100"><div className="meta">
                             <div className="p-3">
                                 <div className="d-flex ">
@@ -187,7 +187,7 @@ export default function ResumeComp() {
                 </div>
                 <div className="d-flex justify-content-start flex-wrap">
 
-                    <div className="col-6 ps-3 mb-3">
+                    <div className="col-lg-6 col-12 ps-3 mb-3">
                         <div className="card-glass h-100"><div className="meta">
                             <div className="p-3">
                                 <div className="d-flex ">
@@ -219,7 +219,7 @@ export default function ResumeComp() {
                         </div>
                         </div>
                     </div>
-                    <div className="col-6 ps-3 mb-3">
+                    <div className="col-lg-6 col-12 ps-3 mb-3">
                         <div className="card-glass h-100"><div className="meta">
                             <div className="p-3">
                                 <div className="d-flex ">
@@ -251,7 +251,7 @@ export default function ResumeComp() {
                         </div>
                         </div>
                     </div>
-                    <div className="col-6 ps-3 mb-3">
+                    <div className="col-lg-6 col-12 ps-3 mb-3">
                         <div className="card-glass h-100"><div className="meta">
                             <div className="p-3">
                                 <div className="d-flex ">
@@ -283,7 +283,7 @@ export default function ResumeComp() {
                         </div>
                         </div>
                     </div>
-                    <div className="col-6 ps-3 mb-3">
+                    <div className="col-lg-6 col-12 ps-3 mb-3">
                         <div className="card-glass h-100"><div className="meta">
                             <div className="p-3">
                                 <div className="d-flex ">
