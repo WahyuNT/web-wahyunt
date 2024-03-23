@@ -169,6 +169,15 @@ body{
 	padding-top: 7px  !important;
 	padding-bottom: 7px  !important;
 }
+.btn-tag-active{
+	background-color: var(--bs-primary) !important;
+	color: white !important;
+	border-radius: 7px !important;
+	padding-left: 6px !important;
+	padding-right: 6px !important;
+	padding-top: 7px  !important;
+	padding-bottom: 7px  !important;
+}
 .certificate-image{
 	object-fit: cover !important;
 	border-radius: 15px;

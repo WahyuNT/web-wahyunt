@@ -5,19 +5,26 @@ import React, { useEffect, useState } from 'react'
 
 export default function PortofolioComp() {
     const [portofolio, setPortofolio] = useState([]);
+    const [valueFilter, setValueFilter] = useState('');
+
+    const handleFilterChange = (newValue: any) => {
+        setValueFilter(newValue);
+
+    };
 
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const responsePortofolio = await axios.get('https://portodb.wahyunt.me/api/portofolio');
+                const responsePortofolio = await axios.get(`https://portodb.wahyunt.me/api/portofolio/?keyword=${valueFilter}`);
                 setPortofolio(responsePortofolio.data.data);
+
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
         };
 
         fetchData();
-    }, []);
+    }, [valueFilter]);
 
     return (
         <div><div className="card-body  px-1" style={{ maxHeight: "100%" }}>
@@ -26,7 +33,101 @@ export default function PortofolioComp() {
 
             </div>
             <h4 className="text-utama mt-2 text-center"><b>Portofolio</b></h4>
-            <div className="d-flex  flex-wrap">
+            <small className='text-second  mb-1 ms-2'>valueFilter :</small>
+            <div className="d-flex flex-wrap ms-2">
+                <button
+                    className={`btn btn-xs  text-second me-2 mb-2 ${valueFilter === '' ? 'btn-tag-active' : 'btn-tag'}`}
+                    onClick={() => handleFilterChange('')}
+                >
+                    <small>All</small>
+                </button>
+                <button
+                    className={`btn btn-xs  text-second me-2 mb-2 ${valueFilter === 'laravel' ? 'btn-tag-active' : 'btn-tag'}`}
+                    onClick={() => handleFilterChange('laravel')}
+                >
+                    <small>laravel</small>
+                </button>
+                <button
+                    className={`btn btn-xs  text-second me-2 mb-2 ${valueFilter === 'React JS' ? 'btn-tag-active' : 'btn-tag'}`}
+                    onClick={() => handleFilterChange('React JS')}
+                >
+                    <small>React JS</small>
+                </button>
+                <button
+                    className={`btn btn-xs  text-second me-2 mb-2 ${valueFilter === 'ExpressJS' ? 'btn-tag-active' : 'btn-tag'}`}
+                    onClick={() => handleFilterChange('ExpressJS')}
+                >
+                    <small>ExpressJS</small>
+                </button>
+                <button
+                    className={`btn btn-xs  text-second me-2 mb-2 ${valueFilter === 'Front End' ? 'btn-tag-active' : 'btn-tag'}`}
+                    onClick={() => handleFilterChange('Front End')}
+                >
+                    <small>Front End</small>
+                </button>
+                <button
+                    className={`btn btn-xs  text-second me-2 mb-2 ${valueFilter === 'Back End' ? 'btn-tag-active' : 'btn-tag'}`}
+                    onClick={() => handleFilterChange('Back End')}
+                >
+                    <small>Back End</small>
+                </button>
+                <button
+                    className={`btn btn-xs  text-second me-2 mb-2 ${valueFilter === 'JavaScript' ? 'btn-tag-active' : 'btn-tag'}`}
+                    onClick={() => handleFilterChange('JavaScript')}
+                >
+                    <small>JavaScript</small>
+                </button>
+                <button
+                    className={`btn btn-xs  text-second me-2 mb-2 ${valueFilter === 'MySQL' ? 'btn-tag-active' : 'btn-tag'}`}
+                    onClick={() => handleFilterChange('MySQL')}
+                >
+                    <small>MySQL</small>
+                </button>
+                <button
+                    className={`btn btn-xs  text-second me-2 mb-2 ${valueFilter === 'Mongo DB' ? 'btn-tag-active' : 'btn-tag'}`}
+                    onClick={() => handleFilterChange('Mongo DB')}
+                >
+                    <small>Mongo DB</small>
+                </button>
+                <button
+                    className={`btn btn-xs  text-second me-2 mb-2 ${valueFilter === 'Unity' ? 'btn-tag-active' : 'btn-tag'}`}
+                    onClick={() => handleFilterChange('Unity')}
+                >
+                    <small>Unity</small>
+                </button>
+                <button
+                    className={`btn btn-xs  text-second me-2 mb-2 ${valueFilter === 'Unreal Engine' ? 'btn-tag-active' : 'btn-tag'}`}
+                    onClick={() => handleFilterChange('Unreal Engine')}
+                >
+                    <small>Unreal Engine</small>
+                </button>
+                <button
+                    className={`btn btn-xs  text-second me-2 mb-2  ${valueFilter === 'Multimedia' ? 'btn-tag-active' : 'btn-tag'}`}
+                    onClick={() => handleFilterChange('Multimedia')}
+                >
+                    <small>Multimedia</small>
+                </button>
+                <button
+                    className={`btn btn-xs  text-second me-2 mb-2  ${valueFilter === 'Interactive Media' ? 'btn-tag-active' : 'btn-tag'}`}
+                    onClick={() => handleFilterChange('Interactive Media')}
+                >
+                    <small>Interactive Media</small>
+                </button>
+                <button
+                    className={`btn btn-xs  text-second me-2 mb-2 ${valueFilter === 'Design' ? 'btn-tag-active' : 'btn-tag'}`}
+                    onClick={() => handleFilterChange('Design')}
+                >
+                    <small>Design</small>
+                </button>
+                <button
+                    className={`btn btn-xs  text-second me-2 mb-2  ${valueFilter === 'UI/UX' ? 'btn-tag-active' : 'btn-tag'}`}
+                    onClick={() => handleFilterChange('UI/UX')}
+                >
+                    <small>UI/UX</small>
+                </button>
+
+            </div>
+            <div className="d-flex  flex-wrap mt-2">
 
                 {portofolio.map((item: { _id: string, title: string, desc: string, purpose: string, icon_company: string, cover: string, company: string, desc_company: string, date: string, slug: string, link: string, figma: string, github: string, software: string[], type: string[] }) => {
                     return (
