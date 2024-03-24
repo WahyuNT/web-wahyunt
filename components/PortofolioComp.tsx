@@ -41,6 +41,20 @@ export default function PortofolioComp() {
                 >
                     <small>All</small>
                 </button>
+
+                <button
+                    className={`btn btn-xs  text-second me-2 mb-2 ${valueFilter === 'game' ? 'btn-tag-active' : 'btn-tag'}`}
+                    onClick={() => handleFilterChange('game')}
+                >
+                    <small>Game</small>
+                </button>
+                <button
+                    className={`btn btn-xs  text-second me-2 mb-2 ${valueFilter === 'website' ? 'btn-tag-active' : 'btn-tag'}`}
+                    onClick={() => handleFilterChange('website')}
+                >
+                    <small>Website</small>
+                </button>
+
                 <button
                     className={`btn btn-xs  text-second me-2 mb-2 ${valueFilter === 'laravel' ? 'btn-tag-active' : 'btn-tag'}`}
                     onClick={() => handleFilterChange('laravel')}
@@ -119,6 +133,7 @@ export default function PortofolioComp() {
                 >
                     <small>Unreal Engine</small>
                 </button>
+
                 <button
                     className={`btn btn-xs  text-second me-2 mb-2  ${valueFilter === 'Multimedia' ? 'btn-tag-active' : 'btn-tag'}`}
                     onClick={() => handleFilterChange('Multimedia')}
