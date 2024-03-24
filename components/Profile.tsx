@@ -192,7 +192,7 @@ export default function Profile() {
                     <div className="card card-bg w-100 p-3">
                         <div className="d-flex justify-content-between align-items-center">
 
-                            <img src="https://avatars.githubusercontent.com/u/83133470?v=4" className="avatar-profile" alt="icon" />
+                            <img src="https://wahyunt.me/img/icon/foto-profil.jpg" className="avatar-profile" alt="icon" />
                             <div className="col  ms-2 d-flex flex-column">
                                 <h6 className="text-white fw-bold">Wahyu NT</h6>
                                 <div className="d-flex justify-content-start flex-wrap gap-1">
