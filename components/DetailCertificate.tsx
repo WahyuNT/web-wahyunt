@@ -10,6 +10,7 @@ export default function DetailCertificate() {
     const [certificate, setCertificate] = useState({ title: '', image: '', company: '', year: '', credential: '', file_name: '' }); // Ganti array dengan objek tunggal
 
     useEffect(() => {
+
         const fetchData = async () => {
             try {
                 if (slug) { // Pastikan slug tidak undefined
@@ -26,7 +27,6 @@ export default function DetailCertificate() {
     }, [slug]);
 
     return (
-
         <div className='p-2'>
             <div className="card-body  px-1" style={{ maxHeight: "100%" }}>
 
@@ -72,9 +72,9 @@ export default function DetailCertificate() {
                                     </li>
                                 )}
                             </ul>
-                            <div className="d-flex justify-content-center">
+                            {/* <div className="d-flex justify-content-center">
                                 <button className='btn btn-primary  mb-3 rounded-pill btn-xs text-dark px-3 py-2 '><i className="fa-solid fa-file-arrow-down me-1"></i>Download PDF</button>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
