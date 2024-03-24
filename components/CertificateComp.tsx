@@ -28,9 +28,9 @@ export default function CertificateComp() {
             <h4 className="text-utama mt-2 text-center"><b>Certificate</b></h4>
             <div className="d-flex  flex-wrap">
 
-                {certificate.map((item: {slug:string, image: string, title: string, company: string, year: string, credential: string, }) => {
+                {certificate.map((item: { slug: string, image: string, title: string, company: string, year: string, credential: string, }) => {
                     return (
-                        <div className="col-lg-4 col-12 mb-3 p-2">
+                        <div className="col-lg-4 col-12 mb-1 p-2">
                             <div className=" bg-transparent card h-100 card-glass card-porto pb-2">
                                 <div className="card bg-transparent  card-banner flex-column">
                                     <div className="card bg-transparent pt-3 px-3">

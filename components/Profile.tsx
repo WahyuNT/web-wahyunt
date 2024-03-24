@@ -165,9 +165,9 @@ export default function Profile() {
                                     <i className="fa-brands fa-discord fa-sm  "></i>
                                 </div>
                             </a> */}
-                            <a href="https://steamcommunity.com/id/wahyu_nt/" target='_blank' className='text-decoration-none'>
+                            <a href="https://play.google.com/store/apps/dev?id=7140720691173663103" target='_blank' className='text-decoration-none'>
                                 <div className="card-sosmed-mini d-flex justify-content-center align-items-center p-1">
-                                    <i className="fa-brands fa-steam fa-sm  "></i>
+                                    <i className="fa-brands fa-google-play fa-sm  "></i>
                                 </div>
                             </a>
                         </div>
@@ -196,28 +196,46 @@ export default function Profile() {
                             <div className="col  ms-2 d-flex flex-column">
                                 <h6 className="text-white fw-bold">Wahyu NT</h6>
                                 <div className="d-flex justify-content-start flex-wrap gap-1">
-                                    <div className="card-sosmed-mini d-flex justify-content-center align-items-center p-1">
-                                        <i className="fa-solid fa-envelope fa-xs  "></i>
-                                    </div>
-                                    <div className="card-sosmed-mini d-flex justify-content-center align-items-center p-1">
-                                        <i className="fa-brands fa-github fa-xs  "></i>
-                                    </div>
-                                    <div className="card-sosmed-mini d-flex justify-content-center align-items-center p-1">
-                                        <i className="fa-brands fa-linkedin fa-xs  "></i>
-                                    </div>
-                                    <div className="card-sosmed-mini d-flex justify-content-center align-items-center p-1">
-                                        <i className="fa-brands fa-instagram fa-xs  "></i>
-                                    </div>
-                                    <div className="card-sosmed-mini d-flex justify-content-center align-items-center p-1">
-                                        <i className="fa-brands fa-facebook fa-xs  "></i>
-                                    </div>
-                                    <div className="card-sosmed-mini d-flex justify-content-center align-items-center p-1">
-                                        <i className="fa-brands fa-dribbble fa-xs  "></i>
-                                    </div>
-                                    <div className="card-sosmed-mini d-flex justify-content-center align-items-center p-1">
-                                        <i className="fa-brands fa-youtube fa-xs  "></i>
-                                    </div>
-
+                                    <a href="mailto:wahyuntx28@gmail.com" target='_blank' className='text-decoration-none'>
+                                        <div className="card-sosmed-mini d-flex justify-content-center align-items-center p-1">
+                                            <i className="fa-solid fa-envelope fa-xs  "></i>
+                                        </div>
+                                    </a>
+                                    <a href="https://github.com/WahyuNT/" target='_blank' className='text-decoration-none'>
+                                        <div className="card-sosmed-mini d-flex justify-content-center align-items-center p-1">
+                                            <i className="fa-brands fa-github fa-xs  "></i>
+                                        </div>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/wahyu-nusantara-53026a229/" target='_blank' className='text-decoration-none'>
+                                        <div className="card-sosmed-mini d-flex justify-content-center align-items-center p-1">
+                                            <i className="fa-brands fa-linkedin fa-xs  "></i>
+                                        </div>
+                                    </a>
+                                    <a href="https://www.instagram.com/wahyu_nt/" target='_blank' className='text-decoration-none'>
+                                        <div className="card-sosmed-mini d-flex justify-content-center align-items-center p-1">
+                                            <i className="fa-brands fa-instagram fa-xs  "></i>
+                                        </div>
+                                    </a>
+                                    <a href="https://www.facebook.com/ntx28" target='_blank' className='text-decoration-none'>
+                                        <div className="card-sosmed-mini d-flex justify-content-center align-items-center p-1">
+                                            <i className="fa-brands fa-facebook fa-xs  "></i>
+                                        </div>
+                                    </a>
+                                    <a href="https://dribbble.com/wahyunt" target='_blank' className='text-decoration-none'>
+                                        <div className="card-sosmed-mini d-flex justify-content-center align-items-center p-1">
+                                            <i className="fa-brands fa-dribbble fa-xs  "></i>
+                                        </div>
+                                    </a>
+                                    <a href="https://www.youtube.com/channel/UClJgoKaadXYg1rU68KzVo2A" target='_blank' className='text-decoration-none'>
+                                        <div className="card-sosmed-mini d-flex justify-content-center align-items-center p-1">
+                                            <i className="fa-brands fa-youtube fa-xs  "></i>
+                                        </div>
+                                    </a>
+                                    <a href="https://play.google.com/store/apps/dev?id=7140720691173663103" target='_blank' className='text-decoration-none'>
+                                        <div className="card-sosmed-mini d-flex justify-content-center align-items-center p-1">
+                                            <i className="fa-brands fa-google-play fa-xs  "></i>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                             <div className="div">

@@ -45,17 +45,23 @@ export default function PortofolioComp() {
                     className={`btn btn-xs  text-second me-2 mb-2 ${valueFilter === 'laravel' ? 'btn-tag-active' : 'btn-tag'}`}
                     onClick={() => handleFilterChange('laravel')}
                 >
-                    <small>laravel</small>
+                    <small>Laravel</small>
                 </button>
                 <button
-                    className={`btn btn-xs  text-second me-2 mb-2 ${valueFilter === 'React JS' ? 'btn-tag-active' : 'btn-tag'}`}
-                    onClick={() => handleFilterChange('React JS')}
+                    className={`btn btn-xs  text-second me-2 mb-2 ${valueFilter === 'React_JS' ? 'btn-tag-active' : 'btn-tag'}`}
+                    onClick={() => handleFilterChange('React_JS')}
                 >
                     <small>React JS</small>
                 </button>
                 <button
-                    className={`btn btn-xs  text-second me-2 mb-2 ${valueFilter === 'ExpressJS' ? 'btn-tag-active' : 'btn-tag'}`}
-                    onClick={() => handleFilterChange('ExpressJS')}
+                    className={`btn btn-xs  text-second me-2 mb-2 ${valueFilter === 'Next_JS' ? 'btn-tag-active' : 'btn-tag'}`}
+                    onClick={() => handleFilterChange('Next_JS')}
+                >
+                    <small>Next JS</small>
+                </button>
+                <button
+                    className={`btn btn-xs  text-second me-2 mb-2 ${valueFilter === 'Express_JS' ? 'btn-tag-active' : 'btn-tag'}`}
+                    onClick={() => handleFilterChange('Express_JS')}
                 >
                     <small>ExpressJS</small>
                 </button>
@@ -72,8 +78,14 @@ export default function PortofolioComp() {
                     <small>Back End</small>
                 </button>
                 <button
-                    className={`btn btn-xs  text-second me-2 mb-2 ${valueFilter === 'JavaScript' ? 'btn-tag-active' : 'btn-tag'}`}
-                    onClick={() => handleFilterChange('JavaScript')}
+                    className={`btn btn-xs  text-second me-2 mb-2 ${valueFilter === 'bootstrap' ? 'btn-tag-active' : 'btn-tag'}`}
+                    onClick={() => handleFilterChange('bootstrap')}
+                >
+                    <small>Bootstrap</small>
+                </button>
+                <button
+                    className={`btn btn-xs  text-second me-2 mb-2 ${valueFilter === 'js' ? 'btn-tag-active' : 'btn-tag'}`}
+                    onClick={() => handleFilterChange('js')}
                 >
                     <small>JavaScript</small>
                 </button>
@@ -84,10 +96,16 @@ export default function PortofolioComp() {
                     <small>MySQL</small>
                 </button>
                 <button
-                    className={`btn btn-xs  text-second me-2 mb-2 ${valueFilter === 'Mongo DB' ? 'btn-tag-active' : 'btn-tag'}`}
-                    onClick={() => handleFilterChange('Mongo DB')}
+                    className={`btn btn-xs  text-second me-2 mb-2 ${valueFilter === 'Mongo' ? 'btn-tag-active' : 'btn-tag'}`}
+                    onClick={() => handleFilterChange('Mongo')}
                 >
                     <small>Mongo DB</small>
+                </button>
+                <button
+                    className={`btn btn-xs  text-second me-2 mb-2 ${valueFilter === 'csharp' ? 'btn-tag-active' : 'btn-tag'}`}
+                    onClick={() => handleFilterChange('csharp')}
+                >
+                    <small>C#</small>
                 </button>
                 <button
                     className={`btn btn-xs  text-second me-2 mb-2 ${valueFilter === 'Unity' ? 'btn-tag-active' : 'btn-tag'}`}
@@ -96,8 +114,8 @@ export default function PortofolioComp() {
                     <small>Unity</small>
                 </button>
                 <button
-                    className={`btn btn-xs  text-second me-2 mb-2 ${valueFilter === 'Unreal Engine' ? 'btn-tag-active' : 'btn-tag'}`}
-                    onClick={() => handleFilterChange('Unreal Engine')}
+                    className={`btn btn-xs  text-second me-2 mb-2 ${valueFilter === 'Unreal_Engine' ? 'btn-tag-active' : 'btn-tag'}`}
+                    onClick={() => handleFilterChange('Unreal_Engine')}
                 >
                     <small>Unreal Engine</small>
                 </button>

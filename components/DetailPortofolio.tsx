@@ -272,7 +272,7 @@ export default function DetailPortofolio() {
                 </div>
 
                 <small className='text-second '>Category :</small>
-                <div className="d-flex flex-wrap mt-1">
+                <div className="d-flex flex-wrap mt-1 mb-4">
                     {portofolio.type.map((typeItem) => (
 
 

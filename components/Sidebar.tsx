@@ -2,25 +2,30 @@ import React from 'react'
 import Link from "next/link";
 import { useState, useEffect } from 'react';
 
+
 export default function Sidebar() {
     const [isActive, setIsActive] = useState(false);
+    const [location, setLocation] = useState('');
 
     useEffect(() => {
         // Periksa apakah URL saat ini sama dengan href
-        setIsActive(window.location.pathname === "/");
+        const currentLocation = window.location.pathname;
+        setLocation(currentLocation);
+
 
     }, []);
 
     return (
         <div >
+
             <div className="d-flex align-items-start justify-content-center flex-wrap gap-3 ">
                 <div className="col d-flex justify-content-center align-items-start mb-1">
                     <Link href="/" className='text-decoration-none'>
-                        <button className='btn p-3 btn-icon d-flex flex-column'>
-                            <i className="fa-solid fa-user text-white   text-utama"></i>
+                        <button className={`btn p-3 btn-icon d-flex flex-column ${location === '/' ? 'text-utama' : 'text-white'}`}>
+                            <i className="fa-solid fa-user   "></i>
                             <small>
                                 <small>
-                                    <small className='text-utama'>About</small>
+                                    <small className=''>About</small>
                                 </small>
                             </small>
                         </button>
@@ -28,11 +33,11 @@ export default function Sidebar() {
                 </div>
                 <div className="col d-flex justify-content-center mb-1">
                     <Link href="/resume" className='text-decoration-none'>
-                        <button className='btn p-3 btn-icon d-flex flex-column' >
-                            <i className="fa-solid fa-briefcase text-white ${isActive ? 'text-utama' : ''}"></i>
+                        <button className={`btn p-3 btn-icon d-flex flex-column ${location === '/resume' ? 'text-utama' : 'text-white'}`}>
+                            <i className="fa-solid fa-briefcase "></i>
                             <small>
                                 <small>
-                                    <small className='text-white'>Resume</small>
+                                    <small className=''>Resume</small>
                                 </small>
                             </small>
                         </button>
@@ -40,11 +45,11 @@ export default function Sidebar() {
                 </div>
                 <div className="col d-flex justify-content-center mb-1">
                     <Link href="/portofolio" className='text-decoration-none'>
-                        <button className='btn p-3 btn-icon d-flex flex-column' >
-                            <i className="fa-solid fa-images text-white ${isActive ? 'text-utama' : ''}"></i>
+                        <button className={`btn p-3 btn-icon d-flex flex-column ${location === '/portofolio' ? 'text-utama' : 'text-white'}`}>
+                            <i className="fa-solid fa-images "></i>
                             <small>
                                 <small>
-                                    <small className='text-white'>Portofolio</small>
+                                    <small className=''>Portofolio</small>
                                 </small>
                             </small>
                         </button>
@@ -64,11 +69,11 @@ export default function Sidebar() {
                 </div> */}
                 <div className="col d-flex justify-content-center mb-1">
                     <Link href="/certificate" className='text-decoration-none'>
-                        <button className='btn p-3 btn-icon d-flex flex-column' >
-                            <i className="fa-solid fa-file-invoice text-white ${isActive ? 'text-utama' : ''}"></i>
+                        <button className={`btn p-3 btn-icon d-flex flex-column ${location === '/certificate' ? 'text-utama' : 'text-white'}`} >
+                            <i className="fa-solid fa-file-invoice"></i>
                             <small>
                                 <small>
-                                    <small className='text-white'>Certificate</small>
+                                    <small className=''>Certificate</small>
                                 </small>
                             </small>
                         </button>
@@ -76,11 +81,11 @@ export default function Sidebar() {
                 </div>
                 <div className="col d-flex justify-content-center mb-1">
                     <Link href="/award" className='text-decoration-none'>
-                        <button className='btn p-3 btn-icon d-flex flex-column' >
-                            <i className="fa-solid fa-award text-white ${isActive ? 'text-utama' : ''}"></i>
+                        <button className={`btn p-3 btn-icon d-flex flex-column ${location === '/award' ? 'text-utama' : 'text-white'}`} >
+                            <i className="fa-solid fa-award "></i>
                             <small>
                                 <small>
-                                    <small className='text-white'>Award</small>
+                                    <small className=''>Award</small>
                                 </small>
                             </small>
                         </button>

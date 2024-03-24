@@ -31,7 +31,7 @@ export default function AwardComp() {
             <div className="d-flex  flex-wrap">
                 {award.map((item: { title: string, cover: string, desc: string, icon_company: string, company: string, desc_company: string, date: string, slug: string }) => {
                     return (
-                        <div className="col-lg-4 col-12 mb-3 p-2">
+                        <div className="col-lg-4 col-12 mb-1 p-2">
                             <div className=" bg-transparent card h-100 card-glass card-porto pb-2">
                                 <div className="card bg-transparent card-body p-0 card-banner flex-column">
                                     <div className="card bg-transparent">
