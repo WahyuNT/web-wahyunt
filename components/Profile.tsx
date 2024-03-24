@@ -57,7 +57,7 @@ export default function Profile() {
 
                     <div className="card card-bg w-100 p-3">
                         <div className=" d-flex justify-content-center align-items-center mt-4">
-                            <img src="https://avatars.githubusercontent.com/u/83133470?v=4" className="avatar-profile" alt="icon" />
+                            <img src="/img/icon/foto-profil.jpg" className="avatar-profile" alt="icon" />
                         </div>
 
 
