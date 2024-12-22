@@ -12,7 +12,7 @@ export default function AbouteComp() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const responseAbout = await axios.get('https://portodb.wahyunt.me/api/about');
+                const responseAbout = await axios.get('https://portodb.wahyunt.me/api/about/');
                 setAbout(responseAbout.data.data);
 
                 const responseSkill = await axios.get('https://portodb.wahyunt.me/api/skill');
