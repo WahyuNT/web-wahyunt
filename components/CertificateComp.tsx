@@ -8,7 +8,7 @@ export default function CertificateComp() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const responseCertificate = await axios.get('https://portodb.wahyunt.me/api/certificate');
+                const responseCertificate = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/certificate`);
                 setCertificate(responseCertificate.data.data);
             } catch (error) {
                 console.error('Error fetching data:', error);

@@ -57,11 +57,11 @@ export default function DetailPortofolio() {
         const fetchData = async () => {
             try {
                 if (slug) { // Pastikan slug tidak undefined
-                    const responsePortofolio = await axios.get(`https://portodb.wahyunt.me/api/portofolio/detail/${slug}`);
+                    const responsePortofolio = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/portofolio/detail/${slug}`);
                     setPortofolio(responsePortofolio.data.data);
                     const id = responsePortofolio.data.data._id; // Mengambil _id dari responsePortofolio.data.data
                     if (id) {
-                        const responseImage = await axios.get(`https://portodb.wahyunt.me/api/portofolio/image/list/${id}`);
+                        const responseImage = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/portofolio/image/list/${id}`);
                         setImage(responseImage.data.data);
                     }
                 }

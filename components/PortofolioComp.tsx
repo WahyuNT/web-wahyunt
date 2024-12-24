@@ -15,7 +15,7 @@ export default function PortofolioComp() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const responsePortofolio = await axios.get(`https://portodb.wahyunt.me/api/portofolio/?keyword=${valueFilter}`);
+                const responsePortofolio = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/portofolio/?keyword=${valueFilter}`);
                 setPortofolio(responsePortofolio.data.data);
 
             } catch (error) {

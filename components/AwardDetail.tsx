@@ -51,11 +51,11 @@ export default function AwardDetail() {
         const fetchData = async () => {
             try {
                 if (slug) { // Pastikan slug tidak undefined
-                    const responseAward = await axios.get(`https://portodb.wahyunt.me/api/award/detail/${slug}`);
+                    const responseAward = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/award/detail/${slug}`);
                     setAward(responseAward.data.data);
                     const id = responseAward.data.data._id;
                     if (id) {
-                        const responseImage = await axios.get(`https://portodb.wahyunt.me/api/award/image/list/${id}`);
+                        const responseImage = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/award/image/list/${id}`);
                         setImage(responseImage.data.data);
                     }
                 }

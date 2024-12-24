@@ -14,7 +14,7 @@ export default function DetailCertificate() {
         const fetchData = async () => {
             try {
                 if (slug) { // Pastikan slug tidak undefined
-                    const responseCertificate = await axios.get(`https://portodb.wahyunt.me/api/certificate/detail/${slug}`);
+                    const responseCertificate = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/certificate/detail/${slug}`);
                     setCertificate(responseCertificate.data.data);
                     console.log(responseCertificate.data.data);
                 }

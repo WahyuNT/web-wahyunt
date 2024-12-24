@@ -6,7 +6,7 @@ export default function Profile() {
     const router = useRouter();
     const postDataDownload = async () => {
         try {
-            const response = await fetch(`https://portodb.wahyunt.me/api/presensi/post`, {
+            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/presensi/post`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -32,7 +32,7 @@ export default function Profile() {
         }
         const postData = async () => {
             try {
-                const response = await fetch(`https://portodb.wahyunt.me/api/presensi/post`, {
+                const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/presensi/post`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
