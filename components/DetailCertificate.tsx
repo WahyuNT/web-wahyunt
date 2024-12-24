@@ -51,7 +51,7 @@ export default function DetailCertificate() {
             <div className="d-flex  flex-wrap-reverse flex-lg-wrap   ">
                 <div className="col-lg col-12 col-sm-12  pe-lg-3">
                     <div className="card  bg-transparent ">
-                        <img src={certificate.image} className='w-100 certificate-image' alt="" />
+                        <img src={`${process.env.NEXT_PUBLIC_API_URL}/static/images/certificate/${certificate.image}`} className='w-100 certificate-image' alt="" />
                     </div>
                 </div>
                 <div className="col-lg-3 col-12 col-sm-12 mb-3">

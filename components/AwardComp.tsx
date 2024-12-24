@@ -54,7 +54,7 @@ export default function AwardComp() {
                       <div className="card bg-transparent card-body p-0 card-banner flex-column">
                         <div className="card bg-transparent">
                           <img
-                            src={item.cover}
+                            src={`${process.env.NEXT_PUBLIC_API_URL}/static/images/award/${item.cover}`}
                             className="cover-award mb-2"
                             alt=""
                           />
@@ -62,7 +62,7 @@ export default function AwardComp() {
                         <div className="d-flex justify-content-center ">
                           <div className="card bg-transparent ">
                             <img
-                              src={item.icon_company}
+                              src={`${process.env.NEXT_PUBLIC_API_URL}/static/images/award/${item.icon_company}`}
                               className="cover-ava-award "
                               alt=""
                             />
