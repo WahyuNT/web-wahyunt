@@ -52,7 +52,7 @@ export default function CertificateComp() {
                       <div className="card bg-transparent  card-banner flex-column">
                         <div className="card bg-transparent pt-3 px-3">
                           <img
-                            src={item.image}
+                            src={`https://portodb.wahyunt.me/static/images/certificate/${item.image}`}
                             className="cover-certificate mb-2"
                             alt=""
                           />
