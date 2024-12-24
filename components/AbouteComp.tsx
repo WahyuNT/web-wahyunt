@@ -11,23 +11,24 @@ export default function AbouteComp() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const responseAbout = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/about`);
+        const responseAbout = await axios.get(
+          `${process.env.NEXT_PUBLIC_API_URL}/api/about`
+        );
         setAbout(responseAbout.data.data);
 
         const responseSkill = await axios.get(
-          `${process.env.NEXT_PUBLIC_API_URL}/skill`
+          `${process.env.NEXT_PUBLIC_API_URL}/skills`
         );
         setSkill(responseSkill.data.data);
 
         const responseDoing = await axios.get(
-          `${process.env.NEXT_PUBLIC_API_URL}/doing`
+          `${process.env.NEXT_PUBLIC_API_URL}/doings`
         );
         setDoing(responseDoing.data.data);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
     };
-
 
     fetchData();
   }, []);
