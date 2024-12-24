@@ -11,7 +11,7 @@ export default function AwardComp() {
       try {
         setIsLoading(true);
         const responseAward = await axios.get(
-          `${process.env.NEXT_PUBLIC_API_URL}/api/award`
+          `${process.env.NEXT_PUBLIC_API_URL_IMAGE}/api/award`
         );
         setAward(responseAward.data.data);
       } catch (error) {
@@ -54,7 +54,7 @@ export default function AwardComp() {
                       <div className="card bg-transparent card-body p-0 card-banner flex-column">
                         <div className="card bg-transparent">
                           <img
-                            src={`${process.env.NEXT_PUBLIC_API_URL}/static/images/award/${item.cover}`}
+                            src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/static/images/award/${item.cover}`}
                             className="cover-award mb-2"
                             alt=""
                           />
@@ -62,7 +62,7 @@ export default function AwardComp() {
                         <div className="d-flex justify-content-center ">
                           <div className="card bg-transparent ">
                             <img
-                              src={`${process.env.NEXT_PUBLIC_API_URL}/static/images/award/${item.icon_company}`}
+                              src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/static/images/award/${item.icon_company}`}
                               className="cover-ava-award "
                               alt=""
                             />
