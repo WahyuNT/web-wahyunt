@@ -123,7 +123,7 @@ export default function DetailPortofolio() {
                               title="video"
                               width="auto"
                               height="218px"
-                              src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/static/images/portofolio/${img.video_link}`}
+                              src={img.video_link}
                             ></iframe>
                           </div>
                         </div>
