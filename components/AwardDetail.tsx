@@ -169,7 +169,7 @@ export default function AwardDetail() {
                               style={{ borderRadius: "8px" }}
                               title="video"
                               width="auto"
-                              height="218px"
+                              height="238px"
                               src={img.youtube}
                             ></iframe>
                           </div>
