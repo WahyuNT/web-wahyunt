@@ -132,7 +132,7 @@ export default function AwardDetail() {
               className="rounded-pill me-1"
             ></img>
           </div>
-          <div className=" d-flex align-items-start flex-column ps-1">
+          <div className=" d-flex align-items-start flex-column ps-lg-1">
             <small>
               <small className=" text-second mb-0">From :</small>
             </small>
@@ -141,62 +141,71 @@ export default function AwardDetail() {
         </div>
         <p className="text-second mt-1 mb-2 ms-3">{award.desc}</p>
       </div>
-
-      {isLoading ? (
-        <div className="d-flex justify-content-center">
-          <span className="loader mt-5 "></span>
-        </div>
-      ) : (
-        image &&
-        image.length > 0 && (
-          <div
-            className="row"
-            style={{ position: "relative" }}
-            data-masonry='{"percentPosition": true }'
-          >
-            {image.map((img: { file_name: string; youtube?: string }) => {
-              return (
-                <div
-                  style={{ position: "absolute" }}
-                  className="col-lg-6 col-12  mb-3"
-                  key={img.file_name}
-                >
-                  {img.youtube ? (
-                    <div className="px-1">
-                      <div className="bg-transparent card-glass p-2">
-                        <div className="card bg-transparent p-1">
-                          <iframe
-                            title="video"
-                            width="auto"
-                            height="218px"
-                            src={img.youtube}
-                          ></iframe>
-                        </div>
-                      </div>
-                    </div>
-                  ) : (
-                    <div className="px-1">
-                      <div className="bg-transparent card-glass p-2">
-                        <div className="card bg-transparent p-1 ">
-                          <Image
-                            src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/static/images/award/${img.file_name}`}
-                            alt="Deskripsi gambar"
-                            className="w-full h-auto object-cover"
-                            width={0}
-                            height={0}
-                            sizes="100vw"
-                            style={{ width: "100%", height: "auto" }}
-                          />{" "}
-                        </div>
-                      </div>
-                    </div>
-                  )}
-                </div>
-              );
-            })}
+      <div className="me-lg-3">
+        {isLoading ? (
+          <div className="d-flex justify-content-center">
+            <span className="loader mt-5 "></span>
           </div>
-        )
-      )}
+        ) : (
+          image &&
+          image.length > 0 && (
+            <div
+              className="row "
+              style={{ position: "relative" }}
+              data-masonry='{"percentPosition": true }'
+            >
+              {image.map((img: { file_name: string; youtube?: string }) => {
+                return (
+                  <div
+                    style={{ position: "absolute" }}
+                    className="col-lg-6 col-12 pe-0 mb-3"
+                    key={img.file_name}
+                  >
+                    {img.youtube ? (
+                      <div className="">
+                        <div className="bg-transparent card-glass p-2">
+                          <div className="card border-0 bg-transparent p-1">
+                            <iframe
+                              style={{ borderRadius: "8px" }}
+                              title="video"
+                              width="auto"
+                              height="218px"
+                              src={img.youtube}
+                            ></iframe>
+                          </div>
+                        </div>
+                      </div>
+                    ) : (
+                      <div className="">
+                        <div className="bg-transparent card-glass p-2">
+                          <div className="card border-0 bg-transparent p-1 ">
+                            <Image
+                              src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/static/images/award/${img.file_name}`}
+                              alt="Deskripsi gambar"
+                              className="w-full h-auto object-cover"
+                              width={0}
+                              height={0}
+                              blurDataURL={img.file_name}
+                              sizes="100vw"
+                              style={{
+                                width: "100%",
+                                height: "auto",
+                                objectFit: "cover",
+                                aspectRatio: "16/9",
+                                borderRadius: "8px",
+                              }}
+                            />{" "}
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          )
+        )}
+      </div>
     </div>
   );
 }
