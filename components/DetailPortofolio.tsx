@@ -265,7 +265,7 @@ export default function DetailPortofolio() {
 
                         <div className="avatar avatar-skill me-2 mb-2 pull-up" data-popup="tooltip-custom" data-bs-placement="top" aria-label="Blender" data-bs-original-title="Blender">
                             {/* <img src={software} className="rounded" alt="" /> */}
-                            <Image src={software} width={300} height={300} className="rounded" alt="skill" />
+                            <Image src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/static/images/skills/${software}`} width={300} height={300} className="rounded" alt="skill" />
                         </div>
                     ))}
 

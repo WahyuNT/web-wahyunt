@@ -84,7 +84,7 @@ export default function AbouteComp() {
             {skill.map((item: { icon: string }) => (
               <div className="avatar btn-icon avatar-skill me-2 mb-2">
                 <Image
-                  src={item.icon}
+                  src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/static/images/skills/${item.icon}`}
                   width={40}
                   height={40}
                   className="rounded"

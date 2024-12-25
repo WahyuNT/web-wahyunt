@@ -56,6 +56,7 @@ export default function PortofolioComp() {
           >
             <small>Game</small>
           </button>
+
           <button
             className={`btn btn-xs  text-second me-2 mb-2 ${
               valueFilter === "website" ? "btn-tag-active" : "btn-tag"
@@ -63,111 +64,6 @@ export default function PortofolioComp() {
             onClick={() => handleFilterChange("website")}
           >
             <small>Website</small>
-          </button>
-
-          <button
-            className={`btn btn-xs  text-second me-2 mb-2 ${
-              valueFilter === "laravel" ? "btn-tag-active" : "btn-tag"
-            }`}
-            onClick={() => handleFilterChange("laravel")}
-          >
-            <small>Laravel</small>
-          </button>
-          <button
-            className={`btn btn-xs  text-second me-2 mb-2 ${
-              valueFilter === "React_JS" ? "btn-tag-active" : "btn-tag"
-            }`}
-            onClick={() => handleFilterChange("React_JS")}
-          >
-            <small>React JS</small>
-          </button>
-          <button
-            className={`btn btn-xs  text-second me-2 mb-2 ${
-              valueFilter === "Next_JS" ? "btn-tag-active" : "btn-tag"
-            }`}
-            onClick={() => handleFilterChange("Next_JS")}
-          >
-            <small>Next JS</small>
-          </button>
-          <button
-            className={`btn btn-xs  text-second me-2 mb-2 ${
-              valueFilter === "Express_JS" ? "btn-tag-active" : "btn-tag"
-            }`}
-            onClick={() => handleFilterChange("Express_JS")}
-          >
-            <small>ExpressJS</small>
-          </button>
-          <button
-            className={`btn btn-xs  text-second me-2 mb-2 ${
-              valueFilter === "Front End" ? "btn-tag-active" : "btn-tag"
-            }`}
-            onClick={() => handleFilterChange("Front End")}
-          >
-            <small>Front End</small>
-          </button>
-          <button
-            className={`btn btn-xs  text-second me-2 mb-2 ${
-              valueFilter === "Back End" ? "btn-tag-active" : "btn-tag"
-            }`}
-            onClick={() => handleFilterChange("Back End")}
-          >
-            <small>Back End</small>
-          </button>
-          <button
-            className={`btn btn-xs  text-second me-2 mb-2 ${
-              valueFilter === "bootstrap" ? "btn-tag-active" : "btn-tag"
-            }`}
-            onClick={() => handleFilterChange("bootstrap")}
-          >
-            <small>Bootstrap</small>
-          </button>
-          <button
-            className={`btn btn-xs  text-second me-2 mb-2 ${
-              valueFilter === "js" ? "btn-tag-active" : "btn-tag"
-            }`}
-            onClick={() => handleFilterChange("js")}
-          >
-            <small>JavaScript</small>
-          </button>
-          <button
-            className={`btn btn-xs  text-second me-2 mb-2 ${
-              valueFilter === "MySQL" ? "btn-tag-active" : "btn-tag"
-            }`}
-            onClick={() => handleFilterChange("MySQL")}
-          >
-            <small>MySQL</small>
-          </button>
-          <button
-            className={`btn btn-xs  text-second me-2 mb-2 ${
-              valueFilter === "Mongo" ? "btn-tag-active" : "btn-tag"
-            }`}
-            onClick={() => handleFilterChange("Mongo")}
-          >
-            <small>Mongo DB</small>
-          </button>
-          <button
-            className={`btn btn-xs  text-second me-2 mb-2 ${
-              valueFilter === "csharp" ? "btn-tag-active" : "btn-tag"
-            }`}
-            onClick={() => handleFilterChange("csharp")}
-          >
-            <small>C#</small>
-          </button>
-          <button
-            className={`btn btn-xs  text-second me-2 mb-2 ${
-              valueFilter === "Unity" ? "btn-tag-active" : "btn-tag"
-            }`}
-            onClick={() => handleFilterChange("Unity")}
-          >
-            <small>Unity</small>
-          </button>
-          <button
-            className={`btn btn-xs  text-second me-2 mb-2 ${
-              valueFilter === "Unreal_Engine" ? "btn-tag-active" : "btn-tag"
-            }`}
-            onClick={() => handleFilterChange("Unreal_Engine")}
-          >
-            <small>Unreal Engine</small>
           </button>
 
           <button
@@ -185,22 +81,6 @@ export default function PortofolioComp() {
             onClick={() => handleFilterChange("Interactive Media")}
           >
             <small>Interactive Media</small>
-          </button>
-          <button
-            className={`btn btn-xs  text-second me-2 mb-2 ${
-              valueFilter === "Design" ? "btn-tag-active" : "btn-tag"
-            }`}
-            onClick={() => handleFilterChange("Design")}
-          >
-            <small>Design</small>
-          </button>
-          <button
-            className={`btn btn-xs  text-second me-2 mb-2  ${
-              valueFilter === "UI/UX" ? "btn-tag-active" : "btn-tag"
-            }`}
-            onClick={() => handleFilterChange("UI/UX")}
-          >
-            <small>UI/UX</small>
           </button>
         </div>
         {isLoading ? (
@@ -234,7 +114,7 @@ export default function PortofolioComp() {
                         <div className="card bg-transparent  card-banner flex-column">
                           <div className="card bg-transparent">
                             <img
-                              src={item.cover}
+                              src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/static/images/portofolio/${item.cover}`}
                               className="cover-image img-porto"
                               alt=""
                             />
@@ -271,7 +151,7 @@ export default function PortofolioComp() {
                                       {item.software.map((softwareItem) => (
                                         // <img src={softwareItem}  className="cover-skill-mini " alt="" />
                                         <Image
-                                          src={softwareItem}
+                                          src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/static/images/skills/${softwareItem}`}
                                           width={15}
                                           height={15}
                                           className="rounded"
@@ -297,7 +177,7 @@ export default function PortofolioComp() {
                             <div className="col-2   d-flex align-items-center justify-content-center me-2">
                               <div className="card bg-transparent ">
                                 <img
-                                  src={item.icon_company}
+                                  src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/static/images/portofolio/${item.icon_company}`}
                                   className="cover-ava "
                                   alt=""
                                 />
