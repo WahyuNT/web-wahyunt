@@ -323,8 +323,8 @@ body {
 .detail-porto-image {
 	border-radius: 10px !important;
 	height: auto !important;
-	/* width: auto; */
-	/* aspect-ratio: 16/9; */
+	aspect-ratio: 16/9;
+	width: 100% !important;
 	object-fit: cover;
 }
 

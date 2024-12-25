@@ -2,10 +2,8 @@
 import "../styles/custom.css";
 // import "../styles/globals.css";
 
-
 import type { AppProps } from "next/app";
 import Head from "next/head";
-
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -32,9 +30,12 @@ function MyApp({ Component, pageProps }: AppProps) {
           href="https://unpkg.com/aos@2.3.1/dist/aos.css"
           rel="stylesheet"
         />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
           integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-          crossOrigin="anonymous" />
+          crossOrigin="anonymous"
+        />
         <link
           rel="stylesheet"
           type="text/css"
@@ -46,18 +47,23 @@ function MyApp({ Component, pageProps }: AppProps) {
           type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
         />
-
-
       </Head>
       {/* BootstrapJS  */}
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossOrigin="anonymous" async />
-
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossOrigin="anonymous"
+        async
+      />
+      <script
+        src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+        crossOrigin="anonymous"
+        async
+      ></script>
       <Component {...pageProps} />
-
     </>
   );
 }
-
 
 export default MyApp;

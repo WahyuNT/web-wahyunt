@@ -7,6 +7,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Console } from "console";
+import Masonry from "masonry-layout";
+import Image from "next/image";
 
 export default function AwardDetail() {
   var settings = {
@@ -44,6 +46,7 @@ export default function AwardDetail() {
 
   const router = useRouter();
   const { slug } = router.query;
+  const [isLoading, setIsLoading] = useState(true);
   const [award, setAward] = useState({
     _id: "",
     title: "",
@@ -58,10 +61,20 @@ export default function AwardDetail() {
   const [image, setImage] = useState([]);
 
   useEffect(() => {
+    if (image.length > 0 && typeof window !== "undefined") {
+      const Masonry = require("masonry-layout");
+      new Masonry(".row", {
+        itemSelector: ".col-lg-6",
+        percentPosition: true,
+      });
+    }
+  }, [image]);
+
+  useEffect(() => {
     const fetchData = async () => {
       try {
+        setIsLoading(true);
         if (slug) {
-          // Pastikan slug tidak undefined
           const responseAward = await axios.get(
             `${process.env.NEXT_PUBLIC_API_URL}/api/award/detail/${slug}`
           );
@@ -78,6 +91,8 @@ export default function AwardDetail() {
         }
       } catch (error) {
         console.error("Error fetching data:", error);
+      } finally {
+        setIsLoading(false);
       }
     };
 
@@ -106,7 +121,7 @@ export default function AwardDetail() {
           </div>
         </div>
       </div>
-     
+
       <div className="card card-glass bg-transparent mb-3 mt-1 p-1">
         <div className="d-flex justify-content-start px-3 py-2">
           <div className="d-flex align-items-center">
@@ -127,12 +142,25 @@ export default function AwardDetail() {
         <p className="text-second mt-1 mb-2 ms-3">{award.desc}</p>
       </div>
 
-      <div className=" slider-container px-4">
-        {image && image.length > 0 && (
-          <Slider {...settings}>
+      {isLoading ? (
+        <div className="d-flex justify-content-center">
+          <span className="loader mt-5 "></span>
+        </div>
+      ) : (
+        image &&
+        image.length > 0 && (
+          <div
+            className="row"
+            style={{ position: "relative" }}
+            data-masonry='{"percentPosition": true }'
+          >
             {image.map((img: { file_name: string; youtube?: string }) => {
               return (
-                <div key={img.file_name}>
+                <div
+                  style={{ position: "absolute" }}
+                  className="col-lg-6 col-12  mb-3"
+                  key={img.file_name}
+                >
                   {img.youtube ? (
                     <div className="px-1">
                       <div className="bg-transparent card-glass p-2">
@@ -149,12 +177,16 @@ export default function AwardDetail() {
                   ) : (
                     <div className="px-1">
                       <div className="bg-transparent card-glass p-2">
-                        <div className="card bg-transparent p-1">
-                          <img
+                        <div className="card bg-transparent p-1 ">
+                          <Image
                             src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/static/images/award/${img.file_name}`}
-                            className="detail-porto-image"
-                            alt=""
-                          />
+                            alt="Deskripsi gambar"
+                            className="w-full h-auto object-cover"
+                            width={0}
+                            height={0}
+                            sizes="100vw"
+                            style={{ width: "100%", height: "auto" }}
+                          />{" "}
                         </div>
                       </div>
                     </div>
@@ -162,18 +194,9 @@ export default function AwardDetail() {
                 </div>
               );
             })}
-          </Slider>
-        )}
-      </div>
-
-      {/* <div className="d-flex">
-                <div className="col-12 ">
-                    <div className="card  bg-transparent ">
-                        <img src={award.cover} className='w-100 h-100 award-image' alt="" />
-                    </div>
-                </div>
-
-            </div> */}
+          </div>
+        )
+      )}
     </div>
   );
 }
