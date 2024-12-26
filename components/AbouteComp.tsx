@@ -57,7 +57,7 @@ export default function AbouteComp() {
           </div>
         ) : (
           about.map((item: { desc: string }) => {
-            return <p className="text-second ps-3">{item.desc}</p>;
+            return <p className="text-second text-lg-start text-center ps-3">{item.desc}</p>;
           })
         )}
 
@@ -79,7 +79,7 @@ export default function AbouteComp() {
             <span className="loader"></span>
           </div>
         ) : (
-          <div className="d-flex justify-content-start flex-wrap ps-3">
+          <div className="d-flex justify-content-center justify-content-lg-start flex-wrap ps-3">
             {skill.map((item: { icon: string }) => (
               <div className="avatar btn-icon avatar-skill me-2 mb-2">
                 <Image
