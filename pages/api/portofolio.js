@@ -1,17 +1,11 @@
-import fs from 'fs';
-import path from 'path';
-
 export default function handler(req, res) {
     if (req.method !== 'GET') {
         return res.status(405).json({ message: 'Method not allowed' });
     }
 
     try {
-        // Mendapatkan path absolut ke file JSON
-        const filePath = path.join(process.cwd(), 'lib', 'portofolio.json');
-
-        // Membaca file JSON
-        const jsonData = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+        // Mengakses file JSON langsung melalui public URL
+        const jsonData = require('../../public/json/portofolio.json');
 
         // Mengirim response
         res.status(200).json(jsonData);
