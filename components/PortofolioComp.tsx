@@ -19,7 +19,8 @@ export default function PortofolioComp() {
         const responsePortofolio = await axios.get(
           `${process.env.NEXT_PUBLIC_API_URL}/api/portofolio/?keyword=${valueFilter}`
         );
-        setPortofolio(responsePortofolio.data.data);
+        console.log(responsePortofolio.data);
+        setPortofolio(responsePortofolio.data);
       } catch (error) {
         console.error("Error fetching data:", error);
       } finally {
@@ -89,7 +90,7 @@ export default function PortofolioComp() {
           </div>
         ) : (
           <div className="d-flex  flex-wrap mt-2">
-            {portofolio.map(
+            {portofolio?.map(
               (item: {
                 _id: string;
                 title: string;
