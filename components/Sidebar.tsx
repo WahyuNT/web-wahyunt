@@ -98,7 +98,7 @@ export default function Sidebar() {
                 location === "/awards" ? "text-utama" : "text-white"
               }`}
             >
-              <i className="fa-solid fa-awards "></i>
+              <i className="fa-solid fa-award "></i>
               <small>
                 <small>
                   <small className="">Award</small>
