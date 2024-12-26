@@ -107,7 +107,8 @@ export default function Sidebar() {
             </button>
           </Link>
         </div>
-        <div className="col d-flex justify-content-center mb-1">
+        
+        {/* <div className="col d-flex justify-content-center mb-1">
           <Link href="/cv" className="text-decoration-none">
             <button
               className={`btn p-3 btn-icon d-flex flex-column ${
@@ -122,7 +123,7 @@ export default function Sidebar() {
               </small>
             </button>
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );
