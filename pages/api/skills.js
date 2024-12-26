@@ -7,8 +7,8 @@ export default async function handler(req, res) {
   const db = client.db("web_wahyunt");
   switch (req.method) {
     case "GET":
-      const allPosts = await db.collection("abouts").find({}).toArray();
+      const allPosts = await db.collection("skills").find({}).toArray();
       res.json({ status: 200, data: allPosts });
       break;
-  }
+  } 
 }

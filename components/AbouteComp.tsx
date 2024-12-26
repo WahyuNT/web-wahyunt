@@ -14,7 +14,7 @@ export default function AbouteComp() {
       try {
         setIsLoading(true);
         const responseAbout = await axios.get(
-          `${process.env.NEXT_PUBLIC_API_URL}/api/posts`
+          `${process.env.NEXT_PUBLIC_API_URL}/api/about`
         );
         setAbout(responseAbout.data.data);
 
