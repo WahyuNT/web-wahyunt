@@ -1,5 +1,5 @@
 // app/api/portfolio/route.js
-import portfolioData from '../../../public/json/portofolio.json';
+import portfolioData from '../../../lib/json/portofolio.json';
 
 export async function GET() {
     try {
