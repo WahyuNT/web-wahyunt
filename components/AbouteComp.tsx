@@ -12,7 +12,7 @@ export default function AbouteComp() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        setIsLoading(true);
+        // setIsLoading(true);
         const responseAbout = await axios.get(
           `${process.env.NEXT_PUBLIC_API_URL}/api/about`
         );
@@ -29,9 +29,10 @@ export default function AbouteComp() {
         setDoing(responseDoing.data.data);
       } catch (error) {
         console.error("Error fetching data:", error);
-      } finally {
-        setIsLoading(false);
       }
+      // finally {
+      //   setIsLoading(false);
+      // }
     };
 
     fetchData();
@@ -51,15 +52,17 @@ export default function AbouteComp() {
             </b>
           </h4>
         </div>
-        {isLoading ? (
+        {/* {isLoading ? (
           <div className="d-flex justify-content-center">
             <span className="loader"></span>
           </div>
         ) : (
-          about.map((item: { desc: string }) => {
-            return <p className="text-second ps-3">{item.desc}</p>;
-          })
-        )}
+         
+        )} */}
+
+        {about.map((item: { desc: string }) => {
+          return <p className="text-second ps-3">{item.desc}</p>;
+        })}
 
         <div className="d-flex justify-content-start mb-3">
           <div
