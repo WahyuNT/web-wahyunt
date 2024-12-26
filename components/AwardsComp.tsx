@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 export default function AwardComp() {
-  const [award, setAward] = useState([]);
+  const [awards, setAward] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -11,7 +11,7 @@ export default function AwardComp() {
       try {
         setIsLoading(true);
         const responseAward = await axios.get(
-          `${process.env.NEXT_PUBLIC_API_URL_IMAGE}/api/award`
+          `${process.env.NEXT_PUBLIC_API_URL_IMAGE}/api/awards`
         );
         setAward(responseAward.data.data);
       } catch (error) {
@@ -29,7 +29,7 @@ export default function AwardComp() {
       <div className="card-body  px-1" style={{ maxHeight: "100%" }}>
         <div className="d-flex"></div>
         <h4 className="text-utama mt-2 text-center">
-          <b>Award</b>
+          <b>Awards</b>
         </h4>
         {isLoading ? (
           <div className="d-flex justify-content-center">
@@ -37,7 +37,7 @@ export default function AwardComp() {
           </div>
         ) : (
           <div className="d-flex  flex-wrap">
-            {award.map(
+            {awards.map(
               (item: {
                 title: string;
                 cover: string;
@@ -54,16 +54,16 @@ export default function AwardComp() {
                       <div className="card bg-transparent card-body p-0 card-banner flex-column">
                         <div className="card bg-transparent">
                           <img
-                            src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/static/images/award/${item.cover}`}
-                            className="cover-award mb-2"
+                            src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/images/awards/${item.cover}`}
+                            className="cover-awards mb-2"
                             alt=""
                           />
                         </div>
                         <div className="d-flex justify-content-center ">
                           <div className="card bg-transparent ">
                             <img
-                              src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/static/images/award/${item.icon_company}`}
-                              className="cover-ava-award "
+                              src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/images/awards/${item.icon_company}`}
+                              className="cover-ava-awards "
                               alt=""
                             />
                           </div>
@@ -88,7 +88,7 @@ export default function AwardComp() {
                           <hr className=" mb-0  mt-1 border-2 color-border" />
                         </div>
                         <Link
-                          href={`/award/detail/${item.slug}`}
+                          href={`/awards/detail/${item.slug}`}
                           className="text-decoration-none"
                         >
                           <div className=" text-link">

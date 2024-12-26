@@ -1,0 +1,52 @@
+{
+    "data": [
+        {
+            "__v": 0,
+            "createdAt": "Tue, 19 Mar 2024 16:46:54 GMT",
+            "desc": "As a web developer, I utilize Laravel, React, Express.js, PHP, and JavaScript in my projects.",
+            "icon": "fa-solid fa-globe",
+            "title": "Web Developer",
+            "updatedAt": "Tue, 19 Mar 2024 16:46:54 GMT"
+        },
+        {
+            "__v": 0,
+            "createdAt": "Tue, 19 Mar 2024 16:53:26 GMT",
+            "desc": "I have experience in developing games using the Unity and Unreal game engines.",
+            "icon": "fa-solid fa-puzzle-piece",
+            "title": "Game Developer",
+            "updatedAt": "Tue, 19 Mar 2024 16:53:26 GMT"
+        },
+        {
+            "__v": 0,
+            "createdAt": "Tue, 19 Mar 2024 16:55:00 GMT",
+            "desc": "I am proficient in creating mobile and web application interfaces using Figma or other design software",
+            "icon": "fa-solid fa-pen-nib",
+            "title": "UI/UX",
+            "updatedAt": "Tue, 19 Mar 2024 16:55:00 GMT"
+        },
+        {
+            "__v": 0,
+            "createdAt": "Tue, 19 Mar 2024 16:58:39 GMT",
+            "desc": "I am experienced in graphic design using various software such as CorelDraw, Photoshop, Figma, and others.",
+            "icon": "fa-solid fa-palette",
+            "title": "Graphic Design",
+            "updatedAt": "Tue, 19 Mar 2024 16:58:39 GMT"
+        },
+        {
+            "__v": 0,
+            "createdAt": "Tue, 19 Mar 2024 17:02:01 GMT",
+            "desc": "I have skills in 3D modeling using software such as Blender and Autodesk Maya.",
+            "icon": "fa-solid fa-cubes",
+            "title": "3D Modelling",
+            "updatedAt": "Tue, 19 Mar 2024 17:02:01 GMT"
+        },
+        {
+            "__v": 0,
+            "createdAt": "Tue, 19 Mar 2024 17:02:49 GMT",
+            "desc": "I sometimes create motion graphic videos using Adobe Premiere Pro and After Effects.",
+            "icon": "fa-solid fa-film",
+            "title": "Motion Graphic",
+            "updatedAt": "Tue, 19 Mar 2024 17:02:49 GMT"
+        }
+    ]
+}

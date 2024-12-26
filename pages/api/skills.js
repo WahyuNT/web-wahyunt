@@ -1,14 +1,13 @@
-// posts.js
+export default function handler(req, res) {
+  if (req.method !== 'GET') {
+    return res.status(405).json({ message: 'Method not allowed' });
+  }
 
-import clientPromise from "../../lib/mongodb";
+  try {
+    const jsonData = require('../../public/json/skills.json');
 
-export default async function handler(req, res) {
-  const client = await clientPromise;
-  const db = client.db("web_wahyunt");
-  switch (req.method) {
-    case "GET":
-      const allPosts = await db.collection("skills").find({}).toArray();
-      res.json({ status: 200, data: allPosts });
-      break;
-  } 
+    res.status(200).json(jsonData);
+  } catch (error) {
+    res.status(500).json({ message: 'Error reading portfolio data' });
+  }
 }

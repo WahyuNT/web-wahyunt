@@ -92,13 +92,13 @@ export default function Sidebar() {
           </Link>
         </div>
         <div className="col d-flex justify-content-center mb-1">
-          <Link href="/award" className="text-decoration-none">
+          <Link href="/awards" className="text-decoration-none">
             <button
               className={`btn p-3 btn-icon d-flex flex-column ${
-                location === "/award" ? "text-utama" : "text-white"
+                location === "/awards" ? "text-utama" : "text-white"
               }`}
             >
-              <i className="fa-solid fa-award "></i>
+              <i className="fa-solid fa-awards "></i>
               <small>
                 <small>
                   <small className="">Award</small>

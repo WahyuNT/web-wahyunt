@@ -73,7 +73,7 @@ export default function DetailPortofolio() {
             `${process.env.NEXT_PUBLIC_API_URL}/api/portofolio/detail/${slug}`
           );
           setPortofolio(responsePortofolio.data.data);
-          const id = responsePortofolio.data.data._id; 
+          const id = responsePortofolio.data.data._id;
           if (id) {
             const responseImage = await axios.get(
               `${process.env.NEXT_PUBLIC_API_URL}/api/portofolio/image/list/${id}`
@@ -133,7 +133,7 @@ export default function DetailPortofolio() {
                         <div className="bg-transparent card-glass p-2">
                           <div className="card bg-transparent p-1">
                             <img
-                              src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/static/images/portofolio/${img.image_name}`}
+                              src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/images/portofolio/${img.image_name}`}
                               className="detail-porto-image"
                               alt=""
                             />
@@ -276,7 +276,7 @@ export default function DetailPortofolio() {
             >
               {/* <img src={software} className="rounded" alt="" /> */}
               <Image
-                src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/static/images/skills/${software}`}
+                src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/images/skills/${software}`}
                 width={300}
                 height={300}
                 className="rounded"

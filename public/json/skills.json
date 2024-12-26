@@ -1,0 +1,184 @@
+{
+    "data": [
+        {
+            "_id": "65f9b2b3e214d24d6f95f864",
+            "title": "Adobe After Effects",
+            "icon": "ae.png",
+            "desc": "",
+            "type": "Multimedia",
+            "createdAt": "2024-03-19T15:43:47.285Z",
+            "updatedAt": "2024-03-19T15:43:47.285Z",
+            "__v": 0
+        },
+        {
+            "_id": "65f9b64de214d24d6f95f8aa",
+            "title": "Blender",
+            "icon": "blender.png",
+            "desc": "",
+            "type": "3D",
+            "createdAt": "2024-03-19T15:59:09.277Z",
+            "updatedAt": "2024-03-19T15:59:09.277Z",
+            "__v": 0
+        },
+        {
+            "_id": "65f9b98ae763f86593f77674",
+            "title": "CorelDRAW",
+            "icon": "CorelDraw.png",
+            "desc": "",
+            "type": "Graphic Design",
+            "createdAt": "2024-03-19T16:12:58.501Z",
+            "updatedAt": "2024-03-19T16:12:58.501Z",
+            "__v": 0
+        },
+        {
+            "_id": "65f9ba85e763f86593f7767a",
+            "title": "Express.js",
+            "icon": "express_JS.png",
+            "desc": "",
+            "type": "Back End",
+            "createdAt": "2024-03-19T16:17:09.637Z",
+            "updatedAt": "2024-03-19T16:17:09.637Z",
+            "__v": 0
+        },
+        {
+            "_id": "65f9baa6e763f86593f7767c",
+            "title": "Figma",
+            "icon": "figma.png",
+            "desc": "",
+            "type": "Graphic Design",
+            "createdAt": "2024-03-19T16:17:42.424Z",
+            "updatedAt": "2024-03-19T16:17:42.424Z",
+            "__v": 0
+        },
+        {
+            "_id": "65f9bb26e763f86593f77680",
+            "title": "JavaScript",
+            "icon": "js.png",
+            "desc": "",
+            "type": "Programming",
+            "createdAt": "2024-03-19T16:19:50.922Z",
+            "updatedAt": "2024-03-19T16:19:50.922Z",
+            "__v": 0
+        },
+        {
+            "_id": "65f9bb42e763f86593f77682",
+            "title": "Laravel",
+            "icon": "laravel.png",
+            "desc": "",
+            "type": "Full Stack",
+            "createdAt": "2024-03-19T16:20:18.016Z",
+            "updatedAt": "2024-03-19T16:20:18.016Z",
+            "__v": 0
+        },
+        {
+            "_id": "65f9bb6ee763f86593f77684",
+            "title": "MongoDB",
+            "icon": "mongo.png",
+            "desc": "",
+            "type": "Database",
+            "createdAt": "2024-03-19T16:21:02.904Z",
+            "updatedAt": "2024-03-19T16:21:02.904Z",
+            "__v": 0
+        },
+        {
+            "_id": "65f9bb87e763f86593f77686",
+            "title": "Adobe Premiere Pro",
+            "icon": "premiere.png",
+            "desc": "",
+            "type": "Multimedia",
+            "createdAt": "2024-03-19T16:21:27.981Z",
+            "updatedAt": "2024-03-19T16:21:27.981Z",
+            "__v": 0
+        },
+        {
+            "_id": "65f9bb9ce763f86593f77688",
+            "title": "Adobe Photoshop",
+            "icon": "photoshop.png",
+            "desc": "",
+            "type": "Graphic Design",
+            "createdAt": "2024-03-19T16:21:48.781Z",
+            "updatedAt": "2024-03-19T16:21:48.781Z",
+            "__v": 0
+        },
+        {
+            "_id": "65f9bc03e763f86593f7768a",
+            "title": "React JS",
+            "icon": "React_JS.png",
+            "desc": "",
+            "type": "Front End",
+            "createdAt": "2024-03-19T16:23:31.811Z",
+            "updatedAt": "2024-03-19T16:23:31.811Z",
+            "__v": 0
+        },
+        {
+            "_id": "65f9bc92e763f86593f7768e",
+            "title": "Unreal Engine",
+            "icon": "Unreal_Engine.png",
+            "desc": "",
+            "type": "Game Development",
+            "createdAt": "2024-03-19T16:25:54.309Z",
+            "updatedAt": "2024-03-19T16:25:54.309Z",
+            "__v": 0
+        },
+        {
+            "_id": "65f9bc9ee763f86593f77690",
+            "title": "Unity Engine",
+            "icon": "unity.png",
+            "desc": "",
+            "type": "Game Development",
+            "createdAt": "2024-03-19T16:26:06.355Z",
+            "updatedAt": "2024-03-19T16:26:06.355Z",
+            "__v": 0
+        },
+        {
+            "_id": "65f9bcbde763f86593f77692",
+            "title": "Vue.js",
+            "icon": "vue.png",
+            "desc": "",
+            "type": "Front End",
+            "createdAt": "2024-03-19T16:26:37.492Z",
+            "updatedAt": "2024-03-19T16:26:37.492Z",
+            "__v": 0
+        },
+        {
+            "_id": "65fc849b495c2002d2d110a8",
+            "title": "MySQL",
+            "icon": "mysql.jpg",
+            "desc": "",
+            "type": "Database",
+            "createdAt": "2024-03-21T19:03:55.905Z",
+            "updatedAt": "2024-03-21T19:03:55.905Z",
+            "__v": 0
+        },
+        {
+            "_id": "65fdd8cc0051ea2e72cc125e",
+            "title": "Bootstrap",
+            "icon": "bootstrap.png",
+            "desc": "",
+            "type": "Front End",
+            "createdAt": "2024-03-22T19:15:24.397Z",
+            "updatedAt": "2024-03-22T19:15:24.397Z",
+            "__v": 0
+        },
+        {
+            "_id": "65fe60a60051ea2e72cc129e",
+            "title": "C#",
+            "icon": "csharp.png",
+            "desc": "",
+            "type": "Game Development",
+            "createdAt": "2024-03-23T04:55:02.521Z",
+            "updatedAt": "2024-03-23T04:55:02.521Z",
+            "__v": 0
+        },
+        {
+            "_id": "660067910299ba8027d9e765",
+            "title": "Next JS",
+            "icon": "Next_JS.jpg",
+            "desc": "",
+            "type": "Front End",
+            "createdAt": "2024-03-24T17:49:05.115Z",
+            "updatedAt": "2024-03-24T17:49:05.115Z",
+            "__v": 0
+        }
+    ]
+}

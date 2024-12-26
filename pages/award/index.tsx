@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 import { width } from "@fortawesome/free-solid-svg-icons/fa0";
 import Profile from "@/components/Profile";
 import Sidebar from "@/components/Sidebar";
-import AwardComp from "@/components/AwardComp";
+import AwardComp from "@/components/AwardsComp";
 
 
 // import styles from "@/styles/Home.module.css";

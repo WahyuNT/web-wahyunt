@@ -4,7 +4,7 @@ export default function handler(req, res) {
     }
 
     try {
-        const jsonData = require('../../public/json/doing.json');
+        const jsonData = require('../../public/json/awards.json');
 
         res.status(200).json(jsonData);
     } catch (error) {

@@ -1,25 +1,13 @@
-import fs from "fs";
-import path from "path";
+export default function handler(req, res) {
+  if (req.method !== 'GET') {
+    return res.status(405).json({ message: 'Method not allowed' });
+  }
 
-export default async function handler(req, res) {
-  switch (req.method) {
-    case "GET":
-      // Path ke file JSON
-      const filePath = path.join(process.cwd(), "json", "portfolio.json");
+  try {
+    const jsonData = require('../../public/json/about.json');
 
-      try {
-        // Baca file JSON
-        const jsonData = fs.readFileSync(filePath, "utf8");
-        const data = JSON.parse(jsonData);
-
-        res.status(200).json({ status: 200, data });
-      } catch (error) {
-        res.status(500).json({ status: 500, message: "Error reading JSON file" });
-      }
-      break;
-
-    default:
-      res.status(405).json({ message: "Method not allowed" });
-      break;
+    res.status(200).json(jsonData);
+  } catch (error) {
+    res.status(500).json({ message: 'Error reading portfolio data' });
   }
 }

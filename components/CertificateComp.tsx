@@ -52,7 +52,7 @@ export default function CertificateComp() {
                       <div className="card bg-transparent  card-banner flex-column">
                         <div className="card bg-transparent pt-3 px-3">
                           <img
-                            src={`${process.env.NEXT_PUBLIC_API_URL}/static/images/certificate/${item.image}`}
+                            src={`${process.env.NEXT_PUBLIC_API_URL}/images/certificate/${item.image}`}
                             className="cover-certificate mb-2"
                             alt=""
                           />

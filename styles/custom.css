@@ -236,7 +236,7 @@ body {
 	border-radius: 15px;
 }
 
-.award-image {
+.awards-image {
 	object-fit: cover !important;
 	border-radius: 15px;
 	height: 100% !important;
@@ -250,7 +250,7 @@ body {
 	}
 }
 
-.award-image-box {
+.awards-image-box {
 	object-fit: cover !important;
 	border-radius: 15px;
 	aspect-ratio: 1/1;
@@ -337,7 +337,7 @@ body {
 	object-fit: cover;
 }
 
-.cover-award {
+.cover-awards {
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
 	width: auto;
@@ -379,7 +379,7 @@ body {
 	border-radius: 3px;
 }
 
-.cover-ava-award {
+.cover-ava-awards {
 	aspect-ratio: 1/1;
 	object-fit: cover;
 	border-radius: 100%;

@@ -29,8 +29,7 @@ export default function AbouteComp() {
         setDoing(responseDoing.data.data);
       } catch (error) {
         console.error("Error fetching data:", error);
-      }
-      finally {
+      } finally {
         setIsLoading(false);
       }
     };
@@ -57,11 +56,9 @@ export default function AbouteComp() {
             <span className="loader"></span>
           </div>
         ) : (
-          
-                  about.map((item: { desc: string }) => {
-                    return <p className="text-second ps-3">{item.desc}</p>;
-                  })
-         
+          about.map((item: { desc: string }) => {
+            return <p className="text-second ps-3">{item.desc}</p>;
+          })
         )}
 
         <div className="d-flex justify-content-start mb-3">
@@ -77,20 +74,26 @@ export default function AbouteComp() {
             </h4>
           </div>
         </div>
+        {isLoading ? (
+          <div className="d-flex justify-content-center">
+            <span className="loader"></span>
+          </div>
+        ) : (
+          <div className="d-flex justify-content-start flex-wrap ps-3">
+            {skill.map((item: { icon: string }) => (
+              <div className="avatar btn-icon avatar-skill me-2 mb-2">
+                <Image
+                  src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/images/skills/${item.icon}`}
+                  width={40}
+                  height={40}
+                  className="rounded"
+                  alt="skill"
+                />
+              </div>
+            ))}
+          </div>
+        )}
 
-        <div className="d-flex justify-content-start flex-wrap ps-3">
-          {skill.map((item: { icon: string }) => (
-            <div className="avatar btn-icon avatar-skill me-2 mb-2">
-              <Image
-                src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/static/images/skills/${item.icon}`}
-                width={40}
-                height={40}
-                className="rounded"
-                alt="skill"
-              />
-            </div>
-          ))}
-        </div>
         <div className="d-flex justify-content-start mb-3 mt-3">
           <div
             className="card me-2 color-utama"
@@ -105,33 +108,43 @@ export default function AbouteComp() {
             </h4>
           </div>
         </div>
-        <div className="d-flex justify-content-start flex-wrap ps-3">
-          {doing.map((item: { title: string; icon: string; desc: string }) => {
-            return (
-              <div className="col-lg-4 col-sm-6 col-12 pe-2 mb-2">
-                <div className="card-glass h-100">
-                  <div className="meta">
-                    <div className="p-3">
-                      <div className="d-flex ">
-                        <div className="col-2 ">
-                          <i className={`fa-xl ${item.icon} text-utama`}></i>
-                        </div>
-                        <div className="col d-flex align-items-start flex-wrap">
-                          <h6 className="text-white fw-bold mb-0 ">
-                            {item.title}
-                          </h6>
-                          <small className="text-second text-wrap">
-                            {item.desc}
-                          </small>
+        {isLoading ? (
+          <div className="d-flex justify-content-center">
+            <span className="loader"></span>
+          </div>
+        ) : (
+          <div className="d-flex justify-content-start flex-wrap ps-3">
+            {doing.map(
+              (item: { title: string; icon: string; desc: string }) => {
+                return (
+                  <div className="col-lg-4 col-sm-6 col-12 pe-2 mb-2">
+                    <div className="card-glass h-100">
+                      <div className="meta">
+                        <div className="p-3">
+                          <div className="d-flex ">
+                            <div className="col-2 ">
+                              <i
+                                className={`fa-xl ${item.icon} text-utama`}
+                              ></i>
+                            </div>
+                            <div className="col d-flex align-items-start flex-wrap">
+                              <h6 className="text-white fw-bold mb-0 ">
+                                {item.title}
+                              </h6>
+                              <small className="text-second text-wrap">
+                                {item.desc}
+                              </small>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            );
-          })}
-        </div>
+                );
+              }
+            )}
+          </div>
+        )}
       </div>
     </div>
   );

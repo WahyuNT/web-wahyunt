@@ -1,0 +1,88 @@
+{
+    "data": [
+        {
+            "__v": 0,
+            "awards_image": [],
+            "company": "AMIKOM University Yogyakarta",
+            "cover": "Wisudawan terbaik.jpg",
+            "createdAt": "Wed, 20 Mar 2024 07:54:05 GMT",
+            "date": "Tue, 27 Feb 2024 00:00:00 GMT",
+            "desc": "With a GPA of 3.99 out of 4.00, I was awardsed the title of Best Bachelor's Degree Graduate during the 89th graduation period.",
+            "desc_company": "",
+            "icon_company": "logo-amikom.png",
+            "slug": "best-bachelors-degree-graduate",
+            "title": "Best Bachelor's Degree Graduate",
+            "updatedAt": "Wed, 20 Mar 2024 07:54:05 GMT"
+        },
+        {
+            "__v": 0,
+            "awards_image": [],
+            "company": "Exhibition TI 2023",
+            "cover": "botb game.jpg",
+            "createdAt": "Thu, 21 Mar 2024 05:39:08 GMT",
+            "date": "Tue, 01 Aug 2023 00:00:00 GMT",
+            "desc": "Winning the Best of the Best Game at the Exhibition TI 2023 with the game titled Prism Odyssey",
+            "desc_company": "",
+            "icon_company": "1710999548233.png",
+            "slug": "best-of-the-best-game",
+            "title": "Best ot the Best Game",
+            "updatedAt": "Thu, 21 Mar 2024 05:39:08 GMT"
+        },
+        {
+            "__v": 0,
+            "awards_image": [],
+            "company": "Exhibition TI 2023",
+            "cover": "best_digital_concept_art.jpg",
+            "createdAt": "Thu, 21 Mar 2024 06:07:47 GMT",
+            "date": "Tue, 01 Aug 2023 00:00:00 GMT",
+            "desc": "Winning the Best Digital Concept Art at the Exhibition TI 2023 with the game titled Prism Odyssey.",
+            "desc_company": "",
+            "icon_company": "1711001267718.png",
+            "slug": "best-digital-concept-art",
+            "title": "Best Digital Concept Art",
+            "updatedAt": "Thu, 21 Mar 2024 06:07:47 GMT"
+        },
+        {
+            "__v": 0,
+            "awards_image": [],
+            "company": "Exhibition TI 2023",
+            "cover": "best_idea_gkm.jpg",
+            "createdAt": "Thu, 21 Mar 2024 06:09:39 GMT",
+            "date": "Tue, 01 Aug 2023 00:00:00 GMT",
+            "desc": "Winning the Best Idea & Concept of Modelling at the Exhibition TI 2023 with the game titled Prism Odyssey.",
+            "desc_company": "",
+            "icon_company": "1711001379275.png",
+            "slug": "best-idea-and-concept-of-modelling",
+            "title": "Best Idea & Concept of Modelling",
+            "updatedAt": "Thu, 21 Mar 2024 06:09:39 GMT"
+        },
+        {
+            "__v": 0,
+            "awards_image": [],
+            "company": "Amicta 2023",
+            "cover": "Amicta Juara 2_Wahyu Nusantara.png",
+            "createdAt": "Thu, 21 Mar 2024 06:16:03 GMT",
+            "date": "Sat, 15 Jul 2023 00:00:00 GMT",
+            "desc": "Securing the second place at the AMICTA Amikom 2023 event for interactive media and AR/VR",
+            "desc_company": "",
+            "icon_company": "logo-amicta.png",
+            "slug": "2nd-winner-interactive-media-and-arvr",
+            "title": "2nd Winner Interactive Media and AR/VR",
+            "updatedAt": "Thu, 21 Mar 2024 06:16:03 GMT"
+        },
+        {
+            "__v": 0,
+            "awards_image": [],
+            "company": "BOIM Amikom 2022",
+            "cover": "Pemenang Boim Astral_Wahyu Nusantara.png",
+            "createdAt": "Thu, 21 Mar 2024 06:26:00 GMT",
+            "date": "Sun, 20 Mar 2022 00:00:00 GMT",
+            "desc": "Winning the Best Gameplay nomination at BOIM AMIKOM 2022 with the game titled Astral",
+            "desc_company": "",
+            "icon_company": "logo boim 2022.png",
+            "slug": "best-gameplay-boim-amikom-2022",
+            "title": "Best Gameplay BOIM AMIKOM 2022",
+            "updatedAt": "Thu, 21 Mar 2024 06:26:00 GMT"
+        }
+    ]
+}

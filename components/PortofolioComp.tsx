@@ -19,8 +19,8 @@ export default function PortofolioComp() {
         const responsePortofolio = await axios.get(
           `${process.env.NEXT_PUBLIC_API_URL}/api/portofolio/?keyword=${valueFilter}`
         );
-        console.log(responsePortofolio.data);
-        setPortofolio(responsePortofolio.data);
+        console.log(responsePortofolio.data.data);
+        setPortofolio(responsePortofolio.data.data);
       } catch (error) {
         console.error("Error fetching data:", error);
       } finally {
@@ -115,11 +115,11 @@ export default function PortofolioComp() {
                         <div className="card bg-transparent  card-banner flex-column">
                           <div className="card bg-transparent">
                             <img
-                              src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/static/images/portofolio/${item.cover}`}
+                              src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/images/portofolio/${item.cover}`}
                               className="cover-image img-porto"
                               alt=""
                             />
-
+                           
                             <div className="overlay-visit   position-absolute  start-50  translate-middle-x">
                               <a
                                 href="https://fontawesome.com/icons/arrow-up-right-from-square?f=classic&s=solid"
@@ -152,7 +152,7 @@ export default function PortofolioComp() {
                                       {item.software.map((softwareItem) => (
                                         // <img src={softwareItem}  className="cover-skill-mini " alt="" />
                                         <Image
-                                          src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/static/images/skills/${softwareItem}`}
+                                          src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/images/skills/${softwareItem}`}
                                           width={15}
                                           height={15}
                                           className="rounded"
@@ -178,7 +178,7 @@ export default function PortofolioComp() {
                             <div className="col-2   d-flex align-items-center justify-content-center me-2">
                               <div className="card bg-transparent ">
                                 <img
-                                  src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/static/images/portofolio/${item.icon_company}`}
+                                  src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/images/portofolio/${item.icon_company}`}
                                   className="cover-ava "
                                   alt=""
                                 />

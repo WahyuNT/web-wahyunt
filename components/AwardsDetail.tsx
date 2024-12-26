@@ -47,7 +47,7 @@ export default function AwardDetail() {
   const router = useRouter();
   const { slug } = router.query;
   const [isLoading, setIsLoading] = useState(true);
-  const [award, setAward] = useState({
+  const [awards, setAward] = useState({
     _id: "",
     title: "",
     desc: "",
@@ -76,14 +76,14 @@ export default function AwardDetail() {
         setIsLoading(true);
         if (slug) {
           const responseAward = await axios.get(
-            `${process.env.NEXT_PUBLIC_API_URL}/api/award/detail/${slug}`
+            `${process.env.NEXT_PUBLIC_API_URL}/api/awards/detail/${slug}`
           );
           setAward(responseAward.data.data);
           const id = responseAward.data.data._id;
 
           if (id) {
             const responseImage = await axios.get(
-              `${process.env.NEXT_PUBLIC_API_URL}/api/award/image/list/${id}`
+              `${process.env.NEXT_PUBLIC_API_URL}/api/awards/image/list/${id}`
             );
             setImage(responseImage.data.data);
             // console.log(responseImage.data.data);
@@ -103,7 +103,7 @@ export default function AwardDetail() {
     <div className="p-2">
       <div className="card-body  px-1" style={{ maxHeight: "100%" }}>
         <div className="d-flex align-items-center justify-content-start mb-0">
-          <Link href="/award">
+          <Link href="/awards">
             <button className="btn card-sosmed btn-icon me-2 text-utama">
               <i className="fa-solid fa-chevron-left"></i>
             </button>
@@ -113,7 +113,7 @@ export default function AwardDetail() {
               <div className="card h-100 bg-transparent card-border px-3">
                 <div className="d-flex justify-content-center align-align-items-center">
                   <h5 className="text-utama my-1">
-                    <b>{award.title}</b>
+                    <b>{awards.title}</b>
                   </h5>
                 </div>
               </div>
@@ -126,7 +126,7 @@ export default function AwardDetail() {
         <div className="d-flex justify-content-start px-3 py-2">
           <div className="d-flex align-items-center">
             <img
-              src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/static/images/award/${award.icon_company}`}
+              src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/images/awards/${awards.icon_company}`}
               style={{ width: "40px", height: "40px" }}
               alt="skill"
               className="rounded-pill me-1"
@@ -136,10 +136,10 @@ export default function AwardDetail() {
             <small>
               <small className=" text-second mb-0">From :</small>
             </small>
-            <small className="text-white ">{award.company}</small>
+            <small className="text-white ">{awards.company}</small>
           </div>
         </div>
-        <p className="text-second mt-1 mb-2 ms-3">{award.desc}</p>
+        <p className="text-second mt-1 mb-2 ms-3">{awards.desc}</p>
       </div>
       <div className="me-lg-3">
         {isLoading ? (
@@ -180,7 +180,7 @@ export default function AwardDetail() {
                         <div className="bg-transparent card-glass p-2">
                           <div className="card border-0 bg-transparent p-1 ">
                             <Image
-                              src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/static/images/award/${img.file_name}`}
+                              src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/images/awards/${img.file_name}`}
                               alt="Deskripsi gambar"
                               className="w-full h-auto object-cover"
                               width={0}

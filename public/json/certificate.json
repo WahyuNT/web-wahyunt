@@ -1,0 +1,100 @@
+{
+    "data": [
+        {
+            "__v": 0,
+            "company": "Microsoft, Kartu Prakerja, and Mereka",
+            "createdAt": "Wed, 20 Mar 2024 05:54:08 GMT",
+            "credential": "",
+            "file_name": "AzureAI.pdf",
+            "image": "AzureAI.png",
+            "slug": "microsoft-azure-ai-fundamentals",
+            "title": "Microsoft Azure AI Fundamentals",
+            "updatedAt": "Wed, 20 Mar 2024 05:54:08 GMT",
+            "year": "February 2024"
+        },
+        {
+            "__v": 0,
+            "company": "Badan Nasional Sertifikat Profesi (BNSP)",
+            "createdAt": "Wed, 20 Mar 2024 06:16:10 GMT",
+            "credential": "62090 2166 4 0069254 2023",
+            "file_name": "BNSP Multimedia Madya_Wahyu Nusantara.pdf",
+            "image": "BNSP Multimedia Madya_Wahyu Nusantara.jpg",
+            "slug": "desainer-multimedia-madya",
+            "title": "Desainer Multimedia Madya",
+            "updatedAt": "Wed, 20 Mar 2024 06:16:10 GMT",
+            "year": "October 2023 – October 2026"
+        },
+        {
+            "__v": 0,
+            "company": "Badan Nasional Sertifikat Profesi (BNSP)",
+            "createdAt": "Wed, 20 Mar 2024 06:17:40 GMT",
+            "credential": "59112 2166 0000297 2023",
+            "file_name": "BNSP 3D Low Poly_Wahyu Nusantara.pdf",
+            "image": "BNSP 3D Low Poly_Wahyu Nusantara.jpg",
+            "slug": "3d-low-poly-model-artist",
+            "title": "3D Low Poly Model Artist",
+            "updatedAt": "Wed, 20 Mar 2024 06:17:40 GMT",
+            "year": "August 2023 – August 2026"
+        },
+        {
+            "__v": 0,
+            "company": "Badan Nasional Sertifikat Profesi (BNSP)",
+            "createdAt": "Wed, 20 Mar 2024 06:18:26 GMT",
+            "credential": "59111 2654 02 0 0000196 2023",
+            "file_name": "BNSP Video Editor_Wahyu Nusantara.pdf",
+            "image": "BNSP Video Editor_Wahyu Nusantara.png",
+            "slug": "video-editor",
+            "title": "Video Editor",
+            "updatedAt": "Wed, 20 Mar 2024 06:18:26 GMT",
+            "year": "August 2023 – August 2026"
+        },
+        {
+            "__v": 0,
+            "company": "Badan Nasional Sertifikat Profesi (BNSP)",
+            "createdAt": "Wed, 20 Mar 2024 06:19:25 GMT",
+            "credential": "59112 2166 0 0004320 2023",
+            "file_name": "BNSP Animasi_Wahyu Nusantara.pdf",
+            "image": "BNSP Animasi_Wahyu Nusantara.png",
+            "slug": "creating-3d-animation-movement",
+            "title": "Creating 3D Animation Movement",
+            "updatedAt": "Wed, 20 Mar 2024 06:19:25 GMT",
+            "year": "March 2023 – March 2026"
+        },
+        {
+            "__v": 0,
+            "company": "Dicoding",
+            "createdAt": "Wed, 20 Mar 2024 06:23:38 GMT",
+            "credential": "4EXG5OGNDXRL",
+            "file_name": "Memulai Pemrograman dengan Dart_Wahyu Nusantara.pdf",
+            "image": "Memulai Pemrograman dengan Dart_Wahyu Nusantara.png",
+            "slug": "memulai-pemrograman-dengan-dart",
+            "title": "Memulai Pemrograman dengan Dart",
+            "updatedAt": "Wed, 20 Mar 2024 06:23:38 GMT",
+            "year": "August 2022 – August 2025"
+        },
+        {
+            "__v": 0,
+            "company": "Dicoding",
+            "createdAt": "Wed, 20 Mar 2024 06:29:12 GMT",
+            "credential": "JMZVGJ0KRZN9",
+            "file_name": "Belajar Membuat Aplikasi Flutter untuk Pemula_Wahyu Nusantara.pdf",
+            "image": "Belajar Membuat Aplikasi Flutter untuk Pemula_Wahyu Nusantara.png",
+            "slug": "belajar-membuat-aplikasi-flutter-untuk-pemula",
+            "title": "Belajar Membuat Aplikasi Flutter untuk Pemula",
+            "updatedAt": "Wed, 20 Mar 2024 06:29:12 GMT",
+            "year": "August 2022 – August 2025"
+        },
+        {
+            "__v": 0,
+            "company": "Dicoding",
+            "createdAt": "Wed, 20 Mar 2024 06:36:30 GMT",
+            "credential": "MRZMD4OLNZYQ",
+            "file_name": "Belajar Membuat Aplikasi Back-End untuk Pemula dengan Google Cloud_Wahyu Nusantara.pdf",
+            "image": "Belajar Membuat Aplikasi Back-End untuk Pemula dengan Google Cloud_Wahyu Nusantara.png",
+            "slug": "belajar-membuat-aplikasi-back-end-untuk-pemula-dengan-google-cloud",
+            "title": "Belajar Membuat Aplikasi Back-End untuk Pemula dengan Google Cloud",
+            "updatedAt": "Wed, 20 Mar 2024 06:36:30 GMT",
+            "year": "Juni 2022 – June 2025"
+        }
+    ]
+}
