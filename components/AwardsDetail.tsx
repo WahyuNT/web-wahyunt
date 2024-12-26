@@ -74,19 +74,19 @@ export default function AwardDetail() {
     const fetchData = async () => {
       try {
         setIsLoading(true);
+
         if (slug) {
           const responseAward = await axios.get(
             `${process.env.NEXT_PUBLIC_API_URL}/api/awards/detail/${slug}`
           );
           setAward(responseAward.data.data);
           const id = responseAward.data.data._id;
-
+          console.log(id);
           if (id) {
             const responseImage = await axios.get(
               `${process.env.NEXT_PUBLIC_API_URL}/api/awards/image/list/${id}`
             );
             setImage(responseImage.data.data);
-            // console.log(responseImage.data.data);
           }
         }
       } catch (error) {

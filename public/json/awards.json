@@ -2,12 +2,13 @@
     "data": [
         {
             "__v": 0,
-            "awards_image": [],
+            "_id": "65fa961dd2be41bc76d56f9c",
+            "award_image": [],
             "company": "AMIKOM University Yogyakarta",
             "cover": "Wisudawan terbaik.jpg",
             "createdAt": "Wed, 20 Mar 2024 07:54:05 GMT",
             "date": "Tue, 27 Feb 2024 00:00:00 GMT",
-            "desc": "With a GPA of 3.99 out of 4.00, I was awardsed the title of Best Bachelor's Degree Graduate during the 89th graduation period.",
+            "desc": "With a GPA of 3.99 out of 4.00, I was awarded the title of Best Bachelor's Degree Graduate during the 89th graduation period.",
             "desc_company": "",
             "icon_company": "logo-amikom.png",
             "slug": "best-bachelors-degree-graduate",
@@ -16,7 +17,8 @@
         },
         {
             "__v": 0,
-            "awards_image": [],
+            "_id": "65fbc7fc7d353fe6f71b675d",
+            "award_image": [],
             "company": "Exhibition TI 2023",
             "cover": "botb game.jpg",
             "createdAt": "Thu, 21 Mar 2024 05:39:08 GMT",
@@ -30,7 +32,8 @@
         },
         {
             "__v": 0,
-            "awards_image": [],
+            "_id": "65fbceb37d353fe6f71b67cb",
+            "award_image": [],
             "company": "Exhibition TI 2023",
             "cover": "best_digital_concept_art.jpg",
             "createdAt": "Thu, 21 Mar 2024 06:07:47 GMT",
@@ -44,7 +47,8 @@
         },
         {
             "__v": 0,
-            "awards_image": [],
+            "_id": "65fbcf237d353fe6f71b67ce",
+            "award_image": [],
             "company": "Exhibition TI 2023",
             "cover": "best_idea_gkm.jpg",
             "createdAt": "Thu, 21 Mar 2024 06:09:39 GMT",
@@ -58,7 +62,8 @@
         },
         {
             "__v": 0,
-            "awards_image": [],
+            "_id": "65fbd0a37d353fe6f71b67d1",
+            "award_image": [],
             "company": "Amicta 2023",
             "cover": "Amicta Juara 2_Wahyu Nusantara.png",
             "createdAt": "Thu, 21 Mar 2024 06:16:03 GMT",
@@ -72,7 +77,8 @@
         },
         {
             "__v": 0,
-            "awards_image": [],
+            "_id": "65fbd2f87d353fe6f71b67d4",
+            "award_image": [],
             "company": "BOIM Amikom 2022",
             "cover": "Pemenang Boim Astral_Wahyu Nusantara.png",
             "createdAt": "Thu, 21 Mar 2024 06:26:00 GMT",
