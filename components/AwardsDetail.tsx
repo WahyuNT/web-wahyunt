@@ -81,9 +81,12 @@ export default function AwardDetail() {
           );
           setAward(responseAward.data.data);
           const id = responseAward.data.data._id;
-          console.log(id);
+
           if (id) {
             const responseImage = await axios.get(
+              `${process.env.NEXT_PUBLIC_API_URL}/api/awards/image/list/${id}`
+            );
+            console.log(
               `${process.env.NEXT_PUBLIC_API_URL}/api/awards/image/list/${id}`
             );
             setImage(responseImage.data.data);
@@ -179,6 +182,7 @@ export default function AwardDetail() {
                       <div className="">
                         <div className="bg-transparent card-glass p-2">
                           <div className="card border-0 bg-transparent p-1 ">
+                           
                             <Image
                               src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/images/awards/${img.file_name}`}
                               alt="Deskripsi gambar"

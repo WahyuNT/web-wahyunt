@@ -7,14 +7,14 @@ export default function handler(req, res) {
         const { slug } = req.query; // Ambil parameter slug dari URL
         const jsonData = require('../../../../public/json/certificate.json');
 
-        const portfolioDetail = jsonData.data.find(item => item.slug === slug);
+        const certificateDetail = jsonData.data.find(item => item.slug === slug);
 
-        if (!portfolioDetail) {
-            return res.status(404).json({ message: 'Portfolio not found' });
+        if (!certificateDetail) {
+            return res.status(404).json({ message: 'certificate not found' });
         }
 
-        res.status(200).json({ "data": portfolioDetail });
+        res.status(200).json({ "data": certificateDetail });
     } catch (error) {
-        res.status(500).json({ message: 'Error reading portfolio data' });
+        res.status(500).json({ message: 'Error reading certificate data' });
     }
 }
