@@ -4,7 +4,7 @@ export default function handler(req, res) {
     }
 
     try {
-        const { awardid } = req.query; // Ambil parameter awardid dari URL
+        const { awardid } = req.query;
         const jsonData = require('../../../../../public/json/awardimages.json');
 
         const awardImagesDetail = jsonData.data.filter(item => item.awardid === awardid);

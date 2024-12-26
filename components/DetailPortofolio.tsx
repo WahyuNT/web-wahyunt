@@ -74,6 +74,7 @@ export default function DetailPortofolio() {
           );
           setPortofolio(responsePortofolio.data.data);
           const id = responsePortofolio.data.data._id;
+          console.log(responsePortofolio.data.data);
           if (id) {
             const responseImage = await axios.get(
               `${process.env.NEXT_PUBLIC_API_URL}/api/portofolio/image/list/${id}`
