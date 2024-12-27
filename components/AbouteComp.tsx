@@ -2,6 +2,7 @@ import { width } from "@fortawesome/free-solid-svg-icons/fa0";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Image from "next/image";
+import { Tooltip, Button } from "@nextui-org/react";
 
 export default function AbouteComp() {
   const [about, setAbout] = useState([]);
@@ -57,7 +58,11 @@ export default function AbouteComp() {
           </div>
         ) : (
           about.map((item: { desc: string }) => {
-            return <p className="text-second text-lg-start text-center ps-3">{item.desc}</p>;
+            return (
+              <p className="text-second text-lg-start text-center ps-3">
+                {item.desc}
+              </p>
+            );
           })
         )}
 
@@ -80,15 +85,17 @@ export default function AbouteComp() {
           </div>
         ) : (
           <div className="d-flex justify-content-center justify-content-lg-start flex-wrap ps-3">
-            {skill.map((item: { icon: string }) => (
+            {skill.map((item: { icon: string; title: string }) => (
               <div className="avatar btn-icon avatar-skill me-2 mb-2">
-                <Image
-                  src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/images/skills/${item.icon}`}
-                  width={40}
-                  height={40}
-                  className="rounded"
-                  alt="skill"
-                />
+                <Tooltip className="text-second" content={item.title}>
+                  <Image
+                    src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/images/skills/${item.icon}`}
+                    width={40}
+                    height={40}
+                    className="rounded"
+                    alt="skill"
+                  />
+                </Tooltip>
               </div>
             ))}
           </div>

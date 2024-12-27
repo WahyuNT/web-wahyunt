@@ -62,6 +62,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         async
       ></script>
       <Component {...pageProps} />
+   
     </>
   );
 }

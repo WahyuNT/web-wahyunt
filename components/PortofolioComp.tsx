@@ -119,7 +119,7 @@ export default function PortofolioComp() {
                               className="cover-image img-porto"
                               alt=""
                             />
-                           
+
                             <div className="overlay-visit   position-absolute  start-50  translate-middle-x">
                               <a
                                 href="https://fontawesome.com/icons/arrow-up-right-from-square?f=classic&s=solid"
@@ -150,7 +150,6 @@ export default function PortofolioComp() {
                                   <div className="card-body p-1">
                                     <div className="d-flex gap-2 px-2 py-1">
                                       {item.software.map((softwareItem) => (
-                                        // <img src={softwareItem}  className="cover-skill-mini " alt="" />
                                         <Image
                                           src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/images/skills/${softwareItem}`}
                                           width={15}
