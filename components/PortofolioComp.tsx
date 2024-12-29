@@ -66,6 +66,14 @@ export default function PortofolioComp() {
           >
             <small>Website (10)</small>
           </button>
+          <button
+            className={`btn btn-xs  text-second me-2 mb-2 ${
+              valueFilter === "mobile" ? "btn-tag-active" : "btn-tag"
+            }`}
+            onClick={() => handleFilterChange("mobile")}
+          >
+            <small>Mobile (5)</small>
+          </button>
 
           <button
             className={`btn btn-xs  text-second me-2 mb-2  ${

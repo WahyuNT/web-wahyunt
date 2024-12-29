@@ -30,8 +30,7 @@
                 "HTML CSS",
                 "Front End",
                 "Back End",
-                "Desktop",
-                "Mobile"
+                "Desktop"
             ],
             "updatedAt": "Thu, 21 Mar 2024 19:01:18 GMT"
         },
@@ -593,6 +592,35 @@
                 "Design"
             ],
             "updatedAt": "Thu, 18 Apr 2024 03:46:14 GMT"
+        },
+        {
+            "__v": 0,
+            "_id": "65fd1b594c27e89ddc611597",
+            "company": "EcoWatt",
+            "cover": "ecowatt_cover.png",
+            "createdAt": "Fri, 22 Mar 2024 05:47:05 GMT",
+            "date": "September 2024",
+            "desc": "The interactive media was developed using Unity and designed with CorelDRAW and Figma. This media aims to provide education about alternative energy. It includes materials, simulations, and quizzes.",
+            "desc_company": "",
+            "figma": "",
+            "github": "",
+            "icon_company": "ecowatt_icon.png",
+            "link": "https://www.ecowatt.fun/",
+            "purpose": "Alternative energy Interactive Media",
+            "slug": "ecowatt",
+            "software": [
+                "unity.png",
+                "CorelDraw.png",
+                "figma.png",
+                "c_Sharp.png"
+            ],
+            "title": "EcoWatt",
+            "type": [
+                "Website",
+                "WebGL",
+                "Interactive Media"
+            ],
+            "updatedAt": "Fri, 22 Mar 2024 05:47:05 GMT"
         }
     ]
 }
