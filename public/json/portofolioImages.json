@@ -1059,6 +1059,79 @@
             "sort": "6",
             "updatedAt": "Thu, 18 Apr 2024 03:52:49 GMT",
             "video_link": ""
+        },
+        {
+            "__v": 0,
+            "_id": "67717c129fa6aacffd559f46",
+            "createdAt": "Thu, 18 Apr 2024 03:52:49 GMT",
+            "image_name": "home_prolintas.png",
+            "portofolio": "67716f989fa6aacffd559f44",
+            "sort": "1",
+            "updatedAt": "Thu, 18 Apr 2024 03:52:49 GMT",
+            "video_link": ""
+        },
+        {
+            "__v": 0,
+            "_id": "67717c519fa6aacffd559f47",
+            "createdAt": "Thu, 18 Apr 2024 03:52:49 GMT",
+            "image_name": "track_prolintas.png",
+            "portofolio": "67716f989fa6aacffd559f44",
+            "sort": "2",
+            "updatedAt": "Thu, 18 Apr 2024 03:52:49 GMT",
+            "video_link": ""
+        },
+
+        {
+            "__v": 0,
+            "_id": "67717c519fa6aacffd559f49",
+            "createdAt": "Thu, 18 Apr 2024 03:52:49 GMT",
+            "image_name": "gallery_prolintass.png",
+            "portofolio": "67716f989fa6aacffd559f44",
+            "sort": "3",
+            "updatedAt": "Thu, 18 Apr 2024 03:52:49 GMT",
+            "video_link": ""
+        },
+        {
+            "__v": 0,
+            "_id": "67717c519fa6aacffd559f51",
+            "createdAt": "Thu, 18 Apr 2024 03:52:49 GMT",
+            "image_name": "faq_prolintas.png",
+            "portofolio": "67716f989fa6aacffd559f44",
+            "sort": "4",
+            "updatedAt": "Thu, 18 Apr 2024 03:52:49 GMT",
+            "video_link": ""
+        },
+        {
+            "__v": 0,
+            "_id": "67717c519fa6aacffd559f48",
+            "createdAt": "Thu, 18 Apr 2024 03:52:49 GMT",
+            "image_name": "About_prolintas.png",
+            "portofolio": "67716f989fa6aacffd559f44",
+            "sort": "5",
+            "updatedAt": "Thu, 18 Apr 2024 03:52:49 GMT",
+            "video_link": ""
+        },
+        {
+            "__v": 0,
+            "_id": "67717c519fa6aacffd559f50",
+            "createdAt": "Thu, 18 Apr 2024 03:52:49 GMT",
+            "image_name": "service_prolintas.png",
+            "portofolio": "67716f989fa6aacffd559f44",
+            "sort": "6",
+            "updatedAt": "Thu, 18 Apr 2024 03:52:49 GMT",
+            "video_link": ""
+        },
+        {
+            "__v": 0,
+            "_id": "67717c519fa6aacffd559f52",
+            "createdAt": "Thu, 18 Apr 2024 03:52:49 GMT",
+            "image_name": "contact_prolintas.png",
+            "portofolio": "67716f989fa6aacffd559f44",
+            "sort": "7",
+            "updatedAt": "Thu, 18 Apr 2024 03:52:49 GMT",
+            "video_link": ""
         }
+    
+
     ]
 }

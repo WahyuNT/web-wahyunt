@@ -563,6 +563,36 @@
                 "Design"
             ],
             "updatedAt": "Thu, 18 Apr 2024 03:46:14 GMT"
+        },
+        {
+            "__v": 0,
+            "_id": "67716f989fa6aacffd559f44",
+            "company": "Prolintass Logistik",
+            "cover": "prolintas_cover.png",
+            "createdAt": "Thu, 18 Apr 2024 03:46:14 GMT",
+            "date": "November 2024",
+            "desc": "This landing page is designed for Prolintas, a shipping company specializing in sea freight. The website helps users better understand Prolintas, from company information and services offered to a package tracking feature. The platform is built using Laravel and Livewire.",
+            "desc_company": "",
+            "figma": "",
+            "github": "",
+            "icon_company": "prolintas_icon.png",
+            "link": "https://www.prolintas.id/",
+            "purpose": "Company Landing Page",
+            "slug": "prolintas",
+            "software": [
+                "laravel.png",
+                "figma.png",
+                "mysql.jpg"
+            ],
+            "title": "Website Prolintas Logistik",
+            "type": [
+                "HTML CSS",
+                "Front End",
+                "Website",
+                "UI/UX",
+                "Design"
+            ],
+            "updatedAt": "Thu, 18 Apr 2024 03:46:14 GMT"
         }
     ]
 }

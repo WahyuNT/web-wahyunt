@@ -46,7 +46,7 @@ export default function PortofolioComp() {
             }`}
             onClick={() => handleFilterChange("")}
           >
-            <small>All (20)</small>
+            <small>All (21)</small>
           </button>
 
           <button
@@ -64,7 +64,7 @@ export default function PortofolioComp() {
             }`}
             onClick={() => handleFilterChange("website")}
           >
-            <small>Website (9)</small>
+            <small>Website (10)</small>
           </button>
 
           <button
@@ -161,7 +161,7 @@ export default function PortofolioComp() {
                                     <div className="d-flex align-items-center gap-2 px-2 py-1">
                                       {item.software.map((softwareItem) => (
                                         <Tooltip
-                                          className="text-white rounded-pill px-2 "
+                                          className="text-second rounded-pill px-3 "
                                           placement="top"
                                           style={{
                                             backgroundColor: "#242624",
