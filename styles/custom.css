@@ -323,9 +323,9 @@ body {
 .detail-porto-image {
 	border-radius: 10px !important;
 	height: auto !important;
-	aspect-ratio: 16/9;
+	aspect-ratio: auto !important;
 	width: 100% !important;
-	object-fit: cover;
+	object-fit: cover !important;
 }
 
 .cover-blog {
@@ -380,16 +380,16 @@ body {
 }
 
 .cover-ava-awards {
-	aspect-ratio: 1/1;
-	object-fit: cover;
-	border-radius: 100%;
-	height: 64px;
-	width: 64px;
-	position: absolute;
-	top: -39px;
-	left: 50%;
-	transform: translateX(-50%);
-	border: 7px solid #19222b;
+	aspect-ratio: 1/1 !important;
+	object-fit: cover !important;
+	border-radius: 100% !important;
+	height: 64px !important;
+	width: 64px !important;
+	position: absolute !important;
+	top: -39px !important;
+	left: 50% !important;
+	transform: translateX(-50%) !important;
+	border: 7px solid #19222b !important;
 	box-sizing: border-box !important;
 }
 
@@ -595,6 +595,11 @@ body {
 					height: 0;
 					content: "";
 					border-bottom: 2px dashed var(--bs-border);
+
+					@media screen and (max-width: 847px) {
+						display: none !important;
+
+					}
 				}
 
 				&:after {
@@ -609,6 +614,11 @@ body {
 					border-radius: 20px;
 					border-top-left-radius: 0;
 					border-bottom-left-radius: 0;
+
+					@media screen and (max-width: 847px) {
+						display: none !important;
+
+					}
 				}
 
 				&:last-child {
@@ -631,6 +641,11 @@ body {
 					height: 0;
 					content: "";
 					border-bottom: 2px dashed var(--bs-border);
+
+					@media screen and (max-width: 847px) {
+						display: none !important;
+
+					}
 				}
 
 				&:after {
@@ -645,6 +660,8 @@ body {
 					border-radius: 20px;
 					border-top-right-radius: 0;
 					border-bottom-right-radius: 0;
+
+
 				}
 
 				&:last-child {
@@ -666,6 +683,8 @@ body {
 							margin-right: 57.5px;
 						}
 					}
+
+
 				}
 			}
 
@@ -798,6 +817,7 @@ body {
 		@media screen and (max-width: 1024px) {
 			padding: 0;
 		}
+
 	}
 
 	@media screen and (max-width: 986px) {
@@ -836,12 +856,14 @@ body {
 							}
 						}
 					}
+
 				}
 
 				.timeline-items {
 					display: block;
 					justify-content: unset;
 					flex-wrap: unset;
+
 
 					.item {
 
@@ -856,6 +878,7 @@ body {
 										}
 									}
 								}
+
 							}
 
 							&:before {
@@ -865,6 +888,7 @@ body {
 								height: 100%;
 								content: "";
 								border-left: 2px dashed var(--bs-border);
+
 							}
 
 							.timeline-date {
@@ -891,6 +915,8 @@ body {
 									@media screen and (max-width: 280px) {
 										width: 177px;
 									}
+
+
 								}
 
 								.date {
@@ -927,6 +953,7 @@ body {
 									.date-before {
 										display: none;
 									}
+
 								}
 							}
 
@@ -945,6 +972,7 @@ body {
 								@media screen and (max-width: 280px) {
 									margin-left: 45px;
 								}
+
 							}
 						}
 					}
@@ -1010,4 +1038,50 @@ body {
 	40% {
 		box-shadow: 0 2.5em 0 0
 	}
+}
+
+.skill-img {
+	height: 40px !important;
+	width: 40px !important;
+	border-radius: 5px !important;
+	transition: all 0.3s ease;
+}
+
+.skill-img:hover {
+	height: 45px !important;
+	width: 45px !important;
+	border-radius: 10px !important;
+}
+
+.img-software {
+	height: 15px !important;
+	width: 15px !important;
+	border-radius: 3px !important;
+	/* transition: all 0.3s ease; */
+}
+
+.img-software:hover {
+	/* height: 16px !important; */
+	/* width: 16px !important; */
+	border-radius: 15px !important;
+	/* transition: all 0.3s ease; */
+}
+
+.img-tools {
+	height: 40px !important;
+	width: 40px !important;
+	border-radius: 10px !important;
+	transition: all 0.3s ease;
+}
+
+.img-tools:hover {
+	height: 45px !important;
+	width: 45px !important;
+	border-radius: 15px !important;
+}
+
+.btn:focus,
+.btn:active {
+	outline: none !important;
+	box-shadow: none;
 }

@@ -1,5 +1,6 @@
 import { width } from "@fortawesome/free-solid-svg-icons/fa0";
 import axios from "axios";
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useCallback, useEffect, useState } from "react";
@@ -60,7 +61,16 @@ export default function DetailCertificate() {
       <div className="d-flex  flex-wrap-reverse flex-lg-wrap   ">
         <div className="col-lg col-12 col-sm-12  pe-lg-3">
           <div className="card  bg-transparent ">
-            <img
+            <Image
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{
+                width: "auto",
+                height: "auto",
+
+                borderRadius: "15px",
+              }}
               src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/images/certificate/${certificate.image}`}
               className="w-100 certificate-image"
               alt=""
@@ -74,25 +84,42 @@ export default function DetailCertificate() {
           >
             <div className="card-body pb-0 text-second">
               <small className="text-white text-utama fw-bold">Detail :</small>
-              <ul className="list-unstyled mb-3">
-                <li>
-                  <i className="fa-solid text-second fa-sm fa-building me-2"></i>
-                  <small>{certificate.company}</small>
-                </li>
-                <li>
-                  <i className="fa-solid text-second fa-sm fa-calendar-days me-2"></i>
-                  <small>{certificate.year}</small>
-                </li>
-                {certificate.credential && (
-                  <li>
-                    <i className="fa-solid text-second fa-sm fa-hashtag me-2"></i>
-                    <small>{certificate.credential}</small>
-                  </li>
+
+              <table>
+                <tr>
+                  <div className="d-flex align-items-top">
+                    <td>
+                      {" "}
+                      <i className="fa-solid text-second fa-sm fa-building me-2"></i>
+                    </td>
+                    <td>
+                      <small>{certificate.company}</small>
+                    </td>
+                  </div>
+                </tr>
+                <tr>
+                  <div className="d-flex align-items-top">
+                    <td>
+                      <i className="fa-solid text-second fa-sm fa-calendar-days me-2"></i>
+                    </td>
+                    <td>
+                      <small>{certificate.year}</small>
+                    </td>
+                  </div>
+                </tr>
+                {typeof window !== "undefined" && certificate.credential && (
+                  <tr>
+                    <div className="d-flex align-items-top">
+                      <td>
+                        <i className="fa-solid text-second fa-sm fa-hashtag me-2"></i>
+                      </td>
+                      <td>
+                        <small>{certificate.credential}</small>
+                      </td>
+                    </div>
+                  </tr>
                 )}
-              </ul>
-              {/* <div className="d-flex justify-content-center">
-                                <button className='btn btn-primary  mb-3 rounded-pill btn-xs text-dark px-3 py-2 '><i className="fa-solid fa-file-arrow-down me-1"></i>Download PDF</button>
-                            </div> */}
+              </table>
             </div>
           </div>
         </div>

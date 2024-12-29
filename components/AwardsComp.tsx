@@ -1,4 +1,5 @@
 import axios from "axios";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
@@ -53,7 +54,18 @@ export default function AwardComp() {
                     <div className=" bg-transparent card h-100 card-glass card-porto pb-2">
                       <div className="card bg-transparent card-body p-0 card-banner flex-column">
                         <div className="card bg-transparent">
-                          <img
+                          <Image
+                            width={0}
+                            height={0}
+                            sizes="100vw"
+                            style={{
+                              width: "auto",
+                              height: "150px",
+                              objectFit: "cover",
+                              aspectRatio: "16/9",
+                              borderTopRightRadius: "15px",
+                              borderTopLeftRadius: "15px",
+                            }}
                             src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/images/awards/${item.cover}`}
                             className="cover-awards mb-2"
                             alt=""
@@ -61,9 +73,12 @@ export default function AwardComp() {
                         </div>
                         <div className="d-flex justify-content-center ">
                           <div className="card bg-transparent ">
-                            <img
+                            <Image
+                              width={0}
+                              height={0}
+                              sizes="100vw"
+                              className="cover-ava-awards"
                               src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/images/awards/${item.icon_company}`}
-                              className="cover-ava-awards "
                               alt=""
                             />
                           </div>

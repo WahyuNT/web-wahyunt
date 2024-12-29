@@ -3,7 +3,7 @@
         {
             "__v": 0,
             "_id": "65fc83fe495c2002d2d110a3",
-            "company": "Forum Asistenx",
+            "company": "Forum Asisten",
             "cover": "web FA.png",
             "createdAt": "Thu, 21 Mar 2024 19:01:18 GMT",
             "date": "2022-2023",
@@ -19,8 +19,8 @@
                 "laravel.png",
                 "mysql.jpg",
                 "React_JS.png",
-                "express_JS.png",
-                "js.png",
+                "Express_JS.png",
+                "JavaScript.png",
                 "bootstrap.png"
             ],
             "title": "Website Forum Asisten",
@@ -55,7 +55,7 @@
                 "mysql.jpg",
                 "figma.png",
                 "bootstrap.png",
-                "js.png"
+                "JavaScript.png"
             ],
             "title": "Website EXPO AMIKOM 2022",
             "type": [
@@ -88,7 +88,7 @@
                 "figma.png",
                 "mysql.jpg",
                 "bootstrap.png",
-                "js.png"
+                "JavaScript.png"
             ],
             "title": "Website BOIM AMIKOM 2023",
             "type": [
@@ -120,7 +120,7 @@
                 "unity.png",
                 "figma.png",
                 "blender.png",
-                "csharp.png"
+                "c_Sharp.png"
             ],
             "title": "App Newton AR",
             "type": [
@@ -138,14 +138,14 @@
             "__v": 0,
             "_id": "65fcff99d1c4e7041b0a897c",
             "company": "Media Pembelajaran XI OTKP",
-            "cover": "XIOtkp icon.png",
+            "cover": "xiotkp.png",
             "createdAt": "Fri, 22 Mar 2024 03:48:41 GMT",
             "date": "March 2023",
             "desc": "This interactive media aims to provide knowledge on personnel administration systems. In addition to explanations, this application features crossword puzzles that can be utilized to sharpen users' knowledge. Developed using Unity Engine, the application is built for WebGL and is accessible at mediapembelajaranxiotkp.my.id.",
             "desc_company": "",
             "figma": "",
             "github": "",
-            "icon_company": "xiotkp.png",
+            "icon_company": "XIOtkp icon.png",
             "link": "https://mediapembelajaranxiotkp.my.id/",
             "purpose": "Personnel Administration System Interactive Media",
             "slug": "media-pembelajaran-xi-otkp",
@@ -153,7 +153,7 @@
                 "unity.png",
                 "figma.png",
                 "CorelDraw.png",
-                "csharp.png"
+                "c_Sharp.png"
             ],
             "title": "Media Pembelajaran Sistem Administrasi Kepegawaian",
             "type": [
@@ -182,7 +182,7 @@
             "software": [
                 "unity.png",
                 "CorelDraw.png",
-                "csharp.png"
+                "c_Sharp.png"
             ],
             "title": "Wahana Antariksa",
             "type": [
@@ -238,7 +238,7 @@
             "software": [
                 "unity.png",
                 "CorelDraw.png",
-                "csharp.png"
+                "c_Sharp.png"
             ],
             "title": "Game Byte Heroes",
             "type": [
@@ -322,7 +322,7 @@
             "software": [
                 "unity.png",
                 "laravel.png",
-                "csharp.png",
+                "c_Sharp.png",
                 "figma.png",
                 "CorelDraw.png"
             ],
@@ -380,7 +380,7 @@
             "slug": "solved",
             "software": [
                 "blender.png",
-                "ae.png"
+                "after_effects.png"
             ],
             "title": "Solved 3D Animation",
             "type": [
@@ -405,8 +405,8 @@
             "purpose": "Motion graphics",
             "slug": "web-fa-2-1",
             "software": [
-                "ae.png",
-                "premiere.png",
+                "after_effects.png",
+                "premiere_Pro.png",
                 "figma.png"
             ],
             "title": "Web FA 2.1 Introducing Motion Graphics",
@@ -432,8 +432,8 @@
             "purpose": "Motion graphics",
             "slug": "web-fa-2-2",
             "software": [
-                "ae.png",
-                "premiere.png",
+                "after_effects.png",
+                "premiere_Pro.png",
                 "figma.png"
             ],
             "title": "Web FA 2.2 Introducing Motion Graphics",
@@ -460,7 +460,7 @@
             "slug": "the-legend-of-monster-slayer",
             "software": [
                 "unity.png",
-                "csharp.png",
+                "c_Sharp.png",
                 "photoshop.png"
             ],
             "title": "Game 2D The Legend of Monster Slayer",
@@ -490,7 +490,7 @@
                 "bootstrap.png",
                 "mongo.png",
                 "React_JS.png",
-                "express_JS.png"
+                "Express_JS.png"
             ],
             "title": "Website Portofolio",
             "type": [

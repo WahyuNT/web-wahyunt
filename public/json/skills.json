@@ -23,7 +23,7 @@
         {
             "_id": "65f9bb26e763f86593f77680",
             "title": "JavaScript",
-            "icon": "js.png",
+            "icon": "JavaScript.png",
             "desc": "",
             "type": "Programming",
             "createdAt": "2024-03-19T16:19:50.922Z",
@@ -43,7 +43,7 @@
         {
             "_id": "65f9ba85e763f86593f7767a",
             "title": "Express.js",
-            "icon": "express_JS.png",
+            "icon": "Express_JS.png",
             "desc": "",
             "type": "Back End",
             "createdAt": "2024-03-19T16:17:09.637Z",
@@ -58,16 +58,6 @@
             "type": "Front End",
             "createdAt": "2024-03-19T16:23:31.811Z",
             "updatedAt": "2024-03-19T16:23:31.811Z",
-            "__v": 0
-        },
-        {
-            "_id": "65f9bcbde763f86593f77692",
-            "title": "Vue.js",
-            "icon": "vue.png",
-            "desc": "",
-            "type": "Front End",
-            "createdAt": "2024-03-19T16:26:37.492Z",
-            "updatedAt": "2024-03-19T16:26:37.492Z",
             "__v": 0
         },
         {
@@ -93,7 +83,7 @@
         {
             "_id": "65fe60a60051ea2e72cc129e",
             "title": "C#",
-            "icon": "csharp.png",
+            "icon": "c_Sharp.png",
             "desc": "",
             "type": "Game Development",
             "createdAt": "2024-03-23T04:55:02.521Z",

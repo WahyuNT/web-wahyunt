@@ -1,4 +1,5 @@
 import axios from "axios";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
@@ -51,7 +52,17 @@ export default function CertificateComp() {
                     <div className=" bg-transparent card h-100 card-glass card-porto pb-2">
                       <div className="card bg-transparent  card-banner flex-column">
                         <div className="card bg-transparent pt-3 px-3">
-                          <img
+                          <Image
+                            width={0}
+                            height={0}
+                            sizes="100vw"
+                            style={{
+                              width: "auto",
+                              height: "150px",
+                              objectFit: "cover",
+                              aspectRatio: "16/9",
+                              borderRadius: "15px",
+                            }}
                             src={`${process.env.NEXT_PUBLIC_API_URL}/images/certificate/${item.image}`}
                             className="cover-certificate mb-2"
                             alt=""

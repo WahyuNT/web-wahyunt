@@ -2,6 +2,7 @@ import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import { Tooltip, Button } from "@nextui-org/react";
 
 export default function PortofolioComp() {
   const [portofolio, setPortofolio] = useState([]);
@@ -19,7 +20,6 @@ export default function PortofolioComp() {
         const responsePortofolio = await axios.get(
           `${process.env.NEXT_PUBLIC_API_URL}/api/portofolio/?keyword=${valueFilter}`
         );
-        console.log(responsePortofolio.data.data);
         setPortofolio(responsePortofolio.data.data);
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -46,7 +46,7 @@ export default function PortofolioComp() {
             }`}
             onClick={() => handleFilterChange("")}
           >
-            <small>All</small>
+            <small>All (20)</small>
           </button>
 
           <button
@@ -55,7 +55,7 @@ export default function PortofolioComp() {
             }`}
             onClick={() => handleFilterChange("game")}
           >
-            <small>Game</small>
+            <small>Game (6)</small>
           </button>
 
           <button
@@ -64,7 +64,7 @@ export default function PortofolioComp() {
             }`}
             onClick={() => handleFilterChange("website")}
           >
-            <small>Website</small>
+            <small>Website (9)</small>
           </button>
 
           <button
@@ -73,7 +73,7 @@ export default function PortofolioComp() {
             }`}
             onClick={() => handleFilterChange("Multimedia")}
           >
-            <small>Multimedia</small>
+            <small>Multimedia (3)</small>
           </button>
           <button
             className={`btn btn-xs  text-second me-2 mb-2  ${
@@ -81,7 +81,7 @@ export default function PortofolioComp() {
             }`}
             onClick={() => handleFilterChange("Interactive Media")}
           >
-            <small>Interactive Media</small>
+            <small>Interactive Media (2)</small>
           </button>
         </div>
         {isLoading ? (
@@ -114,7 +114,17 @@ export default function PortofolioComp() {
                       <div className="div px-3 pt-3">
                         <div className="card bg-transparent  card-banner flex-column">
                           <div className="card bg-transparent">
-                            <img
+                            <Image
+                              width={0}
+                              height={0}
+                              sizes="100vw"
+                              style={{
+                                width: "auto",
+                                height: "170px",
+                                objectFit: "cover",
+                                aspectRatio: "16/9",
+                                borderRadius: "15px",
+                              }}
                               src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/images/portofolio/${item.cover}`}
                               className="cover-image img-porto"
                               alt=""
@@ -148,15 +158,36 @@ export default function PortofolioComp() {
                               <div className="d-flex justify-content-center">
                                 <div className="card rounded-pill bg-dark   ">
                                   <div className="card-body p-1">
-                                    <div className="d-flex gap-2 px-2 py-1">
+                                    <div className="d-flex align-items-center gap-2 px-2 py-1">
                                       {item.software.map((softwareItem) => (
-                                        <Image
-                                          src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/images/skills/${softwareItem}`}
-                                          width={15}
-                                          height={15}
-                                          className="rounded"
-                                          alt="skill"
-                                        />
+                                        <Tooltip
+                                          className="text-white rounded-pill px-2 "
+                                          placement="top"
+                                          style={{
+                                            backgroundColor: "#242624",
+                                            color: "#ffffff",
+                                            borderRadius: "30px",
+                                          }}
+                                          content={
+                                            softwareItem
+                                              .split(".")[0]
+                                              .replace(/_/g, " ")
+                                              .charAt(0)
+                                              .toUpperCase() +
+                                            softwareItem
+                                              .split(".")[0]
+                                              .replace(/_/g, " ")
+                                              .slice(1)
+                                          }
+                                        >
+                                          <Image
+                                            src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/images/skills/${softwareItem}`}
+                                            width={15}
+                                            height={15}
+                                            className="rounded img-software"
+                                            alt="skill"
+                                          />
+                                        </Tooltip>
                                       ))}
                                     </div>
                                   </div>
@@ -176,7 +207,17 @@ export default function PortofolioComp() {
                           <div className="d-flex justify-content-start align-items-center mt-2">
                             <div className="col-2   d-flex align-items-center justify-content-center me-2">
                               <div className="card bg-transparent ">
-                                <img
+                                <Image
+                                  width={0}
+                                  height={0}
+                                  sizes="100vw"
+                                  style={{
+                                    width: "auto",
+                                    height: "auto",
+                                    objectFit: "cover",
+                                    aspectRatio: "1/1",
+                                    borderRadius: "8px",
+                                  }}
                                   src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/images/portofolio/${item.icon_company}`}
                                   className="cover-ava "
                                   alt=""

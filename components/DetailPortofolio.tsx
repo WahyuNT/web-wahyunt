@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Console } from "console";
 import Image from "next/image";
+import { Tooltip, Button } from "@nextui-org/react";
 
 export default function DetailPortofolio() {
   var settings = {
@@ -133,7 +134,12 @@ export default function DetailPortofolio() {
                       <div className="px-1">
                         <div className="bg-transparent card-glass p-2">
                           <div className="card bg-transparent p-1">
-                            <img
+                            <Image
+                              height={0}
+                              width={0}
+                              placeholder="blur"
+                              blurDataURL={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/images/portofolio/${img.image_name}`}
+                              sizes="100vw"
                               src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/images/portofolio/${img.image_name}`}
                               className="detail-porto-image"
                               alt=""
@@ -266,23 +272,36 @@ export default function DetailPortofolio() {
                 </div> */}
         <small className="text-second">Tools :</small>
         <br />
-        <div className="d-flex justify-content-start flex-wrap mt-1 mb-2">
-          {portofolio.software.map((software) => (
-            <div
-              className="avatar avatar-skill me-2 mb-2 pull-up"
-              data-popup="tooltip-custom"
-              data-bs-placement="top"
-              aria-label="Blender"
-              data-bs-original-title="Blender"
-            >
+        <div className="d-flex justify-content-start align-items-center flex-wrap mt-1 mb-2">
+          {portofolio.software.map((software: string) => (
+            <div className="avatar  d-flex justify-content-start align-items-center   me-2 mb-2 ">
               {/* <img src={software} className="rounded" alt="" /> */}
-              <Image
-                src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/images/skills/${software}`}
-                width={300}
-                height={300}
-                className="rounded"
-                alt="skill"
-              />
+              <Tooltip
+                className="text-white rounded-pill px-2 "
+                placement="top"
+                style={{
+                  backgroundColor: "#242624",
+                  color: "#ffffff",
+                  borderRadius: "30px",
+                }}
+                content={
+                  software
+                    .split(".")[0]
+                    .replace(/_/g, " ")
+                    .charAt(0)
+                    .toUpperCase() +
+                  software.split(".")[0].replace(/_/g, " ").slice(1)
+                }
+              >
+                <Image
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="img-tools "
+                  src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/images/skills/${software}`}
+                  alt="skill"
+                />
+              </Tooltip>
             </div>
           ))}
         </div>

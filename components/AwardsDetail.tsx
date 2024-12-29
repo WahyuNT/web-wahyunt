@@ -128,12 +128,14 @@ export default function AwardDetail() {
       <div className="card card-glass bg-transparent mb-3 mt-1 p-1">
         <div className="d-flex justify-content-start px-3 py-2">
           <div className="d-flex align-items-center">
-            <img
+            <Image
+              width={40}
+              height={40}
+              sizes="100vw"
               src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/images/awards/${awards.icon_company}`}
-              style={{ width: "40px", height: "40px" }}
               alt="skill"
               className="rounded-pill me-1"
-            ></img>
+            ></Image>
           </div>
           <div className=" d-flex align-items-start flex-column ps-lg-1">
             <small>
@@ -182,7 +184,6 @@ export default function AwardDetail() {
                       <div className="">
                         <div className="bg-transparent card-glass p-2">
                           <div className="card border-0 bg-transparent p-1 ">
-                           
                             <Image
                               src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/images/awards/${img.file_name}`}
                               alt="Deskripsi gambar"

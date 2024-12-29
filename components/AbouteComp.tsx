@@ -86,13 +86,14 @@ export default function AbouteComp() {
         ) : (
           <div className="d-flex justify-content-center justify-content-lg-start flex-wrap ps-3">
             {skill.map((item: { icon: string; title: string }) => (
-              <div className="avatar btn-icon avatar-skill me-2 mb-2">
+              <div className="avatar  btn-icon avatar-skill me-2 mb-2">
                 <Tooltip className="text-second" content={item.title}>
                   <Image
+                    sizes="100vw"
                     src={`${process.env.NEXT_PUBLIC_API_URL_IMAGE}/images/skills/${item.icon}`}
-                    width={40}
-                    height={40}
-                    className="rounded"
+                    width={0}
+                    height={0}
+                    className="rounded skill-img"
                     alt="skill"
                   />
                 </Tooltip>
