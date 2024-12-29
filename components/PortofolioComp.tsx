@@ -64,7 +64,7 @@ export default function PortofolioComp() {
             }`}
             onClick={() => handleFilterChange("website")}
           >
-            <small>Website (10)</small>
+            <small>Website (11)</small>
           </button>
           <button
             className={`btn btn-xs  text-second me-2 mb-2 ${
@@ -72,7 +72,7 @@ export default function PortofolioComp() {
             }`}
             onClick={() => handleFilterChange("mobile")}
           >
-            <small>Mobile (5)</small>
+            <small>Mobile (4)</small>
           </button>
 
           <button
@@ -89,7 +89,7 @@ export default function PortofolioComp() {
             }`}
             onClick={() => handleFilterChange("Interactive Media")}
           >
-            <small>Interactive Media (2)</small>
+            <small>Interactive Media (3)</small>
           </button>
         </div>
         {isLoading ? (
