@@ -89,7 +89,7 @@ export default function PortofolioComp() {
             }`}
             onClick={() => handleFilterChange("Interactive Media")}
           >
-            <small>Interactive Media (3)</small>
+            <small>Interactive Media (4)</small>
           </button>
         </div>
         {isLoading ? (
