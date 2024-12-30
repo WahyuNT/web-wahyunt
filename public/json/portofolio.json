@@ -365,7 +365,7 @@
         {
             "__v": 0,
             "_id": "65fd3799ce3d7a1a6b43b38c",
-            "company": "Solved",
+            "company": "Setsuna",
             "cover": "solved.jpg",
             "createdAt": "Fri, 22 Mar 2024 07:47:37 GMT",
             "date": "Mar - July 2022",
@@ -619,6 +619,33 @@
                 "Website",
                 "WebGL",
                 "Interactive Media"
+            ],
+            "updatedAt": "Fri, 22 Mar 2024 05:47:05 GMT"
+        },
+        {
+            "__v": 0,
+            "_id": "65fd1b594c27e89ddc711597",
+            "company": "Zeniths",
+            "cover": "chromarise_cover.png",
+            "createdAt": "Fri, 22 Mar 2024 05:47:05 GMT",
+            "date": "August 2024",
+            "desc": "\"Chromarise\" is a 3D platformer puzzle game that blends CMYK and RGB color themes. Players control two \"Chro Seekers,\" trusted knights striving to restore balance to the world by seeking the \"Chro Seed.\"\n\nIn single-player mode, players can switch or split into two distinct color themes to solve puzzles and overcome obstacles in each level. Meanwhile, in multiplayer split-screen mode, two players collaborate, each wielding unique color-based powers.\n\nEach color offers special abilities that must be combined to unlock paths and complete challenges. The game features stunning visuals and innovative color mechanics, delivering a dynamic and strategic puzzle experience.",
+            "desc_company": "",
+            "figma": "",
+            "github": "",
+            "icon_company": "chromarise_icon.png",
+            "link": "https://wahyunt.itch.io/chromarise-return-the-spectrum",
+            "purpose": "GAMESEED 2024 Game Jam",
+            "slug": "chromarise",
+            "software": [
+                "Unreal_Engine.png",
+                "blender.png"
+            ],
+            "title": "Chromarise : Return The Spectrum",
+            "type": [
+                "Game",
+                "Desktop",
+                "3D"
             ],
             "updatedAt": "Fri, 22 Mar 2024 05:47:05 GMT"
         }

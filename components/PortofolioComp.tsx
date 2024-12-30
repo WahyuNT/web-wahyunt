@@ -46,7 +46,7 @@ export default function PortofolioComp() {
             }`}
             onClick={() => handleFilterChange("")}
           >
-            <small>All (21)</small>
+            <small>All (22)</small>
           </button>
 
           <button
@@ -55,7 +55,7 @@ export default function PortofolioComp() {
             }`}
             onClick={() => handleFilterChange("game")}
           >
-            <small>Game (6)</small>
+            <small>Game (7)</small>
           </button>
 
           <button
