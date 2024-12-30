@@ -1,26 +1,27 @@
 import React, { useEffect } from "react";
 import axios from "axios";
 import { useRouter } from "next/router";
+import { Analytics } from "@vercel/analytics/react"
 
 export default function Profile() {
   const router = useRouter();
   const postDataDownload = async () => {
-    try {
-      const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/presensi/post`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ page: "download" }),
-        }
-      );
-      // Do something with the response if needed
-    } catch (error) {
-      console.error("Terjadi kesalahan:", error);
-      // Do something if an error occurs
-    }
+    // try {
+    //   const response = await fetch(
+    //     `${process.env.NEXT_PUBLIC_API_URL}/api/presensi/post`,
+    //     {
+    //       method: "POST",
+    //       headers: {
+    //         "Content-Type": "application/json",
+    //       },
+    //       body: JSON.stringify({ page: "download" }),
+    //     }
+    //   );
+    //   // Do something with the response if needed
+    // } catch (error) {
+    //   console.error("Terjadi kesalahan:", error);
+    //   // Do something if an error occurs
+    // }
   };
   const handlePostDataDownload = () => {
     postDataDownload();
