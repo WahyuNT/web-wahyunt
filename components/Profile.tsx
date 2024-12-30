@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import axios from "axios";
 import { useRouter } from "next/router";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
 
 export default function Profile() {
   const router = useRouter();
@@ -68,7 +68,7 @@ export default function Profile() {
                 alt="icon"
               />
             </div>
-
+            <Analytics />
             <h5 className="text-utama text-center mt-3 fw-bold">Wahyu NT</h5>
             <div className="d-flex justify-content-center">
               <hr
